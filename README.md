@@ -12,7 +12,7 @@ Join us in pushing boundaries, shaping the future, and making an impact through 
 
 ### Prerequisites
 
-- Node.js (v16 or higher)  
+- Node.js (v16 or higher)
 - pnpm package manager
 
 ### Installation
@@ -23,36 +23,35 @@ pnpm install
 
 ## 📜 Available Scripts
 
-| Script Description           | Command              |
-|-----------------------------|----------------------|
-| Start development server    | `pnpm run dev`       |
-| Build for production        | `pnpm run build`     |
-| Preview production build    | `pnpm run preview`   |
-| Run linting                 | `pnpm run lint`      |
-
+| Script Description       | Command            |
+| ------------------------ | ------------------ |
+| Start development server | `pnpm run dev`     |
+| Build for production     | `pnpm run build`   |
+| Preview production build | `pnpm run preview` |
+| Run linting              | `pnpm run lint`    |
 
 ## 📁 Project Structure
 
-| Folder/File     | Description                         |
-|-----------------|-------------------------------------|
-| `src`           | Source code                         |
-| `public`        | Static assets                       |
-| `dist/`         | Production build output             |
+| Folder/File | Description             |
+| ----------- | ----------------------- |
+| `src`       | Source code             |
+| `public`    | Static assets           |
+| `dist/`     | Production build output |
 
 ---
 
 ## 🧰 Technologies
 
-- **Vite** – Build tool and development server  
-- **React** – UI framework  
-- **ESLint** – Code quality tool  
-- **Prettier** – Code formatter  
+- **Vite** – Build tool and development server
+- **React** – UI framework
+- **ESLint** – Code quality tool
+- **Prettier** – Code formatter
 
 ---
 
 ## 🤝 Connect With Us
 
-- **Website**: Apex Circle  
+- **Website**: Apex Circle
 - **Email**: [apexcircleofficial2025@gmail.com](mailto:apexcircleofficial2025@gmail.com)
 
 ---
