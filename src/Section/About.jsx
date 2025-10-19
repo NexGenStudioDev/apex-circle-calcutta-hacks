@@ -26,13 +26,13 @@ const About = () => {
           {aboutHighlights.map((highlight, index) => (
             <SpotlightCard
               key={index}
-              className="p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 !bg-[#9c7c38] border-2 border-[#6c511b]"
+              className="p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 !bg-[#9c7c38] text-[#2a1e08] mix-blend-darken border-3 border-[#6c511b]"
               spotlightColor={highlight.spotlightColor}
             >
               <div className="flex flex-col">
                 {highlight.icon}
-                <h2 className="text-2xl font-semibold mb-4 text-[#2a1e08]">{highlight.title}</h2>
-                <p className="text-[#2a1e08] leading-7">{highlight.description}</p>
+                <h2 className="text-2xl font-semibold mb-4 ">{highlight.title}</h2>
+                <p className="leading-7">{highlight.description}</p>
               </div>
             </SpotlightCard>
           ))}
@@ -40,7 +40,7 @@ const About = () => {
 
         <div className="mt-10 mb-8">
           <SpotlightCard
-            className="p-8 w-full rounded-xl hover:shadow-lg transition-shadow duration-300 !bg-[#bc984e] border-2 border-[#6c511b]"
+            className="p-8 w-full rounded-xl hover:shadow-lg transition-shadow duration-300 !bg-[#bc984e] border-3 border-[#6c511b]"
             spotlightColor="#6c511b"
           >
             <div>
