@@ -1,74 +1,65 @@
-import { useState } from 'react';
+import { Code } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const tab = ['About', 'Timeline', 'Tracks', 'Prizes', 'Register'];
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 bg-[#f5e5c2] backdrop-blur-md  border-b-4 border-[#3e2d1d]">
-      <div className="flex items-center justify-between py-4 w-[90%] mx-auto min-w-[320px]">
-        <a href="#home" className="flex items-center gap-2 shrink-0">
-          <span className="w-10 h-10 p-0.5 border-4 border-[#3e2d1d] object-cover  bg-[#c9a74e] text-[#3e2d1d] font-extrabold">
-            {'< >'}
-          </span>
-          <span className="font-bold tracking-tight text-[#3e2d1d] text-lg">
-            CALCUTTA
-            <span className="py-0.4 px-2 text-[#a67c52]  font-bold rounded">
-              {'<'}HACK/{'>'}
-            </span>{' '}
-          </span>
-        </a>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-[#f4e5c2]/95 shadow-lg border-b-4 border-[#3E2C1D]' : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          {/* Left Side - Logo and Title */}
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 border-4 border-[#3E2C1D] bg-[#D4AF37] flex items-center justify-center">
+              <Code className="text-[#3E2C1D]" size={24} />
+            </div>
+            <div className="font-display text-2xl font-bold text-[#3E2C1D]">
+              Calcutta <span className="text-[#6B4423]">&lt;Hack/&gt;</span>
+            </div>
+          </div>
 
-        {/* Navigation - icon */}
-        <nav className="relative">
-          <button
-            className="text-[#1e1e1e] text-2xl
-            md:hidden ml-auto"
-            aria-label="Toggle navigation"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            ☰
-          </button>
-
-          {/* Nav- Tabs  */}
-          <ul
-            className={`${
-              isOpen ? 'flex' : 'hidden '
-            }  md:flex flex-col md:flex-row absolute md:static right-0 top-12 md:top-auto bg-[#a67c52] md:bg-transparent gap-2 md:gap-5 list-none p-6 md:p-0 rounded-2xl md:rounded-none w-48 md:w-auto transition-all duration-300 `}
-          >
-            {tab.map(item => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  className="text-[#4f3c24] hover:text-[#3b1e04] p-1 gap-6 font-medium transition text-base md:text-lg "
-                >
-                  {item}
-                </a>
-              </li>
+          {/* Right Side - Links */}
+          <div className="hidden md:flex items-center space-x-5 font-serif text-sm">
+            {[
+              { label: 'About', link: '#about' },
+              { label: 'Calcutta', link: '#about-calcutta' },
+              { label: 'Timeline', link: '#timeline' },
+              { label: 'Tracks', link: '#tracks' },
+              { label: 'Prizes', link: '#prizes' },
+              { label: 'Mentors', link: '#mentors' },
+              { label: 'Judges', link: '#judges' },
+              { label: 'Team', link: '#team' },
+              { label: 'Partners', link: '#partners' },
+              { label: 'Avatar', link: '#avatar-generator' },
+            ].map(item => (
+              <a
+                key={item.label}
+                href={item.link}
+                className="text-[#3E2C1D] hover:text-[#6B4423] transition-colors border-b-2 border-transparent hover:border-[#6B4423]"
+              >
+                {item.label}
+              </a>
             ))}
-          </ul>
-        </nav>
-
-        {/* Buttons */}
-        {/* <div className="hidden md:flex gap-3">
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-white/20 text-white bg-white/5 hover:bg-white/10 rounded-full px-4 py-2 font-semibold transition"
-          >
-            Join Discord
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-[#7c3aed] to-[#22d3ee] text-white rounded-full px-4 py-2 font-semibold shadow-[0_16px_60px_rgba(124,58,237,0.25)] hover:brightness-105 transition"
-          >
-            Apply with Devfolio
-          </a>
-        </div> */}
+            <a
+              href="#register"
+              className="bg-[#D4AF37] text-[#3E2C1D] px-6 py-2 rounded-full font-bold border-2 border-[#D4AF37] hover:bg-[#f4e5c2] hover:border-[#D4AF37] transition-all duration-300 transform hover:scale-105"
+            >
+              Register
+            </a>
+          </div>
+        </div>
       </div>
-    </header>
+    </nav>
   );
 };
 
