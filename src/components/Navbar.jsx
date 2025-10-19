@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const tab = ['About', 'Stats', 'Timeline', 'Prizes', 'Teams', 'Sponsors', 'Badge', 'FAQs'];
   return (
-    <header className="sticky top-0 z-50 bg-gray-900 backdrop-blur-md  border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-[#f5e5c2] backdrop-blur-md  border-b-4 border-[#3e2d1d]">
       <div className="flex items-center justify-between py-4 w-[90%] mx-auto">
         <a href="#home" className="flex items-center gap-2">
           <img
@@ -13,9 +13,9 @@ const Navbar = () => {
             alt="Calcutta <Hacks/> 1.0 logo"
             className="w-10 h-10 rounded-lg object-cover"
           />
-          <span className="font-extrabold tracking-tight text-white">
+          <span className="font-extrabold tracking-tight text-[#1e1e1e]">
             Calcutta{' '}
-            <span className="py-0.4 px-2 text-[#0ea5a4] bg-[#f5f5f5] font-bold rounded">
+            <span className="py-0.4 px-2 text-[#07a6b52] bg-[#f4f1e7] font-bold rounded">
               &lt;Hacks/&gt;
             </span>{' '}
             <span className="opacity-80 text-sm">1.0</span>
@@ -25,7 +25,7 @@ const Navbar = () => {
         {/* Navigation - icon */}
         <nav className="relative">
           <button
-            className="text-white text-2xl
+            className="text-[#1e1e1e] text-2xl
             md:hidden"
             aria-label="Toggle navigation"
             onClick={() => setIsOpen(!isOpen)}
@@ -43,7 +43,7 @@ const Navbar = () => {
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="text-gray-400 hover:text-white gap-5 font-medium transition text-lg"
+                  className="text-[#4f3c24] hover:text-[#57422a] gap-5 font-medium transition text-lg"
                 >
                   {item}
                 </a>
