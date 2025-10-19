@@ -1,15 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import {
-  FaCalendarAlt,
-} from 'react-icons/fa';
-
+import { FaCalendarAlt } from 'react-icons/fa';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import TimelineEvent from '../components/TimelineEvent';
 import { day1Events, day2Events } from '../Constant/TimeLine.constant';
-
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,14 +18,11 @@ const Timeline = () => {
     setActiveEvent(activeEvent === index ? null : index);
   };
 
-
   useEffect(() => {
-
     const ctx = gsap.context(() => {
-
       const timelineEvents = gsap.utils.toArray('.timeline-event');
 
-      timelineEvents.forEach((event, i) => {
+      timelineEvents.forEach(event => {
         gsap.to(event, {
           opacity: 1,
           x: 0,
@@ -41,15 +34,14 @@ const Timeline = () => {
             start: 'top bottom-=100',
             end: 'bottom center',
             toggleActions: 'play none none reverse',
-            // markers: true, 
+            // markers: true,
           },
         });
       });
-    }, timelineRef); 
-
+    }, timelineRef);
 
     return () => ctx.revert();
-  }, [activeTab]); 
+  }, [activeTab]);
 
   return (
     <div className="w-full min-h-screen py-20 bg-gradient-to-b from-[#f3e5c1] to-[#e8dab3]">
@@ -61,7 +53,6 @@ const Timeline = () => {
           </p>
         </div>
 
-   
         <div className="flex justify-center items-center mb-12">
           <div className="flex items-center space-x-4">
             <FaCalendarAlt className="text-2xl text-[#3e2d1c]" />
@@ -70,7 +61,6 @@ const Timeline = () => {
             </div>
           </div>
         </div>
-
 
         <div className="flex justify-center mb-16">
           <div className="flex rounded-xl shadow-lg overflow-hidden">
@@ -105,7 +95,6 @@ const Timeline = () => {
           </div>
         </div>
 
- 
         <div ref={timelineRef} className="max-w-4xl mx-auto pl-4 relative">
           {activeTab === 0 &&
             day1Events.map((event, index) => (

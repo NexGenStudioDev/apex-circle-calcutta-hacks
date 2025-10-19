@@ -3,28 +3,27 @@ import { ReactLenis } from '@studio-freight/react-lenis';
 
 const Theme = ({ children }) => {
   const lenisRef = useRef(null);
-  
+
   useEffect(() => {
     function update(time) {
       lenisRef.current?.lenis?.raf(time);
     }
-  
+
     const rafId = requestAnimationFrame(update);
-  
+
     return () => cancelAnimationFrame(rafId);
   }, []);
 
-
   const lenisOptions = {
     duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
+    easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     direction: 'vertical',
     gestureDirection: 'vertical',
     smooth: true,
     smoothTouch: true,
     touchMultiplier: 3,
   };
-  
+
   return (
     <ReactLenis ref={lenisRef} root options={lenisOptions}>
       <div
