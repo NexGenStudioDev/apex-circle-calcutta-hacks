@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export const Hero = () => {
-  return (
-    <div className='h-screen w-full'>Hero</div>
-  )
-}
+  return <div className="h-screen w-full">Hero</div>;
+};
