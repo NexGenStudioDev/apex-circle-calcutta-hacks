@@ -3,22 +3,19 @@ import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const tab = ['About', 'Stats', 'Timeline', 'Prizes', 'Teams', 'Sponsors', 'Badge', 'FAQs'];
+  const tab = ['About', 'Timeline', 'Tracks', 'Prizes', 'Register'];
   return (
     <header className="sticky top-0 z-50 bg-[#f5e5c2] backdrop-blur-md  border-b-4 border-[#3e2d1d]">
-      <div className="flex items-center justify-between py-4 w-[90%] mx-auto">
-        <a href="#home" className="flex items-center gap-2">
-          <img
-            src={logo}
-            alt="Calcutta <Hacks/> 1.0 logo"
-            className="w-10 h-10 rounded-lg object-cover"
-          />
-          <span className="font-extrabold tracking-tight text-[#1e1e1e]">
-            Calcutta{' '}
-            <span className="py-0.4 px-2 text-[#07a6b52] bg-[#f4f1e7] font-bold rounded">
-              &lt;Hacks/&gt;
+      <div className="flex items-center justify-between py-4 w-[90%] mx-auto min-w-[320px]">
+        <a href="#home" className="flex items-center gap-2 shrink-0">
+          <span className="w-10 h-10 p-0.5 border-4 border-[#3e2d1d] object-cover  bg-[#c9a74e] text-[#3e2d1d] font-extrabold">
+            {'< >'}
+          </span>
+          <span className="font-bold tracking-tight text-[#3e2d1d] text-lg">
+            CALCUTTA
+            <span className="py-0.4 px-2 text-[#a67c52]  font-bold rounded">
+              {'<'}HACK/{'>'}
             </span>{' '}
-            <span className="opacity-80 text-sm">1.0</span>
           </span>
         </a>
 
@@ -26,7 +23,7 @@ const Navbar = () => {
         <nav className="relative">
           <button
             className="text-[#1e1e1e] text-2xl
-            md:hidden"
+            md:hidden ml-auto"
             aria-label="Toggle navigation"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -37,13 +34,13 @@ const Navbar = () => {
           <ul
             className={`${
               isOpen ? 'flex' : 'hidden '
-            }  md:flex flex-col md:flex-row absolute md:static right-0 top-12 md:top-auto bg-[#020b27] md:bg-transparent gap-2 md:gap-5 list-none p-6 md:p-0 rounded-2xl md:rounded-none w-56 md:w-auto `}
+            }  md:flex flex-col md:flex-row absolute md:static right-0 top-12 md:top-auto bg-[#a67c52] md:bg-transparent gap-2 md:gap-5 list-none p-6 md:p-0 rounded-2xl md:rounded-none w-48 md:w-auto transition-all duration-300 `}
           >
             {tab.map(item => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="text-[#4f3c24] hover:text-[#57422a] gap-5 font-medium transition text-lg"
+                  className="text-[#4f3c24] hover:text-[#3b1e04] p-1 gap-6 font-medium transition text-base md:text-lg "
                 >
                   {item}
                 </a>
@@ -53,7 +50,7 @@ const Navbar = () => {
         </nav>
 
         {/* Buttons */}
-        <div className="hidden md:flex gap-3">
+        {/* <div className="hidden md:flex gap-3">
           <a
             href="#"
             target="_blank"
@@ -70,7 +67,7 @@ const Navbar = () => {
           >
             Apply with Devfolio
           </a>
-        </div>
+        </div> */}
       </div>
     </header>
   );
