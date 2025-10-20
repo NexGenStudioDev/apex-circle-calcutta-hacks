@@ -6,6 +6,7 @@ import About from './Section/About.jsx';
 import Timeline from './Section/Timeline.jsx';
 import AboutCalcutta from './Section/AboutCalcutta.jsx';
 import Sponsor from './Section/Sponsor.jsx';
+import Mentors from './Section/Mentors.jsx';
 function App() {
   return (
     <Theme>
@@ -15,6 +16,7 @@ function App() {
       <About />
 
       <AboutCalcutta />
+      <Mentors />
       <Timeline />
       <div className="h-screen"></div>
     </Theme>
