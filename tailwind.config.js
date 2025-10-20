@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         vintage: {
-          #f4e5c2: '#F4E5C2',
+          sepia: '#F4E5C2',
           dark: '#3E2C1D',
           brown: '#6B4423',
           gold: '#D4AF37',
