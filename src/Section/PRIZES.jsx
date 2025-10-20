@@ -3,7 +3,6 @@ import { Trophy, Award, Medal } from 'lucide-react';
 import { VintageCard } from './Tracks';
 import SpotlightCard from '../components/ui/SpotlightCard';
 
-
 const PRIZES = () => {
   const prizes = [
     { place: '1st', amount: '₹2,00,000', perks: 'Trophy + Medals + Mentorship', icon: Trophy },

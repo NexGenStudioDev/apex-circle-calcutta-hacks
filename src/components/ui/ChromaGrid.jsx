@@ -1,7 +1,14 @@
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 
-const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeOut = 0.6, ease = 'power3.out' }) => {
+const ChromaGrid = ({
+  items,
+  className = '',
+  radius = 300,
+  damping = 0.45,
+  fadeOut = 0.6,
+  ease = 'power3.out',
+}) => {
   const rootRef = useRef(null);
   const fadeRef = useRef(null);
   const setX = useRef(null);
@@ -16,7 +23,7 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
       handle: '@alexrivera',
       borderColor: '#4F46E5',
       gradient: 'linear-gradient(145deg,#4F46E5,#000)',
-      url: 'https://github.com/'
+      url: 'https://github.com/',
     },
     {
       image: 'https://i.pravatar.cc/300?img=11',
@@ -25,7 +32,7 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
       handle: '@jordanchen',
       borderColor: '#10B981',
       gradient: 'linear-gradient(210deg,#10B981,#000)',
-      url: 'https://linkedin.com/in/'
+      url: 'https://linkedin.com/in/',
     },
     {
       image: 'https://i.pravatar.cc/300?img=3',
@@ -34,7 +41,7 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
       handle: '@morganblake',
       borderColor: '#F59E0B',
       gradient: 'linear-gradient(165deg,#F59E0B,#000)',
-      url: 'https://dribbble.com/'
+      url: 'https://dribbble.com/',
     },
     {
       image: 'https://i.pravatar.cc/300?img=16',
@@ -43,7 +50,7 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
       handle: '@caseypark',
       borderColor: '#EF4444',
       gradient: 'linear-gradient(195deg,#EF4444,#000)',
-      url: 'https://kaggle.com/'
+      url: 'https://kaggle.com/',
     },
     {
       image: 'https://i.pravatar.cc/300?img=25',
@@ -52,7 +59,7 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
       handle: '@thesamkim',
       borderColor: '#8B5CF6',
       gradient: 'linear-gradient(225deg,#8B5CF6,#000)',
-      url: 'https://github.com/'
+      url: 'https://github.com/',
     },
     {
       image: 'https://i.pravatar.cc/300?img=60',
@@ -61,8 +68,8 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
       handle: '@tylerrod',
       borderColor: '#06B6D4',
       gradient: 'linear-gradient(135deg,#06B6D4,#000)',
-      url: 'https://aws.amazon.com/'
-    }
+      url: 'https://aws.amazon.com/',
+    },
   ];
 
   const data = items?.length ? items : demo;
@@ -88,7 +95,7 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
         setX.current?.(pos.current.x);
         setY.current?.(pos.current.y);
       },
-      overwrite: true
+      overwrite: true,
     });
   };
 
@@ -102,7 +109,7 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
     gsap.to(fadeRef.current, {
       opacity: 1,
       duration: fadeOut,
-      overwrite: true
+      overwrite: true,
     });
   };
 
@@ -126,7 +133,7 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
       style={{
         '--r': `${radius}px`,
         '--x': '50%',
-        '--y': '50%'
+        '--y': '50%',
       }}
     >
       {data.map((c, i) => (
@@ -138,24 +145,31 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
           style={{
             '--card-border': c.borderColor || 'transparent',
             background: c.gradient,
-            '--spotlight-color': 'rgba(255,255,255,0.3)'
+            '--spotlight-color': 'rgba(255,255,255,0.3)',
           }}
         >
           <div
             className="absolute inset-0 pointer-events-none transition-opacity duration-500 z-20 opacity-0 group-hover:opacity-100"
             style={{
               background:
-                'radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 70%)'
+                'radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 70%)',
             }}
           />
           <div className="relative z-10 flex-1 p-[10px] box-border">
-            <img src={c.image} alt={c.title} loading="lazy" className="w-full h-[80%] object-cover rounded-[10px] bg-center" />
+            <img
+              src={c.image}
+              alt={c.title}
+              loading="lazy"
+              className="w-full h-[80%] object-cover rounded-[10px] bg-center"
+            />
           </div>
           <footer className="relative z-10 p-3 text-white font-sans grid grid-cols-[1fr_auto] gap-x-3 gap-y-1">
             <h3 className="m-0 text-[1.05rem] font-semibold">{c.title}</h3>
             {c.handle && <span className="text-[0.95rem] opacity-80 text-right">{c.handle}</span>}
             <p className="m-0 text-[0.85rem] opacity-85">{c.subtitle}</p>
-            {c.location && <span className="text-[0.85rem] opacity-85 text-right">{c.location}</span>}
+            {c.location && (
+              <span className="text-[0.85rem] opacity-85 text-right">{c.location}</span>
+            )}
           </footer>
         </article>
       ))}
@@ -168,7 +182,7 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
           maskImage:
             'radial-gradient(circle var(--r) at var(--x) var(--y),transparent 0%,transparent 15%,rgba(0,0,0,0.10) 30%,rgba(0,0,0,0.22)45%,rgba(0,0,0,0.35)60%,rgba(0,0,0,0.50)75%,rgba(0,0,0,0.68)88%,white 100%)',
           WebkitMaskImage:
-            'radial-gradient(circle var(--r) at var(--x) var(--y),transparent 0%,transparent 15%,rgba(0,0,0,0.10) 30%,rgba(0,0,0,0.22)45%,rgba(0,0,0,0.35)60%,rgba(0,0,0,0.50)75%,rgba(0,0,0,0.68)88%,white 100%)'
+            'radial-gradient(circle var(--r) at var(--x) var(--y),transparent 0%,transparent 15%,rgba(0,0,0,0.10) 30%,rgba(0,0,0,0.22)45%,rgba(0,0,0,0.35)60%,rgba(0,0,0,0.50)75%,rgba(0,0,0,0.68)88%,white 100%)',
         }}
       />
       <div
@@ -182,7 +196,7 @@ const ChromaGrid = ({ items, className = '', radius = 300, damping = 0.45, fadeO
             'radial-gradient(circle var(--r) at var(--x) var(--y),white 0%,white 15%,rgba(255,255,255,0.90)30%,rgba(255,255,255,0.78)45%,rgba(255,255,255,0.65)60%,rgba(255,255,255,0.50)75%,rgba(255,255,255,0.32)88%,transparent 100%)',
           WebkitMaskImage:
             'radial-gradient(circle var(--r) at var(--x) var(--y),white 0%,white 15%,rgba(255,255,255,0.90)30%,rgba(255,255,255,0.78)45%,rgba(255,255,255,0.65)60%,rgba(255,255,255,0.50)75%,rgba(255,255,255,0.32)88%,transparent 100%)',
-          opacity: 1
+          opacity: 1,
         }}
       />
     </div>
