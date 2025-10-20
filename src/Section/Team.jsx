@@ -10,8 +10,7 @@ const Team = () => {
       handle: '🧭 Strategy & Vision',
       emoji: '🧭',
       color: '#3E2C1D',
-      image:
-        'https://i.pravatar.cc/300?img=8',
+      image: 'https://i.pravatar.cc/300?img=8',
       social: 'https://linkedin.com/in/',
     },
     {
@@ -20,8 +19,7 @@ const Team = () => {
       handle: '🛠️ Execution & Logistics',
       emoji: '🛠️',
       color: '#3E2C1D',
-      image:
-        'https://i.pravatar.cc/300?img=12',
+      image: 'https://i.pravatar.cc/300?img=12',
       social: 'https://linkedin.com/in/',
     },
     {
@@ -30,8 +28,7 @@ const Team = () => {
       handle: '💡 Innovation & Systems',
       emoji: '💡',
       color: '#3E2C1D',
-      image:
-        'https://i.pravatar.cc/300?img=2', 
+      image: 'https://i.pravatar.cc/300?img=2',
       social: 'https://github.com/',
     },
     {
@@ -40,8 +37,7 @@ const Team = () => {
       handle: '🎯 Aesthetics & Experience',
       emoji: '🎯',
       color: '#3E2C1D',
-      image:
-        'https://i.pravatar.cc/300?img=15',
+      image: 'https://i.pravatar.cc/300?img=15',
       social: 'https://dribbble.com/',
     },
     {
@@ -50,8 +46,7 @@ const Team = () => {
       handle: '📣 Outreach & Relations',
       emoji: '📣',
       color: '#3E2C1D',
-      image:
-        'https://i.pravatar.cc/300?img=20',
+      image: 'https://i.pravatar.cc/300?img=20',
       social: 'https://twitter.com/',
     },
     {
@@ -60,8 +55,7 @@ const Team = () => {
       handle: '🤝 Alliances & Support',
       emoji: '🤝',
       color: '#3E2C1D',
-      image:
-        'https://i.pravatar.cc/300?img=25',
+      image: 'https://i.pravatar.cc/300?img=25',
       social: 'https://linkedin.com/in/',
     },
   ];
@@ -101,7 +95,6 @@ const Team = () => {
                 }}
                 overlayContent={
                   <div className="absolute  h-[32vh] w-[15vw]  inset-0 flex flex-col justify-between p-4 text-white z-10">
-                  
                     <div className="flex justify-start">
                       <a
                         href={member.social}
@@ -112,12 +105,14 @@ const Team = () => {
                         {getSocialIcon(member.social)}
                       </a>
                     </div>
-                
+
                     <div
                       className="w-full py-3 px-4 rounded-md text-center font-semibold text-[#3E2C1D] shadow-md"
                       style={{ backgroundColor: member.color }}
                     >
-                      <span className="text-lg text-[#F3E5C1]">{member.emoji} {member.role}</span>
+                      <span className="text-lg text-[#F3E5C1]">
+                        {member.emoji} {member.role}
+                      </span>
                     </div>
                   </div>
                 }
