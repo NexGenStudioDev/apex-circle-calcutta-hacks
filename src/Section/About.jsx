@@ -1,62 +1,59 @@
 import React from 'react';
-import SpotlightCard from '../components/ui/SpotlightCard';
+import { FaLightbulb, FaLandmark, FaTram, FaBus, FaTaxi, FaArchway } from 'react-icons/fa';
 
-import aboutHighlights from '../Constant/aboutHighlights';
-
-const About = () => {
-  return (
-    <div className="w-full min-h-screen py-16 flex items-center flex-col">
-      <div className="w-[90%] md:w-[80%] lg:w-[60%] mx-auto">
-        <h1 className="text-5xl font-bold text-[#3f2e1f]">
-          What is Calcutta
-          <span className="py-1 px-3 mx-2 text-[#07a6b5] bg-[#f9f3e3] font-bold rounded shadow-sm">
-            &lt;Hacks/&gt;
-          </span>
-          1.0?
-        </h1>
-
-        <p className="text-lg mt-8 text-[#4f3c24] leading-8">
-          Calcutta &lt;Hacks/&gt; 1.0 is Kolkata's very own 24-hour hackathon, celebrating the
-          vibrant fusion of code and culture. Set against the backdrop of a city renowned for its
-          intellectual legacy, artistic soul, and unbreakable spirit, this event unites innovators,
-          coders, and creators to build meaningful solutions in an energetic sprint.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 mb-12">
-          {aboutHighlights.map((highlight, index) => (
-            <SpotlightCard
-              key={index}
-              className="p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 !bg-[#9c7c38] text-[#2a1e08] mix-blend-darken border-3 border-[#6c511b]"
-              spotlightColor={highlight.spotlightColor}
-            >
-              <div className="flex flex-col">
-                {highlight.icon}
-                <h2 className="text-2xl font-semibold mb-4 ">{highlight.title}</h2>
-                <p className="leading-7">{highlight.description}</p>
-              </div>
-            </SpotlightCard>
-          ))}
+const About = () => (
+  <section id="about" className="py-20 relative bg-[#F4E5C2]">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-16">
+        <h2 className="font-display text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4">
+          ABOUT THE HACKATHON
+        </h2>
+        <div className="w-32 h-1 bg-[#D4AF37] mx-auto"></div>
+      </div>
+      
+      <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="rounded-xl p-8 shadow-lg bg-white border-2 border-[#3E2C1D]">
+          <FaLightbulb className="text-[#D4AF37] mb-4 mx-auto md:mx-0" size={40} />
+          <h3 className="font-display text-3xl font-bold text-[#3E2C1D] mb-4 text-center md:text-left">
+            A Premium Experience
+          </h3>
+          <p className="font-serif text-lg text-[#6B4423] leading-relaxed">
+            Calcutta &lt;Hack/&gt; is India's largest heritage-meets-innovation hackathon, 
+            bringing together the finest minds from across the country and beyond. Set in 
+            the cultural capital of India, this event celebrates Kolkata's rich legacy while 
+            pushing the boundaries of technology.
+          </p>
         </div>
-
-        <div className="mt-10 mb-8">
-          <SpotlightCard
-            className="p-8 w-full rounded-xl hover:shadow-lg transition-shadow duration-300 !bg-[#bc984e] border-3 border-[#6c511b]"
-            spotlightColor="#6c511b"
-          >
-            <div>
-              <h2 className="text-2xl font-semibold mb-4 text-[#2a1e08]">Why Participate?</h2>
-              <p className="text-[#3e2a0c] leading-7">
-                Immerse yourself in a dynamic environment where collaboration meets competition.
-                Gain hands-on experience, connect with industry experts, and showcase your skills on
-                a grand stage. Whether you're a seasoned hacker or a curious beginner, Calcutta
-                &lt;Hacks/&gt; 1.0 offers an unparalleled opportunity to innovate, learn, and grow.
-              </p>
-            </div>
-          </SpotlightCard>
+        
+        <div className="rounded-xl p-8 shadow-lg bg-white border-2 border-[#3E2C1D]">
+          <FaLandmark className="text-[#6B4423] mb-4 mx-auto md:mx-0" size={40} />
+          <h3 className="font-display text-3xl font-bold text-[#3E2C1D] mb-4 text-center md:text-left">
+            Calcutta's Spirit
+          </h3>
+          <p className="font-serif text-lg text-[#6B4423] leading-relaxed">
+            From the iconic yellow taxis to the historic trams, from the majestic Howrah 
+            Bridge to the elegant Victoria Memorial, every element of this hackathon embodies 
+            the soul of Calcutta - a perfect blend of tradition and progress.
+          </p>
         </div>
       </div>
+      
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {[
+          { icon: FaTram, label: 'Historic Trams', subtitle: 'First in Asia' },
+          { icon: FaBus, label: 'Blue Buses', subtitle: 'City Symbol' },
+          { icon: FaTaxi, label: 'Yellow Taxis', subtitle: 'Iconic Rides' },
+          { icon: FaArchway, label: 'Howrah Bridge', subtitle: 'Engineering Marvel' }
+        ].map((item, idx) => (
+          <div key={idx} className="text-center bg-[#F4E5C2] p-6 border-2 border-[#3E2C1D] rounded-lg shadow-md">
+            <item.icon className="mx-auto mb-3 text-[#3E2C1D]" size={48} />
+            <div className="font-display font-bold text-[#3E2C1D]">{item.label}</div>
+            <div className="font-serif text-sm text-[#6B4423] italic">{item.subtitle}</div>
+          </div>
+        ))}
+      </div>
     </div>
-  );
-};
+  </section>
+);
 
 export default About;
