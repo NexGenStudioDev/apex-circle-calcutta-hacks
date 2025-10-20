@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, memo } from 'react';
 const ANIMATION_CONFIG = {
   SMOOTH_TAU: 0.25,
   MIN_COPIES: 2,
-  COPY_HEADROOM: 2
+  COPY_HEADROOM: 2,
 };
 
 const toCssLength = value => (typeof value === 'number' ? `${value}px` : (value ?? undefined));
@@ -150,7 +150,7 @@ export const LogoLoop = memo(
     scaleOnHover = false,
     ariaLabel = 'Partner logos',
     className,
-    style
+    style,
   }) => {
     const containerRef = useRef(null);
     const trackRef = useRef(null);
@@ -173,7 +173,8 @@ export const LogoLoop = memo(
 
       if (sequenceWidth > 0) {
         setSeqWidth(Math.ceil(sequenceWidth));
-        const copiesNeeded = Math.ceil(containerWidth / sequenceWidth) + ANIMATION_CONFIG.COPY_HEADROOM;
+        const copiesNeeded =
+          Math.ceil(containerWidth / sequenceWidth) + ANIMATION_CONFIG.COPY_HEADROOM;
         setCopyCount(Math.max(ANIMATION_CONFIG.MIN_COPIES, copiesNeeded));
       }
     }, []);
@@ -188,7 +189,7 @@ export const LogoLoop = memo(
       () => ({
         '--logoloop-gap': `${gap}px`,
         '--logoloop-logoHeight': `${logoHeight}px`,
-        ...(fadeOutColor && { '--logoloop-fadeColor': fadeOutColor })
+        ...(fadeOutColor && { '--logoloop-fadeColor': fadeOutColor }),
       }),
       [gap, logoHeight, fadeOutColor]
     );
@@ -254,7 +255,9 @@ export const LogoLoop = memo(
           />
         );
 
-        const itemAriaLabel = isNodeItem ? (item.ariaLabel ?? item.title) : (item.alt ?? item.title);
+        const itemAriaLabel = isNodeItem
+          ? (item.ariaLabel ?? item.title)
+          : (item.alt ?? item.title);
 
         const inner = item.href ? (
           <a
@@ -311,7 +314,7 @@ export const LogoLoop = memo(
       () => ({
         width: toCssLength(width) ?? '100%',
         ...cssVariables,
-        ...style
+        ...style,
       }),
       [width, cssVariables, style]
     );
@@ -348,7 +351,10 @@ export const LogoLoop = memo(
         )}
 
         <div
-          className={cx('flex w-max will-change-transform select-none', 'motion-reduce:transform-none')}
+          className={cx(
+            'flex w-max will-change-transform select-none',
+            'motion-reduce:transform-none'
+          )}
           ref={trackRef}
         >
           {logoLists}

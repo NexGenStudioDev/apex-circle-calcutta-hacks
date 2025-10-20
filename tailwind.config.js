@@ -11,7 +11,7 @@ export default {
           gold: '#D4AF37',
           yellow: '#FFD700',
           blue: '#4A90E2',
-        }
+        },
       },
       fontFamily: {
         serif: ['Playfair Display', 'serif'],
