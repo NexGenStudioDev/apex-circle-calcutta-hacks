@@ -1,6 +1,7 @@
 import { Calendar, MapPin, Users, ChevronRight } from 'lucide-react';
 import Image from '../../src/assets/biswabangla-with-tram.jpeg';
 import Border from '../components/ui/Border';
+import SocialIcons from '../components/ui/SocialIcon';
 
 const Hero = () => (
   <section className="min-h-[85vh] pt-20 md:pt-24 flex items-center justify-center relative overflow-hidden">
@@ -35,12 +36,13 @@ const Hero = () => (
     </div>
 
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <SocialIcons />
       <Border className="p-8 md:p-12 lg:p-16">
         <div className="p-8 md:p-10 lg:p-12 aged-paper">
           {/* Tagline */}
           <div className="flex justify-center items-start mb-6">
             <div className="inline-block border-4 border-[#3E2C1D] px-6 py-2 bg-[#D4AF37]">
-              <span className="font-display text-sm tracking-widest">
+              <span className="font-display text-sm tracking-widest font-semibold">
                 HERITAGE • INNOVATION • EXCELLENCE
               </span>
             </div>
