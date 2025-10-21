@@ -49,7 +49,7 @@ const CommunityPartners = () => {
 
             return (
               <div key={i} className="group perspective-1000">
-                <div className="absolute inset-0 translate-x-2 translate-y-2 bg-[#3E2C1D]/10 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-sm"></div>
+                {/* <div className="absolute inset-0 translate-x-2 translate-y-2 bg-[#3E2C1D]/10 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-sm"></div> */}
 
                 <VintageCard className="text-center group-hover:scale-[1.03] transform-gpu transition-all duration-300 relative z-10 h-full flex flex-col">
                   <div className="mx-auto -mt-10 mb-4 w-16 h-16 rounded-full bg-[#F4E5C2] border-4 border-[#3E2C1D] flex items-center justify-center text-[#3E2C1D] shadow-md">

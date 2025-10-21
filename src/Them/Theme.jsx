@@ -1,42 +1,41 @@
-import React, { useRef, useEffect } from 'react';
-import { ReactLenis } from '@studio-freight/react-lenis';
+import Lenis from 'lenis';
+import React from 'react';
+import DotGrid from '../components/DotGrid';
 
 const Theme = ({ children }) => {
-  const lenisRef = useRef(null);
 
-  useEffect(() => {
-    function update(time) {
-      lenisRef.current?.lenis?.raf(time);
-    }
+const lenis = new Lenis();
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
 
-    const rafId = requestAnimationFrame(update);
-
-    return () => cancelAnimationFrame(rafId);
-  }, []);
-
-  const lenisOptions = {
-    duration: 1.2,
-    easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    direction: 'vertical',
-    gestureDirection: 'vertical',
-    smooth: true,
-    smoothTouch: true,
-    touchMultiplier: 3,
-  };
+requestAnimationFrame(raf);
 
   return (
-    <ReactLenis ref={lenisRef} root options={lenisOptions}>
-      <div
-        className="
+    <div
+      className="
           w-screen min-h-screen overflow-x-hidden flex flex-col
-          bg-[#f3e5c1]
-          [background-image:radial-gradient(#d4b87a_0.8px,transparent_1px)]
-          [background-size:16px_16px]
+          bg-[#f3e5c1] relative select-none z-0
         "
-      >
-        {children}
+    >
+      <div className="fixed w-full h-full top-0 left-0 z-1">
+        <DotGrid
+          dotSize={1.5}
+          gap={15}
+          baseColor="#bc984e"
+          activeColor="#3e2d1c"
+          proximity={170}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
       </div>
-    </ReactLenis>
+      <section className='z-2 select-none relative'>
+      {children}
+      </section>
+    </div>
   );
 };
 
