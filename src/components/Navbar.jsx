@@ -32,7 +32,6 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-5 font-serif text-sm">
             {[
               { label: 'About', link: '#about' },
-              { label: 'Calcutta', link: '#about-calcutta' },
               { label: 'Timeline', link: '#timeline' },
               { label: 'Tracks', link: '#tracks' },
               { label: 'Prizes', link: '#prizes' },

@@ -6,11 +6,9 @@ import GlareHover from '../components/ui/GlareHover';
 export const VintageCard = ({ children, className }) => {
   return (
     <div
-      className={`bg-[#e0d1b0] border-4 border-[#3e2c1d] p-3  flex mx-[2vw] my-[2vh] shadow-md ${className}`}
+      className={`bg-[#e0d1b0] border-4 border-[#3e2c1d] p-1  flex justify-center  align-center mx-[2vw] my-[2vh] shadow-md ${className}`}
     >
-      <div className="relative z-10 bg-[#e7d7b7] flex flex-col h-[98%] w-[98%] border-2 border-[#bea888]  ">
-        {children}
-      </div>
+      <div className="relative z-10 bg-[#e7d7b7] flex flex-col h-[98%] w-[98%] ">{children}</div>
     </div>
   );
 };

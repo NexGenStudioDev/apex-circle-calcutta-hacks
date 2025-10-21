@@ -31,7 +31,7 @@ const CommunityPartners = () => {
   ];
 
   return (
-    <section id="partners" className="py-20 bg-[#F4E5C2]/20">
+    <section id="partners" className="py-20 bg-[#f4e5c2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4">
@@ -49,7 +49,7 @@ const CommunityPartners = () => {
 
             return (
               <div key={i} className="group perspective-1000">
-                <div className="absolute inset-0 translate-x-2 translate-y-2 bg-[#3E2C1D]/10 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-sm"></div>
+                {/* <div className="absolute inset-0 translate-x-2 translate-y-2 bg-[#3E2C1D]/10 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-sm"></div> */}
 
                 <VintageCard className="text-center group-hover:scale-[1.03] transform-gpu transition-all duration-300 relative z-10 h-full flex flex-col">
                   <div className="mx-auto -mt-10 mb-4 w-16 h-16 rounded-full bg-[#F4E5C2] border-4 border-[#3E2C1D] flex items-center justify-center text-[#3E2C1D] shadow-md">

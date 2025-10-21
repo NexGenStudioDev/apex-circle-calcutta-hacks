@@ -87,7 +87,9 @@ const Team = () => {
                 imageSrc={member.image}
                 captionText={member.name}
                 displayOverlayContent={true}
-                maxTilt={15}
+                altText=''
+                
+                maxTilt={8}
                 scale={1.02}
                 className="bg-[#b18631] w-full  relative border-4 border-[#3E2C1D] rounded-xl overflow-hidden h-[350px] shadow-lg hover:shadow-xl transition duration-300 z-20"
                 style={{

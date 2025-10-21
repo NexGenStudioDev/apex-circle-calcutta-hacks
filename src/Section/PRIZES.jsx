@@ -11,7 +11,7 @@ const PRIZES = () => {
   ];
 
   return (
-    <section id="prizes" className="py-20 bg-[#3E2C1D]/5">
+    <section id="prizes" className="py-20 bg-[#ebdbb9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4">

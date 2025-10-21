@@ -40,7 +40,7 @@ const TimelineEvent = ({
       </div>
 
       <div
-        className={`ml-8 p-6 rounded-xl transition-all duration-300 w-full
+        className={`m-3 p-8  border-4 border-[#3E2C1D]  aged-paper  transition-all duration-300 w-[90%]
           ${
             isActive
               ? 'bg-[#3e2d1c] text-white shadow-[0_10px_25px_-5px_rgba(62,45,28,0.3)]'
@@ -67,7 +67,7 @@ const TimelineEvent = ({
         </h3>
 
         {isActive && (
-          <p className="mt-3 leading-relaxed text-[#f9f3e3] opacity-90">{description}</p>
+          <p className="mt-3 leading-relaxed text-[#3e1d1c] opacity-90">{description}</p>
         )}
       </div>
     </div>
