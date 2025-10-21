@@ -46,7 +46,7 @@ const Timeline = () => {
   return (
     <div
       id="timeline"
-      className="w-full min-h-screen py-20 bg-gradient-to-b from-[#f3e5c1] to-[#e8dab3]"
+      className="w-full min-h-screen py-20 "
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
