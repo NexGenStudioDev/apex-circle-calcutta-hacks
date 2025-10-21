@@ -1,15 +1,13 @@
-import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
-
-const SocialIcons = () => {
-  const icons = [
-    { icon: FaInstagram, link: 'https://instagram.com' },
-    { icon: FaTwitter, link: 'https://twitter.com' },
-    { icon: FaLinkedin, link: 'https://linkedin.com' },
-    { icon: FaGithub, link: 'https://github.com' },
-  ];
+const SocialIcons = ({ icons, position = 'left' }) => {
+  const positionClasses =
+    position === 'left'
+      ? '  left-1 sm:left-0 md:left-2.5 lg:left-4'
+      : 'right-1 sm:right-0 md:right-2.5 lg:right-4';
 
   return (
-    <div className="absolute top-1/2 left-4 transform -translate-y-1/2 flex flex-col gap-6">
+    <div
+      className={` absolute top-1/2 ${positionClasses} transform -translate-y-1/2 flex flex-col gap-6 z-20 `}
+    >
       {icons.map((item, index) => {
         const Icon = item.icon;
         return (
@@ -18,10 +16,10 @@ const SocialIcons = () => {
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group transition-transform hover:scale-110"
+            className=" group transition-transform hover:scale-110"
           >
             <Icon
-              size={28}
+              size={30}
               className="text-[#3E2C1D] group-hover:text-[#D4AF37] transition-colors duration-300"
             />
           </a>
@@ -30,5 +28,4 @@ const SocialIcons = () => {
     </div>
   );
 };
-
 export default SocialIcons;

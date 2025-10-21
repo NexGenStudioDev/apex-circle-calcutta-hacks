@@ -76,7 +76,7 @@ const Team = () => {
           </h2>
           <div className="w-32 h-1 bg-[#D4AF37] mx-auto"></div>
           <p className="font-serif text-xl text-[#6B4423] mt-6">
-            The crew behind Calcutta &lt;Hack/&gt;
+            The crew behind Calcutta &lt;Hacks/&gt;
           </p>
         </div>
 
@@ -87,8 +87,7 @@ const Team = () => {
                 imageSrc={member.image}
                 captionText={member.name}
                 displayOverlayContent={true}
-                altText=''
-                
+                altText=""
                 maxTilt={8}
                 scale={1.02}
                 className="bg-[#b18631] w-full  relative border-4 border-[#3E2C1D] rounded-xl overflow-hidden h-[350px] shadow-lg hover:shadow-xl transition duration-300 z-20"

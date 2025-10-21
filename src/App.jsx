@@ -12,6 +12,7 @@ import Team from './Section/Team.jsx';
 import Footer from './components/Footer.jsx';
 import CommunityPartners from './components/CommunityPartners.jsx';
 import Host from './Section/Host.jsx';
+import Judges from './Section/Judges.jsx';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <PRIZES />
       <Host />
       <Mentors />
+      <Judges />
       <Team />
       <CommunityPartners />
       <div className="h-screen"></div>

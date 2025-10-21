@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="font-display text-2xl font-bold mb-4 flex items-center">
               <Landmark className="mr-2 text-[#D4AF37]" size={24} />
               <span>
-                Calcutta <span className="text-[#D4AF37]">&lt;Hack/&gt;</span>
+                Calcutta <span className="text-[#D4AF37]">&lt;Hacks/&gt;</span>
               </span>
             </div>
             <p className="font-serif text-[#F4E5C2]/80 mb-4">
