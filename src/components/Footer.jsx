@@ -1,35 +1,35 @@
 import React, { useState } from 'react';
-import { 
-  Train, 
-  Bus, 
-  Landmark, 
-  Linkedin, 
-  Github, 
-  Twitter, 
-  Instagram, 
-  Mail, 
-  MapPin, 
-  Calendar, 
+import {
+  Train,
+  Bus,
+  Landmark,
+  Linkedin,
+  Github,
+  Twitter,
+  Instagram,
+  Mail,
+  MapPin,
+  Calendar,
   ArrowRight,
-  ExternalLink
+  ExternalLink,
 } from 'lucide-react';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
-  
-  const handleSubmit = (e) => {
+
+  const handleSubmit = e => {
     e.preventDefault();
     // Handle newsletter signup
     alert(`Thank you for subscribing with ${email}!`);
     setEmail('');
   };
-  
+
   return (
     <footer className="bg-[#3E2C1D] text-[#F4E5C2] pt-16 pb-8 relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-2 bg-[#D4AF37]"></div>
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-6 bg-[#3E2C1D] border-b-4 border-x-4 border-[#D4AF37]"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -37,11 +37,13 @@ const Footer = () => {
           <div>
             <div className="font-display text-2xl font-bold mb-4 flex items-center">
               <Landmark className="mr-2 text-[#D4AF37]" size={24} />
-              <span>Calcutta <span className="text-[#D4AF37]">&lt;Hack/&gt;</span></span>
+              <span>
+                Calcutta <span className="text-[#D4AF37]">&lt;Hack/&gt;</span>
+              </span>
             </div>
             <p className="font-serif text-[#F4E5C2]/80 mb-4">
-              Where heritage meets innovation in the heart of Kolkata. 
-              Join us for a weekend of coding, creativity and collaboration.
+              Where heritage meets innovation in the heart of Kolkata. Join us for a weekend of
+              coding, creativity and collaboration.
             </p>
             <div className="flex items-center mb-3 font-serif">
               <Calendar className="mr-2 text-[#D4AF37]" size={16} />
@@ -52,82 +54,143 @@ const Footer = () => {
               <span>Victoria Memorial Hall, Kolkata, West Bengal 700071</span>
             </div>
           </div>
-          
+
           {/* Column 2 - Quick Links */}
           <div>
             <h3 className="font-display text-xl font-bold mb-4 border-b border-[#D4AF37]/30 pb-2">
               Quick Links
             </h3>
             <div className="grid grid-cols-2 gap-y-2 font-serif">
-              <div><a href="#about" className="hover:text-[#D4AF37] transition-colors flex items-center"><ArrowRight size={14} className="mr-1"/> About</a></div>
-              <div><a href="#timeline" className="hover:text-[#D4AF37] transition-colors flex items-center"><ArrowRight size={14} className="mr-1"/> Timeline</a></div>
-              <div><a href="#tracks" className="hover:text-[#D4AF37] transition-colors flex items-center"><ArrowRight size={14} className="mr-1"/> Tracks</a></div>
-              <div><a href="#prizes" className="hover:text-[#D4AF37] transition-colors flex items-center"><ArrowRight size={14} className="mr-1"/> Prizes</a></div>
-              <div><a href="#team" className="hover:text-[#D4AF37] transition-colors flex items-center"><ArrowRight size={14} className="mr-1"/> Team</a></div>
-              <div><a href="#mentors" className="hover:text-[#D4AF37] transition-colors flex items-center"><ArrowRight size={14} className="mr-1"/> Mentors</a></div>
-              <div><a href="#sponsors" className="hover:text-[#D4AF37] transition-colors flex items-center"><ArrowRight size={14} className="mr-1"/> Sponsors</a></div>
-              <div><a href="#faq" className="hover:text-[#D4AF37] transition-colors flex items-center"><ArrowRight size={14} className="mr-1"/> FAQ</a></div>
+              <div>
+                <a
+                  href="#about"
+                  className="hover:text-[#D4AF37] transition-colors flex items-center"
+                >
+                  <ArrowRight size={14} className="mr-1" /> About
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#timeline"
+                  className="hover:text-[#D4AF37] transition-colors flex items-center"
+                >
+                  <ArrowRight size={14} className="mr-1" /> Timeline
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#tracks"
+                  className="hover:text-[#D4AF37] transition-colors flex items-center"
+                >
+                  <ArrowRight size={14} className="mr-1" /> Tracks
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#prizes"
+                  className="hover:text-[#D4AF37] transition-colors flex items-center"
+                >
+                  <ArrowRight size={14} className="mr-1" /> Prizes
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#team"
+                  className="hover:text-[#D4AF37] transition-colors flex items-center"
+                >
+                  <ArrowRight size={14} className="mr-1" /> Team
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#mentors"
+                  className="hover:text-[#D4AF37] transition-colors flex items-center"
+                >
+                  <ArrowRight size={14} className="mr-1" /> Mentors
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#sponsors"
+                  className="hover:text-[#D4AF37] transition-colors flex items-center"
+                >
+                  <ArrowRight size={14} className="mr-1" /> Sponsors
+                </a>
+              </div>
+              <div>
+                <a href="#faq" className="hover:text-[#D4AF37] transition-colors flex items-center">
+                  <ArrowRight size={14} className="mr-1" /> FAQ
+                </a>
+              </div>
             </div>
           </div>
-          
+
           {/* Column 3 - Connect */}
           <div>
             <h3 className="font-display text-xl font-bold mb-4 border-b border-[#D4AF37]/30 pb-2">
               Connect With Us
             </h3>
             <div className="grid grid-cols-2 gap-4 mb-4">
-              <a 
-                href="https://www.linkedin.com/company/apex-circle-official/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/company/apex-circle-official/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
               >
                 <div className="w-10 h-10 bg-[#F4E5C2]/10 border border-[#F4E5C2]/20 rounded-sm flex items-center justify-center mr-2 group-hover:bg-[#D4AF37]/20 group-hover:border-[#D4AF37] transition-colors">
                   <Linkedin size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
                 </div>
-                <span className="font-serif group-hover:text-[#D4AF37] transition-colors">LinkedIn</span>
+                <span className="font-serif group-hover:text-[#D4AF37] transition-colors">
+                  LinkedIn
+                </span>
               </a>
-              
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
               >
                 <div className="w-10 h-10 bg-[#F4E5C2]/10 border border-[#F4E5C2]/20 rounded-sm flex items-center justify-center mr-2 group-hover:bg-[#D4AF37]/20 group-hover:border-[#D4AF37] transition-colors">
                   <Twitter size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
                 </div>
-                <span className="font-serif group-hover:text-[#D4AF37] transition-colors">Twitter</span>
+                <span className="font-serif group-hover:text-[#D4AF37] transition-colors">
+                  Twitter
+                </span>
               </a>
-              
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
               >
                 <div className="w-10 h-10 bg-[#F4E5C2]/10 border border-[#F4E5C2]/20 rounded-sm flex items-center justify-center mr-2 group-hover:bg-[#D4AF37]/20 group-hover:border-[#D4AF37] transition-colors">
                   <Instagram size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
                 </div>
-                <span className="font-serif group-hover:text-[#D4AF37] transition-colors">Instagram</span>
+                <span className="font-serif group-hover:text-[#D4AF37] transition-colors">
+                  Instagram
+                </span>
               </a>
-              
-              <a 
-                href="https://www.linkedin.com/in/yuvrajprasad" 
-                target="_blank" 
+
+              <a
+                href="https://www.linkedin.com/in/yuvrajprasad"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
               >
                 <div className="w-10 h-10 bg-[#F4E5C2]/10 border border-[#F4E5C2]/20 rounded-sm flex items-center justify-center mr-2 group-hover:bg-[#D4AF37]/20 group-hover:border-[#D4AF37] transition-colors">
                   <Github size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
                 </div>
-                <span className="font-serif group-hover:text-[#D4AF37] transition-colors">GitHub</span>
+                <span className="font-serif group-hover:text-[#D4AF37] transition-colors">
+                  GitHub
+                </span>
               </a>
             </div>
-            
+
             <div className="mt-6">
-              <a 
-                href="mailto:contact@calcuttahack.com" 
+              <a
+                href="mailto:contact@calcuttahack.com"
                 className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
               >
                 <Mail size={16} className="mr-2 text-[#D4AF37]" />
@@ -135,7 +198,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          
+
           {/* Column 4 - Newsletter */}
           <div>
             <h3 className="font-display text-xl font-bold mb-4 border-b border-[#D4AF37]/30 pb-2">
@@ -146,23 +209,23 @@ const Footer = () => {
             </p>
             <form onSubmit={handleSubmit} className="space-y-3">
               <div className="relative">
-                <input 
-                  type="email" 
+                <input
+                  type="email"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={e => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   className="w-full bg-[#F4E5C2]/10 border border-[#F4E5C2]/20 text-[#F4E5C2] px-4 py-2 rounded-sm focus:outline-none focus:border-[#D4AF37] font-serif"
                   required
                 />
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#D4AF37] text-[#3E2C1D] w-8 h-8 flex items-center justify-center rounded-sm hover:bg-[#F4E5C2] transition-colors"
                 >
                   <ArrowRight size={16} />
                 </button>
               </div>
             </form>
-            
+
             {/* Calcutta Icons */}
             <div className="mt-8">
               <h4 className="font-display text-lg font-bold mb-3">Calcutta Icons</h4>
@@ -188,7 +251,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Divider with decorative pattern */}
@@ -201,15 +264,24 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="flex flex-col md:flex-row justify-between items-center font-serif text-sm text-[#F4E5C2]/70">
-          <p>&copy; {new Date().getFullYear()} Calcutta &lt;Hack/&gt;. Celebrating the heritage of Kolkata.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Calcutta &lt;Hack/&gt;. Celebrating the heritage of
+            Kolkata.
+          </p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="#" className="hover:text-[#D4AF37] transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-[#D4AF37] transition-colors">
+              Privacy Policy
+            </a>
             <span>|</span>
-            <a href="#" className="hover:text-[#D4AF37] transition-colors">Code of Conduct</a>
+            <a href="#" className="hover:text-[#D4AF37] transition-colors">
+              Code of Conduct
+            </a>
             <span>|</span>
-            <a href="#" className="hover:text-[#D4AF37] transition-colors">Terms</a>
+            <a href="#" className="hover:text-[#D4AF37] transition-colors">
+              Terms
+            </a>
           </div>
         </div>
       </div>

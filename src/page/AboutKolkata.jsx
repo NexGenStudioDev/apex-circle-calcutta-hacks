@@ -1,18 +1,18 @@
-import React from 'react'
-import Theme from '../Them/Theme'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import React from 'react';
+import Theme from '../Them/Theme';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const AboutKolkata = () => {
   return (
-   <Theme>
-    <Navbar />
+    <Theme>
+      <Navbar />
 
-   <AboutKolkata />
+      <AboutKolkata />
 
-    <Footer />
-   </Theme>
-  )
-}
+      <Footer />
+    </Theme>
+  );
+};
 
-export default AboutKolkata
+export default AboutKolkata;
