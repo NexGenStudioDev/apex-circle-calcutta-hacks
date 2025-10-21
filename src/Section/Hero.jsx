@@ -1,7 +1,7 @@
 import { Calendar, MapPin, Users, ChevronRight } from 'lucide-react';
 import Image from '../../src/assets/biswabangla-with-tram.jpeg';
 import Border from '../components/ui/Border';
-import './Hero.css';
+
 const Hero = () => (
   <section className="min-h-[85vh] pt-20 md:pt-24 flex items-center justify-center relative overflow-hidden">
     {/* Biswa Bangla with Tram Background */}
