@@ -23,13 +23,13 @@ const Team = () => {
       social: 'https://linkedin.com/in/',
     },
     {
-      name: 'Arjun Mehta',
-      role: 'Engineering',
+      name: 'Abhishek Kumar',
+      role: 'Developer',
       handle: '💡 Innovation & Systems',
       emoji: '💡',
       color: '#3E2C1D',
-      image: 'https://i.pravatar.cc/300?img=2',
-      social: 'https://github.com/',
+      image: 'https://avatars.githubusercontent.com/u/122656682?v=4',
+      social: 'https://github.com/abhishek-nexgen-dev',
     },
     {
       name: 'Anjali Das',
