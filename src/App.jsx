@@ -4,12 +4,14 @@ import Theme from './Them/Theme.jsx';
 import Hero from './Section/Hero.jsx';
 import About from './Section/About.jsx';
 import Timeline from './Section/Timeline.jsx';
-import AboutCalcutta from './Section/AboutCalcutta.jsx';
 import Sponsor from './Section/Sponsor.jsx';
 import Mentors from './Section/Mentors.jsx';
 import Tracks from './Section/Tracks.jsx';
 import PRIZES from './Section/PRIZES.jsx';
 import Team from './Section/Team.jsx';
+import Footer from './components/Footer.jsx';
+import CommunityPartners from './components/CommunityPartners.jsx';
+import Host from './Section/Host.jsx';
 
 function App() {
   return (
@@ -18,13 +20,15 @@ function App() {
       <Hero />
       <Sponsor />
       <About />
-      <AboutCalcutta />
       <Timeline />
       <Tracks />
       <PRIZES />
+      <Host />
       <Mentors />
       <Team />
+      <CommunityPartners />
       <div className="h-screen"></div>
+      <Footer />
     </Theme>
   );
 }

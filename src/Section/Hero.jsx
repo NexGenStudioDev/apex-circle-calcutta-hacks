@@ -1,4 +1,5 @@
 import { Calendar, MapPin, Users, ChevronRight } from 'lucide-react';
+import Image from '../../src/assets/biswabangla-with-tram.jpeg';
 import Border from '../components/ui/Border';
 import './Hero.css';
 const Hero = () => (
@@ -8,7 +9,7 @@ const Hero = () => (
       <div className="w-full h-full relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <img
-            src="src\assets\biswabangla with tram.png"
+            src={Image}
             alt="Biswa Bangla with Tram"
             className="w-full h-auto max-h-[90vh] object-contain opacity-30"
             style={{
