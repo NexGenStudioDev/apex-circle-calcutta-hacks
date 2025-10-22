@@ -13,6 +13,7 @@ import Footer from './components/Footer.jsx';
 import CommunityPartners from './components/CommunityPartners.jsx';
 import Host from './Section/Host.jsx';
 import Judges from './Section/Judges.jsx';
+import AvatarCardGenerator from './Section/AvatarCardGenerator.jsx';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Judges />
       <Team />
       <CommunityPartners />
+      <AvatarCardGenerator />
       <div className="h-screen"></div>
       <Footer />
     </Theme>
