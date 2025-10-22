@@ -5,9 +5,14 @@ import SpotlightCard from '../components/ui/SpotlightCard';
 
 const PRIZES = () => {
   const prizes = [
-    { place: '1st', amount: '₹2,00,000', perks: 'Trophy + Medals + Mentorship', icon: Trophy },
-    { place: '2nd', amount: '₹1,00,000', perks: 'Trophy + Medals + Goodies', icon: Medal },
-    { place: '3rd', amount: '₹50,000', perks: 'Trophy + Medals + Goodies', icon: Medal },
+    {
+      place: '1st',
+      amount: 'To be declared ...',
+      perks: 'Trophy + Medals + Mentorship',
+      icon: Trophy,
+    },
+    { place: '2nd', amount: 'To be declared ...', perks: 'Trophy + Medals + Goodies', icon: Medal },
+    { place: '3rd', amount: 'To be declared ...', perks: 'Trophy + Medals + Goodies', icon: Medal },
   ];
 
   return (
