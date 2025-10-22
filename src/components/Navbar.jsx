@@ -24,7 +24,7 @@ const Navbar = () => {
               <Code className="text-[#3E2C1D]" size={24} />
             </div>
             <div className="font-display text-2xl font-bold text-[#3E2C1D]">
-              Calcutta <span className="text-[#6B4423]">&lt;Hack/&gt;</span>
+              Calcutta <span className="text-[#6B4423]">&lt;Hacks/&gt;</span>
             </div>
           </div>
 
