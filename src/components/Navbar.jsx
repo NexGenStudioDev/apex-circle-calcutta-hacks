@@ -1,4 +1,4 @@
-import { Code } from 'lucide-react';
+import { Code, Link } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -31,6 +31,7 @@ const Navbar = () => {
           {/* Right Side - Links */}
           <div className="hidden md:flex items-center space-x-5 font-serif text-sm">
             {[
+              { label: 'Home', link: '/' },
               { label: 'About', link: '#about' },
               { label: 'Calcutta', link: '#about-calcutta' },
               { label: 'Timeline', link: '#timeline' },

@@ -21,7 +21,7 @@ requestAnimationFrame(raf);
     >
       <div className="fixed w-full h-full top-0 left-0 z-1">
         <DotGrid
-          dotSize={1.5}
+          dotSize={3}
           gap={15}
           baseColor="#bc984e"
           activeColor="#3e2d1c"
