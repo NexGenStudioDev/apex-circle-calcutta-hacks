@@ -134,6 +134,25 @@ const Team = () => {
       image: Rouson,
       social: 'https://linkedin.com/in/rouson',
     },
+    {
+      name: 'Abhishek Kumar',
+      role: 'Associate Lead',
+      handle: '🤝 Community Engagement',
+      emoji: '🤝',
+      color: '#3E2C1D',
+      image: "https://avatars.githubusercontent.com/u/122656682?v=4",
+      social: 'https://linkedin.com/in/rouson',
+    },
+    {
+      name: 'Anjali ',
+      role: 'Associate Co Lead',
+      handle: '📊 Operations & Management',
+      emoji: '📊',
+      color: '#3E2C1D',
+      image: "https://avatars.githubusercontent.com/u/160884550?v=4",
+      social: 'https://linkedin.com/in/shreyashi',
+    }
+   
   ];
 
   const getSocialIcon = url => {
