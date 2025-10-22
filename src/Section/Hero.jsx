@@ -2,13 +2,26 @@ import { Calendar, MapPin, Users, ChevronRight } from 'lucide-react';
 import Image from '../../src/assets/biswabangla-with-tram.jpeg';
 import Border from '../components/ui/Border';
 import SocialIcons from '../components/ui/SocialIcon';
-import { FaInstagram, FaLinkedinIn, FaTwitter, FaTwitterSquare } from 'react-icons/fa';
+import {
+  FaDiscord,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaTwitterSquare,
+  FaWhatsapp,
+} from 'react-icons/fa';
 
 const iconsPanel1 = [
   { icon: FaInstagram, link: 'https://instagram.com' },
   { icon: FaTwitterSquare, link: 'https://twitter.com' },
   { icon: FaLinkedinIn, link: 'https://linkedin.com' },
-  // { icon: FaGithub, link: 'https://github.com' },
+];
+
+const iconsPanel2 = [
+  { icon: FaGithub, link: 'https://github.com' },
+  { icon: FaDiscord, link: 'https://discord.com/invite/your-server' },
+  { icon: FaWhatsapp, link: 'https://wa.me/your-number' },
 ];
 
 const Hero = () => (
@@ -51,7 +64,7 @@ const Hero = () => (
         </div>
 
         {/* Right icons */}
-        <SocialIcons icons={iconsPanel1} position="right" />
+        <SocialIcons icons={iconsPanel2} position="right" />
 
         <div className="p-8 md:p-10 lg:p-12 aged-paper">
           {/* Tagline */}

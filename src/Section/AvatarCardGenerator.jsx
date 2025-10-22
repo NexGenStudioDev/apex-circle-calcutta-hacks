@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { Camera, Upload, RefreshCw, Download, Share2, Star } from 'react-feather';
 
 const VintageCard = ({ children }) => (
-  <div className="bg-vintage-sepia/20 border-4 border-vintage-brown/40 rounded-lg shadow-lg p-6">
+  <div className="rounded-lg shadow-lg p-6 bg-[#F4E5C2]/20 border-4 border-[#3E2C1D]">
     {children}
   </div>
 );
@@ -332,14 +332,14 @@ const AvatarCardGenerator = () => {
   const currentStyle = avatarStyles.find(s => s.id === selectedStyle);
 
   return (
-    <section id="avatar-generator" className="py-20 bg-vintage-dark/5">
+    <section id="avatar-generator" className="py-20 bg-[#3E2C1D]/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-display text-5xl md:text-6xl font-bold text-vintage-dark mb-4">
+          <h2 className="font-display text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4">
             CREATE YOUR AVATAR ID CARD
           </h2>
-          <div className="w-32 h-1 bg-vintage-gold mx-auto mb-6"></div>
-          <p className="font-serif text-xl text-vintage-brown max-w-3xl mx-auto">
+          <div className="w-32 h-1 bg-[#D4AF37] mx-auto mb-6"></div>
+          <p className="font-serif text-xl text-[#6B4423] max-w-3xl mx-auto">
             Design your personalized hackathon ID card inspired by Bengal's legendary icons. Upload
             your photo, choose your inspiration, and share your unique identity!
           </p>
@@ -350,9 +350,9 @@ const AvatarCardGenerator = () => {
           <div className="space-y-8">
             {/* Style Selection */}
             <VintageCard>
-              <div className="flex justify-between flex-col bg-[#e8d9b8] p-6 rounded-lg">
-                <h3 className="font-display text-2xl font-bold text-vintage-dark mb-6 flex items-center gap-3">
-                  <Star size={28} className="text-vintage-gold" />
+              <div className="flex justify-between flex-col bg-[#E8D9B8] p-6 rounded-lg">
+                <h3 className="font-display text-2xl font-bold text-[#3E2C1D] mb-6 flex items-center gap-3">
+                  <Star size={28} className="text-[#D4AF37]" />
                   Choose Your Inspiration
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
@@ -360,19 +360,19 @@ const AvatarCardGenerator = () => {
                     <button
                       key={style.id}
                       onClick={() => setSelectedStyle(style.id)}
-                      className={`p-4 border-4 transition-all  duration-300 rounded-lg relative overflow-hidden ${
+                      className={`p-4 border-4 transition-all duration-300 rounded-lg relative overflow-hidden ${
                         selectedStyle === style.id
                           ? 'border-[#3E2C1D] text-white bg-[#3E2C1D]/40 shadow-lg transform scale-105'
-                          : 'border-[#6B4423]/40 hover:border-[#6B4423] hover:bg-[#6B4423]/20 hover:shadow-md'
+                          : 'border-[#3E2C1D]/40 hover:border-[#6b4423] hover:bg-white hover:shadow-md'
                       }`}
                       style={{
-                        backgroundColor: selectedStyle === style.id ? `${'#6b4423'}` : '#f3e5c1',
+                        backgroundColor: selectedStyle === style.id ? '#e4d6ba' : '#E8D9B8',
                       }}
                     >
                       {selectedStyle === style.id && (
                         <div className="absolute top-2 right-2">
-                          <div className="w-8 h-8 bg-vintage-gold rounded-full flex items-center justify-center shadow-md border-2 border-vintage-dark">
-                            <span className="text-vintage-dark font-bold">✓</span>
+                          <div className="w-8 h-8 bg-[#D4AF37] rounded-full flex items-center justify-center shadow-md border-2 border-[#3E2C1D]">
+                            <span className="text-[#3E2C1D] font-bold">✓</span>
                           </div>
                         </div>
                       )}
@@ -382,11 +382,11 @@ const AvatarCardGenerator = () => {
                         </span>
                         <span className="text-3xl opacity-70">{style.symbolIcon}</span>
                       </div>
-                      <div className="font-display text-sm font-bold text-vintage-dark mb-1">
+                      <div className="font-display text-sm font-bold text-[#3E2C1D] mb-1">
                         {style.name}
                       </div>
-                      <div className="text-xs text-vintage-brown/80 mb-1">{style.category}</div>
-                      <div className="font-serif text-xs text-vintage-brown italic">
+                      <div className="text-xs text-[#6B4423]/80 mb-1">{style.category}</div>
+                      <div className="font-serif text-xs text-[#6B4423] italic">
                         "{style.quote}"
                       </div>
                     </button>
@@ -397,8 +397,8 @@ const AvatarCardGenerator = () => {
 
             {/* Image Upload */}
             <VintageCard>
-              <h3 className="font-display text-2xl font-bold text-vintage-dark mb-6 flex items-center gap-3">
-                <Camera size={28} className="text-vintage-gold" />
+              <h3 className="font-display text-2xl font-bold text-[#3E2C1D] mb-6 flex items-center gap-3">
+                <Camera size={28} className="text-[#D4AF37]" />
                 Upload Your Photo
               </h3>
               <input
@@ -410,7 +410,7 @@ const AvatarCardGenerator = () => {
               />
               <button
                 onClick={() => fileInputRef.current?.click()}
-                className="w-full bg-vintage-dark text-vintage-sepia px-8 py-4 font-display font-bold border-4 border-vintage-dark hover:bg-vintage-brown hover:border-vintage-brown transition-all duration-300 flex items-center justify-center gap-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
+                className="w-full bg-[#3E2C1D] text-[#E8D9B8] px-8 py-4 font-display font-bold border-4 border-[#3E2C1D] hover:bg-[#6B4423] hover:border-[#6B4423] transition-all duration-300 flex items-center justify-center gap-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
               >
                 <Upload size={24} />
                 {uploadedImage ? 'Change Photo' : 'Upload Photo'}
@@ -421,15 +421,15 @@ const AvatarCardGenerator = () => {
                     <img
                       src={uploadedImage}
                       alt="Preview"
-                      className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-vintage-dark shadow-lg"
+                      className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-[#3E2C1D] shadow-lg"
                     />
-                    <div className="absolute -top-2 -right-2 bg-vintage-gold rounded-full p-2 shadow-md">
-                      <span className="text-vintage-dark text-xs">✓</span>
+                    <div className="absolute -top-2 -right-2 bg-[#D4AF37] rounded-full p-2 shadow-md">
+                      <span className="text-[#3E2C1D] text-xs">✓</span>
                     </div>
                   </div>
                   <button
                     onClick={() => setUploadedImage(null)}
-                    className="mt-4 text-vintage-brown hover:text-vintage-dark font-serif flex items-center gap-2 mx-auto transition-colors duration-300 hover:underline"
+                    className="mt-4 text-[#6B4423] hover:text-[#3E2C1D] font-serif flex items-center gap-2 mx-auto transition-colors duration-300 hover:underline"
                   >
                     <RefreshCw size={16} /> Remove Photo
                   </button>
@@ -439,26 +439,24 @@ const AvatarCardGenerator = () => {
 
             {/* Details */}
             <VintageCard>
-              <h3 className="font-display text-2xl font-bold text-vintage-dark mb-6">
-                Your Details
-              </h3>
+              <h3 className="font-display text-2xl font-bold text-[#3E2C1D] mb-6">Your Details</h3>
               <div className="space-y-4">
                 <div>
-                  <label className="font-serif text-vintage-brown block mb-2">Name</label>
+                  <label className="font-serif text-[#6B4423] block mb-2">Name</label>
                   <input
                     type="text"
                     value={participantName}
                     onChange={e => setParticipantName(e.target.value)}
                     placeholder="Enter your name"
-                    className="w-full px-4 py-3 border-2 border-vintage-dark font-serif text-vintage-dark focus:outline-none focus:border-vintage-brown rounded-md transition-all duration-300 focus:shadow-md"
+                    className="w-full px-4 py-3 border-2 border-[#3E2C1D] font-serif text-[#3E2C1D] focus:outline-none focus:border-[#6B4423] rounded-md transition-all duration-300 focus:shadow-md"
                   />
                 </div>
                 <div>
-                  <label className="font-serif text-vintage-brown block mb-2">Role</label>
+                  <label className="font-serif text-[#6B4423] block mb-2">Role</label>
                   <select
                     value={participantRole}
                     onChange={e => setParticipantRole(e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-vintage-dark font-serif text-vintage-dark focus:outline-none focus:border-vintage-brown rounded-md transition-all duration-300 focus:shadow-md"
+                    className="w-full px-4 py-3 border-2 border-[#3E2C1D] font-serif text-[#3E2C1D] focus:outline-none focus:border-[#6B4423] rounded-md transition-all duration-300 focus:shadow-md"
                   >
                     <option>Participant</option>
                     <option>Team Lead</option>
@@ -473,13 +471,15 @@ const AvatarCardGenerator = () => {
           </div>
 
           {/* Right: Preview */}
+          {/* Right: Preview */}
           <div>
             <VintageCard>
-              <h3 className="font-display text-2xl font-bold text-vintage-dark mb-6 text-center">
+              <h3 className="font-display text-2xl font-bold text-[#3E2C1D] mb-6 text-center">
                 Preview Your Card
               </h3>
+
               <div
-                className="relative mx-auto border-4 overflow-hidden rounded-xl shadow-2xl transition-all duration-500"
+                className={`relative mx-auto border-4 overflow-hidden rounded-xl transition-all duration-500 `}
                 style={{
                   width: '100%',
                   maxWidth: '400px',
@@ -491,26 +491,22 @@ const AvatarCardGenerator = () => {
               >
                 {/* Decorative corner patterns */}
                 <div
-                  className="absolute top-4 left-4 w-8 h-8 border-l-4 border-t-4 opacity-30"
-                  style={{ borderColor: currentStyle.accent }}
+                  className={`absolute top-4 left-4 w-8 h-8 border-l-4 border-t-4 opacity-30 border-[${currentStyle.accent}]`}
                 ></div>
                 <div
-                  className="absolute top-4 right-4 w-8 h-8 border-r-4 border-t-4 opacity-30"
-                  style={{ borderColor: currentStyle.accent }}
+                  className={` top-4 right-4 w-8 h-8 border-r-4 border-t-4 border-[${currentStyle.accent}opacity-30`}
                 ></div>
                 <div
-                  className="absolute bottom-4 left-4 w-8 h-8 border-l-4 border-b-4 opacity-30"
-                  style={{ borderColor: currentStyle.accent }}
+                  className={`absolute bottom-4 left-4 w-8 h-8 border-l-4 border-b-4 border-[${currentStyle.accent} opacity-30`}
                 ></div>
                 <div
-                  className="absolute bottom-4 right-4 w-8 h-8 border-r-4 border-b-4 opacity-30"
-                  style={{ borderColor: currentStyle.accent }}
+                  className={`absolute bottom-4 right-4 w-8 h-8 border-r-4 border-b-4 border-[${currentStyle.accent} opacity-30`}
                 ></div>
+
                 {/* Header */}
                 <div
                   className="absolute top-0 left-0 right-0 p-5 text-center shadow-lg"
                   style={{
-                    backgroundColor: currentStyle.accent,
                     backgroundImage: `linear-gradient(135deg, ${currentStyle.accent} 0%, ${currentStyle.secondaryAccent} 100%)`,
                   }}
                 >
@@ -518,21 +514,18 @@ const AvatarCardGenerator = () => {
                     CALCUTTA &lt;HACKS/&gt;
                   </div>
                   <div className="font-serif text-xs text-white/90">13-14 December 2025</div>
-                  <div
-                    className="absolute bottom-0 left-0 right-0 h-1"
-                    style={{ backgroundColor: currentStyle.secondaryAccent }}
-                  ></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#6B4423]"></div>
                 </div>
 
                 {/* Avatar Circle */}
                 <div className="absolute top-28 left-1/2 -translate-x-1/2">
                   {/* Outer decorative ring */}
                   <div
-                    className="w-36 h-36 rounded-full absolute -top-2 -left-2 opacity-20"
-                    style={{ backgroundColor: currentStyle.secondaryAccent }}
+                    className={`w-36 h-36 rounded-full absolute top-2 left-2 opacity-20 bg-[${currentStyle.secondaryAccent}]`}
                   ></div>
+
                   <div
-                    className="w-32 h-32 rounded-full border-4 bg-white flex items-center justify-center overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-110 relative z-10"
+                    className={`w-32 h-32 rounded-full border-4 bg-white flex items-center justify-center overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-110 relative z-10`}
                     style={{
                       borderColor: currentStyle.accent,
                       boxShadow: `0 8px 32px ${currentStyle.accent}60, inset 0 0 20px ${currentStyle.secondaryAccent}20`,
@@ -548,9 +541,10 @@ const AvatarCardGenerator = () => {
                       <span className="text-5xl filter drop-shadow-lg">{currentStyle.icon}</span>
                     )}
                   </div>
+
                   {/* Small icon badge */}
                   <div
-                    className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center border-2 border-white shadow-lg z-20"
+                    className={`absolute bottom-2 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center border-2 border-white shadow-lg z-20`}
                     style={{ backgroundColor: currentStyle.secondaryAccent }}
                   >
                     <span className="text-xl">{currentStyle.symbolIcon}</span>
@@ -559,14 +553,12 @@ const AvatarCardGenerator = () => {
 
                 {/* Name & Role */}
                 <div className="absolute top-72 left-0 right-0 text-center px-4">
-                  <div
-                    className="font-display text-xl font-bold mb-2 tracking-wide"
-                    style={{ color: currentStyle.accent }}
-                  >
+                  <div className="font-display text-xl font-bold mb-2 tracking-wide text-[#D4AF37]">
                     {participantName || 'Your Name'}
                   </div>
                   <div
-                    className="inline-block px-4 py-1 rounded-full text-xs font-serif font-semibold"
+                    className={`inline-block px-4 py-1 rounded-full text-xs font-serif font-semibold
+`}
                     style={{
                       backgroundColor: `${currentStyle.secondaryAccent}30`,
                       color: currentStyle.accent,
@@ -579,11 +571,10 @@ const AvatarCardGenerator = () => {
 
                 {/* Inspiration Box */}
                 <div
-                  className="absolute bottom-12 left-4 right-4 p-4 text-center rounded-lg shadow-lg"
+                  className="absolute bottom-3 left-4 right-4 p-4 text-center rounded-lg shadow-lg border-2"
                   style={{
-                    backgroundColor: currentStyle.accent,
+                    borderColor: currentStyle.secondaryAccent,
                     backgroundImage: `linear-gradient(135deg, ${currentStyle.accent} 0%, ${currentStyle.secondaryAccent} 100%)`,
-                    border: `2px solid ${currentStyle.secondaryAccent}`,
                   }}
                 >
                   <div className="flex items-center justify-center gap-2 mb-2">
@@ -607,7 +598,7 @@ const AvatarCardGenerator = () => {
                 <button
                   onClick={downloadCard}
                   disabled={!participantName || !uploadedImage}
-                  className="w-full bg-vintage-dark text-vintage-sepia px-6 py-4 font-display font-bold border-4 border-vintage-dark hover:bg-vintage-brown hover:border-vintage-brown transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
+                  className="w-full bg-[#3E2C1D] text-[#E8D9B8] px-6 py-4 font-display font-bold border-4 border-[#3E2C1D] hover:bg-[#6B4423] hover:border-[#6B4423] transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
                 >
                   <Download size={24} />
                   Download ID Card
@@ -615,7 +606,7 @@ const AvatarCardGenerator = () => {
                 <button
                   onClick={shareCard}
                   disabled={!participantName || !uploadedImage}
-                  className="w-full bg-vintage-sepia text-vintage-dark px-6 py-4 font-display font-bold border-4 border-vintage-dark hover:bg-vintage-gold transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
+                  className="w-full bg-[#E8D9B8] text-[#3E2C1D] px-6 py-4 font-display font-bold border-4 border-[#3E2C1D] hover:bg-[#D4AF37] transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
                 >
                   <Share2 size={24} />
                   Share on Social Media
@@ -623,7 +614,7 @@ const AvatarCardGenerator = () => {
               </div>
 
               {(!participantName || !uploadedImage) && (
-                <p className="text-center font-serif text-sm text-vintage-brown italic mt-4">
+                <p className="text-center font-serif text-sm text-[#6B4423] italic mt-4">
                   Upload a photo and enter your name to enable download & share
                 </p>
               )}

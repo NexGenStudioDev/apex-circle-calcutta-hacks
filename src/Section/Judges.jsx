@@ -35,6 +35,12 @@ const Judges = () => {
       img_url: 'https://i.pinimg.com/originals/56/fe/c1/56fec125a824d4a1c4430abe9a1ef3b1.png',
     },
   ];
+  const judge = [
+    { content: 'Coming Soon...' },
+    { content: 'Coming Soon...' },
+    { content: 'Coming Soon...' },
+    { content: 'Coming Soon...' },
+  ];
 
   return (
     <section id="judges" className="py-20 bg-[#3E2C1D]/5">
@@ -49,24 +55,15 @@ const Judges = () => {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {judges.map((j, i) => (
+          {/* ====== Coming Soon Cards ====== */}
+          {judge.map((j, i) => (
             <div key={i} className="group [perspective:1000px]">
               <div className="relative transform-gpu transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl [transform-style:preserve-3d]">
                 <Card className="bg-[#ebdbb9]">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-36 h-36 rounded-full bg-[#F4E5C266] border-2 border-[#3E2C1D] flex items-center justify-center mb-4 overflow-hidden">
-                      <img
-                        src={j.img_url}
-                        alt={`Image of judge ${j.name}`}
-                        className="w-full h-full object-cover rounded-full"
-                      />
+                  <div className="flex flex-col items-center text-center py-16">
+                    <div className="font-display text-2xl font-bold text-[#3E2C1D]">
+                      {j.content}
                     </div>
-
-                    <div className="font-display text-2xl font-bold text-[#3E2C1D]">{j.name}</div>
-                    <div className="font-serif text-[#6B4423]">{j.role}</div>
-                    <span className="mt-3 inline-block px-3 py-1 text-sm bg-[#3E2C1D1A] text-[#3E2C1D] rounded-full">
-                      {j.badge}
-                    </span>
                   </div>
                 </Card>
                 <div
@@ -76,6 +73,36 @@ const Judges = () => {
               </div>
             </div>
           ))}
+
+          {/* ====== Original Judge Cards ====== */}
+          {/*
+      {judges.map((j, i) => (
+        <div key={i} className="group [perspective:1000px]">
+          <div className="relative transform-gpu transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl [transform-style:preserve-3d]">
+            <Card className="bg-[#ebdbb9]">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-36 h-36 rounded-full bg-[#F4E5C266] border-2 border-[#3E2C1D] flex items-center justify-center mb-4 overflow-hidden">
+                  <img
+                    src={j.img_url}
+                    alt={`Image of judge ${j.name}`}
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+                <div className="font-display text-2xl font-bold text-[#3E2C1D]">{j.name}</div>
+                <div className="font-serif text-[#6B4423]">{j.role}</div>
+                <span className="mt-3 inline-block px-3 py-1 text-sm bg-[#3E2C1D1A] text-[#3E2C1D] rounded-full">
+                  {j.badge}
+                </span>
+              </div>
+            </Card>
+            <div
+              className="absolute inset-0 rounded-lg ring-1 ring-[#6B44234D] translate-y-2 blur-sm opacity-0 group-hover:opacity-100 transition"
+              aria-hidden
+            ></div>
+          </div>
+        </div>
+      ))}
+      */}
         </div>
       </div>
     </section>

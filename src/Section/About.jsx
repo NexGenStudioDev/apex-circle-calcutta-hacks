@@ -1,5 +1,9 @@
 import React from 'react';
 import { FaLightbulb, FaLandmark, FaTram, FaBus, FaTaxi, FaArchway } from 'react-icons/fa';
+import bridge from '../../src/assets/Icon/bridge.png';
+import taxi from '../../src/assets/Icon/taxii.png';
+import tram from '../../src/assets/Icon/tram.png';
+import bluebus from '../../src/assets/Icon/bluebus.png';
 import '../App.css';
 const About = () => (
   <section id="about" className="py-20 relative bg-[#f4e5c2]">
@@ -44,16 +48,34 @@ const About = () => (
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 ">
         {[
-          { imageSrc: FaTram, label: 'Historic Trams', subtitle: 'First in Asia' },
-          { imageSrc: FaBus, label: 'Blue Buses', subtitle: 'City Symbol' },
-          { imageSrc: FaTaxi, label: 'Yellow Taxis', subtitle: 'Iconic Rides' },
-          { imageSrc: FaArchway, label: 'Howrah Bridge', subtitle: 'Engineering Marvel' },
+          {
+            imageSrc: tram,
+            label: 'Historic Trams',
+            subtitle: 'First in Asia',
+          },
+          {
+            imageSrc: bluebus,
+            label: 'Blue Buses',
+            subtitle: 'City Symbol',
+          },
+          {
+            imageSrc: taxi,
+            label: 'Yellow Taxis',
+            subtitle: 'Iconic Rides',
+          },
+          {
+            imageSrc: bridge,
+            label: 'Howrah Bridge',
+            subtitle: 'Engineering Marvel',
+          },
         ].map((item, idx) => (
           <div
             key={idx}
             className="text-center bg-[#F4E5C2] p-6 border-2 border-[#3E2C1D] shadow-md aged-paper"
           >
-           <img src="/src/assets/Icon/bluebus.png" alt="" srcset="" className='size-20' />
+            <div className="flex justify-center align-center w-full">
+              <img src={item.imageSrc} alt="" srcset="" className="size-23" />
+            </div>
             <div className="font-display font-bold text-[#3E2C1D]">{item.label}</div>
             <div className="font-serif text-sm text-[#6B4423] italic">{item.subtitle}</div>
           </div>

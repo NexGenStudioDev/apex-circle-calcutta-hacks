@@ -1,62 +1,138 @@
 import React from 'react';
+import Abhishek from '../../src/assets/Team/AbhishekBan.jpg';
+import Agnij from '../../src/assets/Team/Agnij.jpg';
+import Naila from '../../src/assets/Team/Naila.jpg';
+import Pritham from '../../src/assets/Team/pritham.webp';
+import Pushkar from '../../src/assets/Team/pushkarDas.jpg';
+import Rouson from '../../src/assets/Team/Rouson.jpg';
+import Shreyanshi from '../../src/assets/Team/Shreyanshi.jpg';
+import Somnath from '../../src/assets/Team/Somnath.jpg';
+import Soumodweep from '../../src/assets/Team/Soumodweep.png';
+import Souvik from '../../src/assets/Team/Souvik.jpg';
+import Yuvraj from '../../src/assets/Team/yuvraj.jpg';
+// import Vivek from '../../src/assets/Team/yuvraj.jpg';
+
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
 const Team = () => {
   const team = [
     {
-      name: 'Rahul Sharma',
-      role: 'Organiser',
+      name: 'Soumodweep',
+      role: 'Founder',
       handle: '🧭 Strategy & Vision',
       emoji: '🧭',
       color: '#3E2C1D',
-      image: 'https://i.pravatar.cc/300?img=8',
-      social: 'https://linkedin.com/in/',
+      image: Soumodweep,
+      social: 'https://linkedin.com/in/soumodweep',
     },
     {
-      name: 'Priya Patel',
-      role: 'Operations',
+      name: 'Souvik',
+      role: 'Co-Founder',
       handle: '🛠️ Execution & Logistics',
       emoji: '🛠️',
       color: '#3E2C1D',
-      image: 'https://i.pravatar.cc/300?img=12',
-      social: 'https://linkedin.com/in/',
+      image: Souvik,
+      social: 'https://linkedin.com/in/souvik',
     },
     {
-      name: 'Abhishek Kumar',
-      role: 'Developer',
+      name: 'Pritam',
+      role: 'Co-Founder',
       handle: '💡 Innovation & Systems',
       emoji: '💡',
       color: '#3E2C1D',
-      image: 'https://avatars.githubusercontent.com/u/122656682?v=4',
-      social: 'https://github.com/abhishek-nexgen-dev',
+      image: Pritham,
+      social: '',
     },
     {
-      name: 'Anjali Das',
-      role: 'Design',
+      name: 'Yuvraj',
+      role: 'Co-Founder',
       handle: '🎯 Aesthetics & Experience',
       emoji: '🎯',
       color: '#3E2C1D',
-      image: 'https://i.pravatar.cc/300?img=15',
-      social: 'https://dribbble.com/',
+      image: Yuvraj,
+      social: '',
     },
     {
-      name: 'Vikram Singh',
-      role: 'Community',
+      name: 'Somnath',
+      role: 'Web Lead',
       handle: '📣 Outreach & Relations',
       emoji: '📣',
       color: '#3E2C1D',
-      image: 'https://i.pravatar.cc/300?img=20',
-      social: 'https://twitter.com/',
+      image: Somnath,
+      social: '',
     },
     {
-      name: 'Meera Joshi',
-      role: 'Partnerships',
+      name: 'Naila',
+      role: 'Web Co Lead',
       handle: '🤝 Alliances & Support',
       emoji: '🤝',
       color: '#3E2C1D',
-      image: 'https://i.pravatar.cc/300?img=25',
-      social: 'https://linkedin.com/in/',
+      image: Naila,
+      social: 'https://linkedin.com/in/naila',
+    },
+    {
+      name: 'Abhishek',
+      role: 'Web Associate Lead',
+      handle: '🤝 Alliances & Support',
+      emoji: '🤝',
+      color: '#3E2C1D',
+      image: Abhishek,
+      social: 'https://linkedin.com/in/abhishek',
+    },
+    {
+      name: 'Shuvrajit',
+      role: 'Social Media Lead',
+      handle: '📱 Social & Growth',
+      emoji: '📱',
+      color: '#3E2C1D',
+      image: '',
+      social: 'https://linkedin.com/in/shuvrajit',
+    },
+    {
+      name: 'Pushkar Das',
+      role: 'Social Media Co Lead',
+      handle: '📱 Engagement & Outreach',
+      emoji: '📱',
+      color: '#3E2C1D',
+      image: Pushkar,
+      social: 'https://linkedin.com/in/pushkar',
+    },
+    {
+      name: 'Agnij',
+      role: 'Outreach Team Lead',
+      handle: '📢 Public Relations',
+      emoji: '📢',
+      color: '#3E2C1D',
+      image: Agnij,
+      social: 'https://linkedin.com/in/agnij',
+    },
+    {
+      name: 'Vivek',
+      role: 'Outreach Team Co Lead',
+      handle: '📢 PR Support',
+      emoji: '📢',
+      color: '#3E2C1D',
+      image: '',
+      social: 'https://linkedin.com/in/vivek',
+    },
+    {
+      name: 'Shreyashi Debnath',
+      role: 'Management Lead',
+      handle: '📊 Operations & Management',
+      emoji: '📊',
+      color: '#3E2C1D',
+      image: Shreyanshi,
+      social: 'https://linkedin.com/in/shreyashi',
+    },
+    {
+      name: 'Rouson Das',
+      role: 'Community Coordinator',
+      handle: '🤝 Community Engagement',
+      emoji: '🤝',
+      color: '#3E2C1D',
+      image: Rouson,
+      social: 'https://linkedin.com/in/rouson',
     },
   ];
 
@@ -113,7 +189,7 @@ const Team = () => {
                     <div
                       className="w-full py-3 px-4 rounded-md text-center font-semibold text-[#3E2C1D] shadow-md "
                       style={{ backgroundColor: member.color }}
-                    > 
+                    >
                       <span className="text-lg text-[#F3E5C1]">
                         {member.emoji} {member.role}
                       </span>
