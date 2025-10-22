@@ -1,14 +1,29 @@
-import { Code, Link } from 'lucide-react';
+import { Code, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  // Handle scroll for background
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Menu items
+  const menuItems = [
+    { label: 'About', link: '#about' },
+    { label: 'Timeline', link: '#timeline' },
+    { label: 'Tracks', link: '#tracks' },
+    { label: 'Mentors', link: '#mentors' },
+    { label: 'Judges', link: '#judges' },
+    { label: 'Team', link: '#team' },
+
+    { label: 'Partners', link: '#partners' },
+    { label: 'Avatar', link: '#avatar-generator' },
+  ];
 
   return (
     <nav
@@ -24,11 +39,11 @@ const Navbar = () => {
               <Code className="text-[#3E2C1D]" size={24} />
             </div>
             <div className="font-display text-2xl font-bold text-[#3E2C1D]">
-              Calcutta <span className="text-[#6B4423]">&lt;Hack/&gt;</span>
+              Calcutta <span className="text-[#6B4423]">&lt;Hacks/&gt;</span>
             </div>
           </div>
 
-          {/* Right Side - Links */}
+          {/* Right Side - Desktop Menu */}
           <div className="hidden md:flex items-center space-x-5 font-serif text-sm">
             {[
               { label: 'Home', link: '/' },
@@ -58,8 +73,44 @@ const Navbar = () => {
               Register
             </a>
           </div>
+
+          {/* Mobile Menu Icon */}
+          <div className="md:hidden flex items-center">
+            <button onClick={() => setMenuOpen(!menuOpen)}>
+              {menuOpen ? (
+                <X size={28} className="text-[#3E2C1D]" />
+              ) : (
+                <Menu size={28} className="text-[#3E2C1D]" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {menuOpen && (
+        <div className="md:hidden bg-[#f4e5c2]/95 border-t-4 border-[#3E2C1D] shadow-lg">
+          <div className="flex flex-col items-center space-y-4 py-4 font-serif text-sm">
+            {menuItems.map(item => (
+              <a
+                key={item.label}
+                href={item.link}
+                className="text-[#3E2C1D] hover:text-[#6B4423] transition-colors"
+                onClick={() => setMenuOpen(false)} // close menu on click
+              >
+                {item.label}
+              </a>
+            ))}
+            <a
+              href="#register"
+              className="bg-[#D4AF37] text-[#3E2C1D] px-6 py-2 rounded-full font-bold border-2 border-[#D4AF37] hover:bg-[#f4e5c2] hover:border-[#D4AF37] transition-all duration-300 transform hover:scale-105"
+              onClick={() => setMenuOpen(false)}
+            >
+              Register
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

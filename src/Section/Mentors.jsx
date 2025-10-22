@@ -45,7 +45,7 @@ const Mentors = () => {
   ];
 
   return (
-    <section id="mentors" className="py-20">
+    <section id="mentors" className="py-20 bg-[#ebdbb9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4">
@@ -76,7 +76,7 @@ const Mentors = () => {
                   containerWidth="250px"
                   imageHeight="350px"
                   imageWidth="250px"
-                  rotateAmplitude={12}
+                  rotateAmplitude={7}
                   scaleOnHover={1.05}
                   showMobileWarning={false}
                   showTooltip={false}

@@ -5,13 +5,18 @@ import SpotlightCard from '../components/ui/SpotlightCard';
 
 const PRIZES = () => {
   const prizes = [
-    { place: '1st', amount: '₹2,00,000', perks: 'Trophy + Medals + Mentorship', icon: Trophy },
-    { place: '2nd', amount: '₹1,00,000', perks: 'Trophy + Medals + Goodies', icon: Medal },
-    { place: '3rd', amount: '₹50,000', perks: 'Trophy + Medals + Goodies', icon: Medal },
+    {
+      place: '1st',
+      amount: 'To be declared ...',
+      perks: 'Trophy + Medals + Mentorship',
+      icon: Trophy,
+    },
+    { place: '2nd', amount: 'To be declared ...', perks: 'Trophy + Medals + Goodies', icon: Medal },
+    { place: '3rd', amount: 'To be declared ...', perks: 'Trophy + Medals + Goodies', icon: Medal },
   ];
 
   return (
-    <section id="prizes" className="py-20 bg-[#3E2C1D]/5">
+    <section id="prizes" className="py-20 bg-[#ebdbb9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4">

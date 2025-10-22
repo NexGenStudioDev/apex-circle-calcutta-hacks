@@ -21,7 +21,7 @@ requestAnimationFrame(raf);
     >
       <div className="fixed w-full h-full top-0 left-0 z-1">
         <DotGrid
-          dotSize={3}
+          dotSize={1.9}
           gap={15}
           baseColor="#bc984e"
           activeColor="#3e2d1c"
@@ -32,7 +32,9 @@ requestAnimationFrame(raf);
           returnDuration={1.5}
         />
       </div>
+
       <section className='z-2 select-none relative'>
+
       {children}
       </section>
     </div>

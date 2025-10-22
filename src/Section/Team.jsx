@@ -76,7 +76,7 @@ const Team = () => {
           </h2>
           <div className="w-32 h-1 bg-[#D4AF37] mx-auto"></div>
           <p className="font-serif text-xl text-[#6B4423] mt-6">
-            The crew behind Calcutta &lt;Hack/&gt;
+            The crew behind Calcutta &lt;Hacks/&gt;
           </p>
         </div>
 
@@ -87,8 +87,12 @@ const Team = () => {
                 imageSrc={member.image}
                 captionText={member.name}
                 displayOverlayContent={true}
-                maxTilt={15}
-                scale={1.02}
+                key={i}
+                altText=""
+                scaleOnHover={1.1}
+                rotateAmplitude={1.8}
+                maxTilt={2}
+                scale={1}
                 className="bg-[#b18631] w-full  relative border-4 border-[#3E2C1D] rounded-xl overflow-hidden h-[350px] shadow-lg hover:shadow-xl transition duration-300 z-20"
                 style={{
                   boxShadow: '0.5rem 0.5rem 0 rgba(62, 44, 29, 0.2)',
@@ -107,9 +111,9 @@ const Team = () => {
                     </div>
 
                     <div
-                      className="w-full py-3 px-4 rounded-md text-center font-semibold text-[#3E2C1D] shadow-md"
+                      className="w-full py-3 px-4 rounded-md text-center font-semibold text-[#3E2C1D] shadow-md "
                       style={{ backgroundColor: member.color }}
-                    >
+                    > 
                       <span className="text-lg text-[#F3E5C1]">
                         {member.emoji} {member.role}
                       </span>

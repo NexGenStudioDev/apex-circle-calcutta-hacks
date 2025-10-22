@@ -5,7 +5,7 @@ import allSponsors from '../Constant/Sponsor.constant';
 const Sponsor = () => {
   return (
     <div
-      className="bg-[#f4e5c2] flex items-center justify-center my-[5vh]"
+      className="flex items-center justify-center my-[5vh]"
       style={{ height: '200px', position: 'relative', overflow: 'hidden' }}
     >
       <LogoLoop

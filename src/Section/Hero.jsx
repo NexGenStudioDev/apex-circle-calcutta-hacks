@@ -1,7 +1,16 @@
 import { Calendar, MapPin, Users, ChevronRight } from 'lucide-react';
 import Image from '../../src/assets/biswabangla-with-tram.jpeg';
 import Border from '../components/ui/Border';
-import './Hero.css';
+import SocialIcons from '../components/ui/SocialIcon';
+import { FaInstagram, FaLinkedinIn, FaTwitter, FaTwitterSquare } from 'react-icons/fa';
+
+const iconsPanel1 = [
+  { icon: FaInstagram, link: 'https://instagram.com' },
+  { icon: FaTwitterSquare, link: 'https://twitter.com' },
+  { icon: FaLinkedinIn, link: 'https://linkedin.com' },
+  // { icon: FaGithub, link: 'https://github.com' },
+];
+
 const Hero = () => (
   <section className="min-h-[85vh] pt-20 md:pt-24 flex items-center justify-center relative overflow-hidden">
     {/* Biswa Bangla with Tram Background */}
@@ -36,11 +45,19 @@ const Hero = () => (
 
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <Border className="p-8 md:p-12 lg:p-16">
+        {/* Left icons */}
+        <div className="ml-2 md:ml-4 lg:ml-6">
+          <SocialIcons icons={iconsPanel1} position="left" />
+        </div>
+
+        {/* Right icons */}
+        <SocialIcons icons={iconsPanel1} position="right" />
+
         <div className="p-8 md:p-10 lg:p-12 aged-paper">
           {/* Tagline */}
           <div className="flex justify-center items-start mb-6">
             <div className="inline-block border-4 border-[#3E2C1D] px-6 py-2 bg-[#D4AF37]">
-              <span className="font-display text-sm tracking-widest">
+              <span className="font-display text-sm tracking-widest font-semibold">
                 HERITAGE • INNOVATION • EXCELLENCE
               </span>
             </div>
