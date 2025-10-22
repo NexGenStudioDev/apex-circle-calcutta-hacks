@@ -1,0 +1,177 @@
+import React from 'react';
+import { Map, MapPin, Award } from 'lucide-react'; 
+import { VintageCard } from './Tracks';
+
+
+const OurPartners = () => {
+  return (
+    <section id="partners" className="py-20 bg-[#F2E2C0]/30">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="font-display text-5xl md:text-6xl font-bold text-[#332518] mb-4">
+            OUR PARTNERS
+          </h2>
+          <div className="w-32 h-1 bg-[#C9A22C] mx-auto mb-6"></div>
+          <p className="font-serif text-xl text-[#7D5B3D] max-w-3xl mx-auto">
+            Proudly hosted at our venue partner
+          </p>
+        </div>
+
+        <VintageCard className="mb-16">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-[#332518] rounded-full flex items-center justify-center">
+                  <Map className="text-[#C9A22C]" size={32} />
+                </div>
+                <h3 className="font-display text-3xl font-bold text-[#332518]">
+                  Venue Partner
+                </h3>
+              </div>
+              
+              <div className="mb-6">
+                <h4 className="font-display text-2xl font-bold text-[#7D5B3D] mb-2">
+                  Techno India University
+                </h4>
+                <p className="font-serif text-[#7D5B3D]/90 mb-4">
+                  EM-4, EM Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091
+                </p>
+                <a 
+                  href="https://maps.app.goo.gl/qX2sEeT1irqAn4836" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-[#7D5B3D] hover:text-[#332518] font-medium transition-colors"
+                >
+                  <MapPin className="mr-2" size={18} />
+                  View on Google Maps
+                </a>
+              </div>
+              
+              <div className="flex flex-wrap gap-4">
+                <span className="inline-block px-4 py-2 bg-[#332518]/10 text-[#332518] font-medium rounded-full">
+                  🚇 10 min from Sector V Metro
+                </span>
+                <span className="inline-block px-4 py-2 bg-[#332518]/10 text-[#332518] font-medium rounded-full">
+                  🅿️ Ample Parking
+                </span>
+              </div>
+            </div>
+            
+            <div className="rounded-lg overflow-hidden border-4 border-[#332518] h-full">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0827672337136!2d88.42593737499146!3d22.576007532846074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f970ae9a2e19b5%3A0x16c43b9069f4b159!2sTechno%20India%20University!5e0!3m2!1sen!2sin!4v1760859347451!5m2!1sen!2sin" 
+                width="100%" 
+                height="400" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Techno India University Location"
+                className="w-full h-full min-h-[300px]"
+              ></iframe>
+            </div>
+          </div>
+        </VintageCard>
+
+        {/* Silver Sponsors */}
+        <div className="space-y-16">
+          {/* Devfolio Sponsor */}
+          <VintageCard className="mb-16">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-[#332518] rounded-full flex items-center justify-center">
+                    <Award className="text-[#C9A22C]" size={32} />
+                  </div>
+                  <h3 className="font-display text-3xl font-bold text-[#332518]">
+                    Silver Sponsor
+                  </h3>
+                </div>
+                
+                <div className="mb-6">
+                  <h4 className="font-display text-2xl font-bold text-[#7D5B3D] mb-4">
+                    Devfolio
+                  </h4>
+                  <p className="font-serif text-[#7D5B3D]/90 mb-4">
+                    Empowering the future of hackathons
+                  </p>
+                  <a 
+                    href="https://devfolio.co" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-[#7D5B3D] hover:text-[#332518] font-medium transition-colors"
+                  >
+                    Visit Website
+                  </a>
+                </div>
+              </div>
+              
+              <div className="bg-white p-8 rounded-lg border-4 border-[#332518] flex items-center justify-center">
+                <img 
+                  src="/assests/Devfolio.png" 
+                  alt="Devfolio Logo" 
+                  className="max-h-40 max-w-full object-contain"
+                />
+              </div>
+            </div>
+          </VintageCard>
+
+          {/* Axicov Sponsor */}
+          <VintageCard className="mb-16">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-[#332518] rounded-full flex items-center justify-center">
+                    <Award className="text-[#C9A22C]" size={32} />
+                  </div>
+                  <h3 className="font-display text-3xl font-bold text-[#332518]">
+                    Silver Sponsor
+                  </h3>
+                </div>
+                
+                <div className="mb-6">
+                  <h4 className="font-display text-2xl font-bold text-[#7D5B3D] mb-4">
+                    Axicov
+                  </h4>
+                  <p className="font-serif text-[#7D5B3D]/90 mb-4">
+                    Innovation in healthcare technology
+                  </p>
+                  <a 
+                    href="https://axicov.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-[#7D5B3D] hover:text-[#332518] font-medium transition-colors"
+                  >
+                    Visit Website
+                  </a>
+                </div>
+              </div>
+              
+              <div className="bg-white p-8 rounded-lg border-4 border-[#332518] flex items-center justify-center">
+                <img 
+                  src="/assests/Axicov.jpg" 
+                  alt="Axicov Logo" 
+                  className="max-h-40 max-w-full object-contain"
+                />
+              </div>
+            </div>
+          </VintageCard>
+        </div>
+        
+        <div className="text-center">
+          <h3 className="font-display text-2xl font-bold text-[#332518] mb-8">
+            Want to partner with us?
+          </h3>
+          <a 
+            href="mailto:partners@calcuttahack.in" 
+            className="inline-block bg-[#332518] text-[#F2E2C0] px-8 py-3 text-lg font-display font-bold border-4 border-[#332518] hover:bg-[#7D5B3D] hover:border-[#7D5B3D] transition-all duration-300"
+          >
+            Become a Partner
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default OurPartners;
