@@ -1,4 +1,17 @@
 import React from 'react';
+import Abhishek from '../../src/assets/Team/AbhishekBan.jpg';
+import Agnij from '../../src/assets/Team/Agnij.jpg';
+import Naila from '../../src/assets/Team/Naila.jpg';
+import Pritham from '../../src/assets/Team/pritham.webp';
+import Pushkar from '../../src/assets/Team/pushkarDas.jpg';
+import Rouson from '../../src/assets/Team/Rouson.jpg';
+import Shreyanshi from '../../src/assets/Team/Shreyanshi.jpg';
+import Somnath from '../../src/assets/Team/Somnath.jpg';
+import Soumodweep from '../../src/assets/Team/Soumodweep.png';
+import Souvik from '../../src/assets/Team/Souvik.jpg';
+import Yuvraj from '../../src/assets/Team/yuvraj.jpg';
+// import Vivek from '../../src/assets/Team/yuvraj.jpg';
+
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
@@ -10,7 +23,7 @@ const Team = () => {
       handle: '🧭 Strategy & Vision',
       emoji: '🧭',
       color: '#3E2C1D',
-      image: '../src/assets/Team/Soumodweep.png',
+      image: Soumodweep,
       social: 'https://linkedin.com/in/soumodweep',
     },
     {
@@ -19,7 +32,7 @@ const Team = () => {
       handle: '🛠️ Execution & Logistics',
       emoji: '🛠️',
       color: '#3E2C1D',
-      image: '../src/assets/Team/Souvik.jpg',
+      image: Souvik,
       social: 'https://linkedin.com/in/souvik',
     },
     {
@@ -28,7 +41,7 @@ const Team = () => {
       handle: '💡 Innovation & Systems',
       emoji: '💡',
       color: '#3E2C1D',
-      image: '../src/assets/Team/pritham.webp',
+      image: Pritham,
       social: '',
     },
     {
@@ -37,7 +50,7 @@ const Team = () => {
       handle: '🎯 Aesthetics & Experience',
       emoji: '🎯',
       color: '#3E2C1D',
-      image: '../src/assets/Team/yuvraj.jpg',
+      image: Yuvraj,
       social: '',
     },
     {
@@ -46,7 +59,7 @@ const Team = () => {
       handle: '📣 Outreach & Relations',
       emoji: '📣',
       color: '#3E2C1D',
-      image: '../src/assets/Team/Somnath.jpg',
+      image: Somnath,
       social: '',
     },
     {
@@ -55,7 +68,7 @@ const Team = () => {
       handle: '🤝 Alliances & Support',
       emoji: '🤝',
       color: '#3E2C1D',
-      image: '../src/assets/Team/Naila.jpg',
+      image: Naila,
       social: 'https://linkedin.com/in/naila',
     },
     {
@@ -64,7 +77,7 @@ const Team = () => {
       handle: '🤝 Alliances & Support',
       emoji: '🤝',
       color: '#3E2C1D',
-      image: '../src/assets/Team/AbhishekBan.jpg',
+      image: Abhishek,
       social: 'https://linkedin.com/in/abhishek',
     },
     {
@@ -73,7 +86,7 @@ const Team = () => {
       handle: '📱 Social & Growth',
       emoji: '📱',
       color: '#3E2C1D',
-      image: '../src/assets/Team/Shuvrajit.png',
+      image: '',
       social: 'https://linkedin.com/in/shuvrajit',
     },
     {
@@ -82,7 +95,7 @@ const Team = () => {
       handle: '📱 Engagement & Outreach',
       emoji: '📱',
       color: '#3E2C1D',
-      image: '../src/assets/Team/pushkarDas.jpg',
+      image: Pushkar,
       social: 'https://linkedin.com/in/pushkar',
     },
     {
@@ -91,7 +104,7 @@ const Team = () => {
       handle: '📢 Public Relations',
       emoji: '📢',
       color: '#3E2C1D',
-      image: '../src/assets/Team/Agnij.jpg',
+      image: Agnij,
       social: 'https://linkedin.com/in/agnij',
     },
     {
@@ -100,7 +113,7 @@ const Team = () => {
       handle: '📢 PR Support',
       emoji: '📢',
       color: '#3E2C1D',
-      image: '../src/assets/Team/Vivek.png',
+      image: '',
       social: 'https://linkedin.com/in/vivek',
     },
     {
@@ -109,7 +122,7 @@ const Team = () => {
       handle: '📊 Operations & Management',
       emoji: '📊',
       color: '#3E2C1D',
-      image: '../src/assets/Team/Shreyanshi.jpg',
+      image: Shreyanshi,
       social: 'https://linkedin.com/in/shreyashi',
     },
     {
@@ -118,7 +131,7 @@ const Team = () => {
       handle: '🤝 Community Engagement',
       emoji: '🤝',
       color: '#3E2C1D',
-      image: '../src/assets/Team/Rouson.jpg',
+      image: Rouson,
       social: 'https://linkedin.com/in/rouson',
     },
   ];
