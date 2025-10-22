@@ -205,7 +205,7 @@ const Footer = () => {
               Join Our Newsletter
             </h3>
             <p className="font-serif text-sm mb-4">
-              Stay updated with the latest news and announcements for Calcutta &lt;Hack/&gt;
+              Stay updated with the latest news and announcements for Calcutta &lt;Hacks/&gt;
             </p>
             <form onSubmit={handleSubmit} className="space-y-3">
               <div className="relative">

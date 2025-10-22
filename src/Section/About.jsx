@@ -44,16 +44,16 @@ const About = () => (
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 ">
         {[
-          { icon: FaTram, label: 'Historic Trams', subtitle: 'First in Asia' },
-          { icon: FaBus, label: 'Blue Buses', subtitle: 'City Symbol' },
-          { icon: FaTaxi, label: 'Yellow Taxis', subtitle: 'Iconic Rides' },
-          { icon: FaArchway, label: 'Howrah Bridge', subtitle: 'Engineering Marvel' },
+          { imageSrc: FaTram, label: 'Historic Trams', subtitle: 'First in Asia' },
+          { imageSrc: FaBus, label: 'Blue Buses', subtitle: 'City Symbol' },
+          { imageSrc: FaTaxi, label: 'Yellow Taxis', subtitle: 'Iconic Rides' },
+          { imageSrc: FaArchway, label: 'Howrah Bridge', subtitle: 'Engineering Marvel' },
         ].map((item, idx) => (
           <div
             key={idx}
             className="text-center bg-[#F4E5C2] p-6 border-2 border-[#3E2C1D] shadow-md aged-paper"
           >
-            <item.icon className="mx-auto mb-3 text-[#3E2C1D]" size={48} />
+           <img src="/src/assets/Icon/bluebus.png" alt="" srcset="" className='size-20' />
             <div className="font-display font-bold text-[#3E2C1D]">{item.label}</div>
             <div className="font-serif text-sm text-[#6B4423] italic">{item.subtitle}</div>
           </div>
