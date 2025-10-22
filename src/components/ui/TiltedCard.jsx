@@ -74,7 +74,7 @@ function TiltedCard({
   return (
     <figure
       ref={ref}
-      className="relative w-full h-full [perspective:800px] flex flex-col items-center justify-center"
+      className="relative w-full h-full [perspective:800px] flex flex-col items-center justify-center" 
       style={{
         height: containerHeight,
         width: containerWidth,
@@ -86,7 +86,7 @@ function TiltedCard({
       
 
       <motion.div
-        className="relative [transform-style:preserve-3d]"
+        className="relative"
         style={{
           width: imageWidth,
           height: imageHeight,
@@ -98,7 +98,7 @@ function TiltedCard({
         <motion.img
           src={imageSrc}
           alt={altText}
-          className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
+          className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)] grayscale-100 "
           style={{
             width: imageWidth,
             height: imageHeight,

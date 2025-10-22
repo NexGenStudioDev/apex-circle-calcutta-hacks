@@ -76,7 +76,7 @@ const Mentors = () => {
                   containerWidth="250px"
                   imageHeight="350px"
                   imageWidth="250px"
-                  rotateAmplitude={9}
+                  rotateAmplitude={7}
                   scaleOnHover={1.05}
                   showMobileWarning={false}
                   showTooltip={false}
