@@ -46,7 +46,9 @@ const Hero = () => (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <Border className="p-8 md:p-12 lg:p-16">
         {/* Left icons */}
-        <SocialIcons icons={iconsPanel1} position="left" />
+        <div className="ml-2 md:ml-4 lg:ml-6">
+          <SocialIcons icons={iconsPanel1} position="left" />
+        </div>
 
         {/* Right icons */}
         <SocialIcons icons={iconsPanel1} position="right" />

@@ -1,12 +1,12 @@
 const SocialIcons = ({ icons, position = 'left' }) => {
   const positionClasses =
     position === 'left'
-      ? '  left-1 sm:left-0 md:left-2.5 lg:left-4'
-      : 'right-1 sm:right-0 md:right-2.5 lg:right-4';
+      ? '  left-1 sm:hidden md:left-[-0.7rem] lg:left-[-1.25rem]'
+      : 'right-1 sm:right-[-0.5rem] md:right-[-0.7rem] lg:right-[-1.25rem]';
 
   return (
     <div
-      className={` absolute top-1/2 ${positionClasses} transform -translate-y-1/2 flex flex-col gap-6 z-20 `}
+      className={` hidden md:flex  absolute top-1/2 ${positionClasses}  transform -translate-y-1/2 flex flex-col text-center gap-8 z-20  `}
     >
       {icons.map((item, index) => {
         const Icon = item.icon;

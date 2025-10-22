@@ -54,7 +54,7 @@ const Judges = () => {
               <div className="relative transform-gpu transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl [transform-style:preserve-3d]">
                 <Card className="bg-[#ebdbb9]">
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-20 h-20 rounded-full bg-[#F4E5C266] border-2 border-[#3E2C1D] flex items-center justify-center mb-4 overflow-hidden">
+                    <div className="w-36 h-36 rounded-full bg-[#F4E5C266] border-2 border-[#3E2C1D] flex items-center justify-center mb-4 overflow-hidden">
                       <img
                         src={j.img_url}
                         alt={`Image of judge ${j.name}`}
