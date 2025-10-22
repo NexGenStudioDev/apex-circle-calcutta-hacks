@@ -90,7 +90,8 @@ const Team = () => {
                 key={i}
                 altText=""
                 scaleOnHover={1.1}
-                maxTilt={0.5}
+                rotateAmplitude={1.8}
+                maxTilt={2}
                 scale={1}
                 className="bg-[#b18631] w-full  relative border-4 border-[#3E2C1D] rounded-xl overflow-hidden h-[350px] shadow-lg hover:shadow-xl transition duration-300 z-20"
                 style={{
