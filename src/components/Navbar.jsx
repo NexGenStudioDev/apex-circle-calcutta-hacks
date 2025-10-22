@@ -45,7 +45,19 @@ const Navbar = () => {
 
           {/* Right Side - Desktop Menu */}
           <div className="hidden md:flex items-center space-x-5 font-serif text-sm">
-            {menuItems.map(item => (
+            {[
+              { label: 'Home', link: '/' },
+              { label: 'About', link: '#about' },
+              { label: 'Calcutta', link: '#about-calcutta' },
+              { label: 'Timeline', link: '#timeline' },
+              { label: 'Tracks', link: '#tracks' },
+              { label: 'Prizes', link: '#prizes' },
+              { label: 'Mentors', link: '#mentors' },
+              { label: 'Judges', link: '#judges' },
+              { label: 'Team', link: '#team' },
+              { label: 'Partners', link: '#partners' },
+              { label: 'Avatar', link: '#avatar-generator' },
+            ].map(item => (
               <a
                 key={item.label}
                 href={item.link}
