@@ -13,7 +13,7 @@ const Host = () => (
     <div className="max-w-4xl sm:max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 relative z-10">
       <div className="text-center mb-8 sm:mb-16">
         <h2 className="font-display text-3xl sm:text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4 relative inline-block">
-          ABOUT THE CO-HOST
+          ABOUT THE HOST
           <div className="absolute -bottom-4 left-0 w-full h-1 bg-[#D4AF37] transform -skew-x-12"></div>
           <div className="absolute -bottom-3 sm:-bottom-4 left-1/4 w-1/2 h-1 bg-[#D4AF37] transform skew-x-12 mt-2 sm:mt-3"></div>
         </h2>
@@ -60,7 +60,7 @@ const Host = () => (
                   alongside like-minded individuals.
                 </p>
                 <div className="KnowMoreAboutKolataBtn bg-red-400 px-2 py-2 sm:py-4">
-                  <Link to="/about-kolkata">Know More About Kolkara</Link>
+                  <Link to="/about-kolkata">Know More About Calcutta</Link>
                 </div>
                 <div className="bg-[#F4E5C2]/50 p-2 sm:p-4 border-l-4 border-[#D4AF37] my-4 sm:my-6">
                   <p className="text-base sm:text-lg text-[#6B4423] leading-relaxed italic">
