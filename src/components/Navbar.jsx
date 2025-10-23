@@ -1,5 +1,6 @@
 import { Code, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -57,14 +58,20 @@ const Navbar = () => {
               { label: 'Team', link: '#team' },
               { label: 'Partners', link: '#partners' },
               { label: 'Avatar', link: '#avatar-generator' },
-            ].map(item => (
-              <a
-                key={item.label}
-                href={item.link}
-                className="text-[#3E2C1D] hover:text-[#6B4423] transition-colors border-b-2 border-transparent hover:border-[#6B4423]"
-              >
-                {item.label}
-              </a>
+            ].map((item, id) => (
+              id === 0 ? (
+                <Link key={item.label} to={item.link} className="text-[#3E2C1D] hover:text-[#6B4423] transition-colors">
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.link}
+                  className="text-[#3E2C1D] hover:text-[#6B4423] transition-colors"
+                >
+                  {item.label}
+                </a>
+              )
             ))}
             <a
               href="#register"
