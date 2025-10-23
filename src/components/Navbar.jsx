@@ -58,9 +58,13 @@ const Navbar = () => {
               { label: 'Team', link: '#team' },
               { label: 'Partners', link: '#partners' },
               { label: 'Avatar', link: '#avatar-generator' },
-            ].map((item, id) => (
+            ].map((item, id) =>
               id === 0 ? (
-                <Link key={item.label} to={item.link} className="text-[#3E2C1D] hover:text-[#6B4423] transition-colors">
+                <Link
+                  key={item.label}
+                  to={item.link}
+                  className="text-[#3E2C1D] hover:text-[#6B4423] transition-colors"
+                >
                   {item.label}
                 </Link>
               ) : (
@@ -72,7 +76,7 @@ const Navbar = () => {
                   {item.label}
                 </a>
               )
-            ))}
+            )}
             <a
               href="#register"
               className="bg-[#D4AF37] text-[#3E2C1D] px-6 py-2 rounded-full font-bold border-2 border-[#D4AF37] hover:bg-[#f4e5c2] hover:border-[#D4AF37] transition-all duration-300 transform hover:scale-105"

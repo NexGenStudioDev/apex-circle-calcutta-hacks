@@ -18,7 +18,7 @@ const FAQ = () => {
     {
       question: 'Who can participate?',
       answer:
-        'The hackathon is open to all students, developers, designers, and tech enthusiasts. Whether you\'re a beginner or an experienced hacker, everyone is welcome to participate!',
+        "The hackathon is open to all students, developers, designers, and tech enthusiasts. Whether you're a beginner or an experienced hacker, everyone is welcome to participate!",
     },
     {
       question: 'How do I register?',
@@ -38,7 +38,7 @@ const FAQ = () => {
     {
       question: 'What should I bring?',
       answer:
-        'Bring your laptop, chargers, student ID, and lots of enthusiasm! We\'ll provide WiFi, food, beverages, and a creative environment.',
+        "Bring your laptop, chargers, student ID, and lots of enthusiasm! We'll provide WiFi, food, beverages, and a creative environment.",
     },
     {
       question: 'Are there any prizes?',
@@ -53,7 +53,7 @@ const FAQ = () => {
     {
       question: 'What are the judging criteria?',
       answer:
-        'Projects will be judged based on innovation, technical complexity, design, feasibility, and presentation. Bonus points for projects that celebrate Kolkata\'s heritage!',
+        "Projects will be judged based on innovation, technical complexity, design, feasibility, and presentation. Bonus points for projects that celebrate Kolkata's heritage!",
     },
   ];
 
@@ -77,7 +77,7 @@ const FAQ = () => {
             <HelpCircle className="text-[#D4AF37]" size={32} />
             <div className="w-12 h-1 bg-[#D4AF37] ml-4"></div>
           </div>
-          
+
           <h2
             className="text-4xl md:text-5xl lg:text-6xl font-black text-[#3E2C1D] mb-4"
             style={{
@@ -95,7 +95,7 @@ const FAQ = () => {
           >
             Questions
           </h3>
-          
+
           <div className="mt-6 max-w-2xl mx-auto">
             <div className="border-4 border-dashed border-[#3E2C1D] bg-[#F4E5C2] px-6 py-3">
               <p className="font-serif text-lg italic text-[#3E2C1D]">
@@ -126,7 +126,7 @@ const FAQ = () => {
                   size={24}
                 />
               </button>
-              
+
               <div
                 className={`overflow-hidden transition-all duration-300 ${
                   openIndex === index ? 'max-h-96' : 'max-h-0'
@@ -145,9 +145,7 @@ const FAQ = () => {
         {/* Contact CTA */}
         <div className="mt-12 text-center">
           <div className="border-4 border-[#3E2C1D] bg-[#D4AF37] inline-block px-8 py-4">
-            <p className="font-serif text-lg text-[#3E2C1D] mb-2">
-              Still have questions?
-            </p>
+            <p className="font-serif text-lg text-[#3E2C1D] mb-2">Still have questions?</p>
             <a
               href="mailto:apexcircleofficial2025@gmail.com"
               className="font-display font-bold text-xl text-[#3E2C1D] hover:text-white transition-colors underline"

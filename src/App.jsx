@@ -17,6 +17,8 @@ import Judges from './Section/Judges.jsx';
 import AvatarCardGenerator from './Section/AvatarCardGenerator.jsx';
 import OurPartners from './Section/OurPartners.jsx';
 import FAQ from './Section/Faq.jsx';
+import ContactForm from './page/ContactPage.jsx';
+
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
       <PRIZES />
       <Host />
       {/* <Gallery /> */}
+      <ContactForm />
       <Mentors />
       <Judges />
       <Team />
