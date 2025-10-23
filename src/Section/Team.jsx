@@ -11,13 +11,18 @@ import Somnath from '../../src/assets/Team/Somnath.jpg';
 import Soumodweep from '../../src/assets/Team/Soumodweep.png';
 import Souvik from '../../src/assets/Team/Souvik.jpg';
 import Yuvraj from '../../src/assets/Team/yuvraj.jpg';
+import Shuvrajit from '../../src/assets/Team/Shuvrajit.jpg';
+// import Vivek from '../../src/assets/Team/yuvraj.jpg';
+
+
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
 const Team = () => {
   const team = [
+    // 🥇 1st Hierarchy — Founders & Advisor
     {
-      name: 'Soumodweep',
+      name: 'Soumodweep Das',
       role: 'Founder',
       handle: '🧭 Strategy & Vision',
       emoji: '🧭',
@@ -26,7 +31,7 @@ const Team = () => {
       social: 'https://linkedin.com/in/soumodweep',
     },
     {
-      name: 'Souvik',
+      name: 'Souvik Ghosh',
       role: 'Co-Founder',
       handle: '🛠️ Execution & Logistics',
       emoji: '🛠️',
@@ -35,7 +40,7 @@ const Team = () => {
       social: 'https://linkedin.com/in/souvik',
     },
     {
-      name: 'Pritam',
+      name: 'Pritam Das',
       role: 'Co-Founder',
       handle: '💡 Innovation & Systems',
       emoji: '💡',
@@ -44,28 +49,39 @@ const Team = () => {
       social: '',
     },
     {
-      name: 'Yuvraj',
+      name: 'Yuvraj Prasad',
       role: 'Co-Founder',
       handle: '🎯 Aesthetics & Experience',
       emoji: '🎯',
       color: '#3E2C1D',
       image: Yuvraj,
-      social: '',
+      social: 'https://www.linkedin.com/in/yuvrajprasad',
     },
+    {
+      name: 'Abhishek Banerjee',
+      role: 'Chief Advisor',
+      handle: '🤝 Strategic Alliances & Guidance',
+      emoji: '🤝',
+      color: '#3E2C1D',
+      image: Abhishek,
+      social: 'https://linkedin.com/in/abhishek',
+    },
+
+    // 🥈 2nd Hierarchy — Web Team
     {
       name: 'Somnath',
       role: 'Web Lead',
-      handle: '📣 Outreach & Relations',
-      emoji: '📣',
+      handle: '💻 Development & Infrastructure',
+      emoji: '💻',
       color: '#3E2C1D',
       image: Somnath,
       social: '',
     },
     {
       name: 'Naila',
-      role: 'Web Co Lead',
-      handle: '🤝 Alliances & Support',
-      emoji: '🤝',
+      role: 'Web Co-Lead',
+      handle: '🧩 Frontend Integration & Support',
+      emoji: '🧩',
       color: '#3E2C1D',
       image: Naila,
       social: 'https://linkedin.com/in/naila',
@@ -84,14 +100,28 @@ const Team = () => {
       role: 'Social Media Co Lead',
       handle: '📱 Engagement & Outreach',
       emoji: '📱',
+      role: 'Web Associate',
+      handle: '⚙️ Technical Implementation',
+      emoji: '⚙️',
       color: '#3E2C1D',
-      image: Pushkar,
-      social: 'https://linkedin.com/in/pushkar',
+      image: 'https://avatars.githubusercontent.com/u/122656682?v=4',
+      social: 'https://linkedin.com/in/rouson',
     },
     {
-      name: 'Agnij',
-      role: 'Outreach Team Lead',
-      handle: '📢 Public Relations',
+      name: 'Anjali',
+      role: 'Web Associate',
+      handle: '🧠 Backend & Content Management',
+      emoji: '🧠',
+      color: '#3E2C1D',
+      image: 'https://avatars.githubusercontent.com/u/160884550?v=4',
+      social: 'https://linkedin.com/in/shreyashi',
+    },
+
+    // 🥉 3rd Hierarchy — PR & Outreach
+    {
+      name: 'Agnij Dutta',
+      role: 'PR & Outreach Team Lead',
+      handle: '📢 Public Relations & Partnerships',
       emoji: '📢',
       color: '#3E2C1D',
       image: Agnij,
@@ -99,13 +129,15 @@ const Team = () => {
     },
     {
       name: 'Rouson Das',
-      role: 'Community Coordinator',
-      handle: '🤝 Community Engagement',
-      emoji: '🤝',
+      role: 'Management Lead',
+      handle: '🗂️ Planning & Coordination',
+      emoji: '🗂️',
       color: '#3E2C1D',
       image: Rouson,
       social: 'https://linkedin.com/in/rouson',
     },
+
+    // 💬 5th Hierarchy — Social Media
     {
       name: 'Shreyashi Debnath',
       role: 'Management Lead',
