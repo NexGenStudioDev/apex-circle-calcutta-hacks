@@ -140,7 +140,7 @@ const Team = () => {
       handle: '🤝 Community Engagement',
       emoji: '🤝',
       color: '#3E2C1D',
-      image: "https://avatars.githubusercontent.com/u/122656682?v=4",
+      image: 'https://avatars.githubusercontent.com/u/122656682?v=4',
       social: 'https://linkedin.com/in/rouson',
     },
     {
@@ -149,10 +149,9 @@ const Team = () => {
       handle: '📊 Operations & Management',
       emoji: '📊',
       color: '#3E2C1D',
-      image: "https://avatars.githubusercontent.com/u/160884550?v=4",
+      image: 'https://avatars.githubusercontent.com/u/160884550?v=4',
       social: 'https://linkedin.com/in/shreyashi',
-    }
-   
+    },
   ];
 
   const getSocialIcon = url => {
@@ -185,8 +184,8 @@ const Team = () => {
                 key={i}
                 altText=""
                 scaleOnHover={1.1}
-                rotateAmplitude={1.8}
-                maxTilt={2}
+                rotateAmplitude={0.1}
+                maxTilt={0.2}
                 scale={1}
                 className="bg-[#b18631] w-full  relative border-4 border-[#3E2C1D] rounded-xl overflow-hidden h-[350px] shadow-lg hover:shadow-xl transition duration-300 z-20"
                 style={{

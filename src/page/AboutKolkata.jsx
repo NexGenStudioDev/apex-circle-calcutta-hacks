@@ -193,19 +193,21 @@ const AboutCulcutta = () => {
           />
           <div className=" absolute top-0 left-0 w-full h-screen pointer-events-none flex items-center justify-center text-[#f3e5c1]">
             <div className=" w-full h-full backdrop-blur-xs ">
-             <div className='overlay max-[599px]:px-14 max-[599px]:leading-none w-full h-full rounded-md flex flex-col items-center justify-center gap-6'>
-             <h1 className="text-[5vw] max-[599px]:text-[10vw] text-center head font-bold uppercase">Know About Culcutta</h1>
-              <p className="text-[1.5vw] max-[599px]:text-[3.5vw] max-[599px]:w-full subhead leading-tight tracking-tight text-center w-[70%] font-medium">
-                Culcutta, often called the “City of Joy,” is a vibrant cultural and historical hub
-                that pulses with artistic energy, intellectual legacy, and resilient spirit. Every
-                street, from the grand colonial avenues to the bustling local markets, carries a
-                story that reveals the city’s profound ability to inspire and uplift all who call it
-                home.
-              </p>
-              <span className="text-[2vw] max-[599px]:text-[6vw] subhead1 font-semibold flex items-center gap-4">
-                Scroll To Know More <ArrowDown />
-              </span>
-             </div>
+              <div className="overlay max-[599px]:px-14 max-[599px]:leading-none w-full h-full rounded-md flex flex-col items-center justify-center gap-6">
+                <h1 className="text-[5vw] max-[599px]:text-[10vw] text-center head font-bold uppercase">
+                  Know About Culcutta
+                </h1>
+                <p className="text-[1.5vw] max-[599px]:text-[3.5vw] max-[599px]:w-full subhead leading-tight tracking-tight text-center w-[70%] font-medium">
+                  Culcutta, often called the “City of Joy,” is a vibrant cultural and historical hub
+                  that pulses with artistic energy, intellectual legacy, and resilient spirit. Every
+                  street, from the grand colonial avenues to the bustling local markets, carries a
+                  story that reveals the city’s profound ability to inspire and uplift all who call
+                  it home.
+                </p>
+                <span className="text-[2vw] max-[599px]:text-[6vw] subhead1 font-semibold flex items-center gap-4">
+                  Scroll To Know More <ArrowDown />
+                </span>
+              </div>
             </div>
           </div>
         </section>

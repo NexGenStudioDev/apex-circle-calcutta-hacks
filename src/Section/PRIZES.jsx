@@ -7,23 +7,33 @@ const PRIZES = () => {
   const prizes = [
     {
       place: '1st',
-      amount: 'To be declared ...',
+      amount: 'Amount To be declared ...',
       perks: 'Trophy + Medals + Mentorship',
       icon: Trophy,
     },
-    { place: '2nd', amount: 'To be declared ...', perks: 'Trophy + Medals + Goodies', icon: Medal },
-    { place: '3rd', amount: 'To be declared ...', perks: 'Trophy + Medals + Goodies', icon: Medal },
+    {
+      place: '2nd',
+      amount: 'Amount To be declared ...',
+      perks: 'Trophy + Medals + Goodies',
+      icon: Medal,
+    },
+    {
+      place: '3rd',
+      amount: 'Amount To be declared ...',
+      perks: 'Trophy + Medals + Goodies',
+      icon: Medal,
+    },
   ];
 
   return (
     <section id="prizes" className="py-20 bg-[#ebdbb9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-display text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4">
+          <h2 className="font-display text-[6.7vw] lg:text-6xl font-bold text-[#3E2C1D] mb-4">
             PRIZES & PERKS
           </h2>
-          <div className="w-32 h-1 bg-[#D4AF37] mx-auto mb-6"></div>
-          <p className="font-serif text-xl text-[#6B4423]">
+          <div className="w-32 h-1  text-[2vw] bg-[#D4AF37] mx-auto mb-6"></div>
+          <p className="font-serif lg:text-xl text-[#6B4423]">
             Total Prize Pool: <span className="font-bold">₹5,00,000+</span>
           </p>
         </div>
@@ -34,10 +44,10 @@ const PRIZES = () => {
             return (
               <div
                 key={idx}
-                className="relative group transform transition-transform duration-500 hover:scale-105 "
+                className="relative group transform transition-transform duration-500 hover:scale-105 py-[4.8vh]"
               >
                 {idx === 0 && (
-                  <div className="absolute -top-3 -right-3 bg-[#D4AF37] text-[#3E2C1D] px-4 py-1 font-display font-bold text-sm transform rotate-12 shadow-md z-10">
+                  <div className="absolute top-0 -right-3 bg-[#D4AF37] text-[#3E2C1D] px-4 py-1 font-display font-bold text-sm transform rotate-12 shadow-md z-10">
                     GRAND PRIZE
                   </div>
                 )}
@@ -53,20 +63,20 @@ const PRIZES = () => {
                     </svg>
                   </div>
 
-                  <div className="relative z-10">
+                  <div className="relative z-10 flex flex-col items-center px-6 py-8">
                     <div className="relative w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent group-hover:translate-x-full transition-transform duration-1500 ease-in-out"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent group-hover:translate-x-full transition-transform duration-1500 ease-in-out "></div>
                       <Icon
-                        className={`w-full h-full ${idx === 0 ? 'text-[#D4AF37]' : 'text-[#6B4423] mt-2.5'}`}
+                        className={`w-[70%] h-full ${idx === 0 ? 'text-[#D4AF37]' : 'text-[#6B4423] my-2.5'}`}
                       />
                     </div>
 
-                    <div className="font-display text-4xl font-bold text-[#3E2C1D] mb-2 relative">
+                    <div className="font-display text-[4.8vw] lg:text-4xl font-bold text-[#3E2C1D] mb-2 relative">
                       {prize.place}
                       <div className="absolute h-1 w-0 bg-[#D4AF37] left-1/2 -bottom-1 transform -translate-x-1/2 group-hover:w-16 transition-all duration-300"></div>
                     </div>
 
-                    <div className="font-display text-3xl font-bold text-[#6B4423] mb-4">
+                    <div className="font-display text-[3.5vw] lg:text-3xl font-bold text-[#6B4423] mb-4">
                       {prize.amount}
                     </div>
 

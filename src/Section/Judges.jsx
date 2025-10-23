@@ -1,6 +1,6 @@
 import '../App.css';
 
-const Card = ({ children, className = 'bg-[#e1d7c3] ' }) => (
+export const Card = ({ children, className = 'bg-[#e1d7c3] ' }) => (
   <div className={` border-4 border-[#3E2C1D] p-8 relative ${className}`}>
     <div className="absolute top-2 left-2 right-2 bottom-2 border-2 border-[#6B4423] opacity-30 pointer-events-none"></div>
     {children}
