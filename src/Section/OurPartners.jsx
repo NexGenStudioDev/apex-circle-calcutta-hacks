@@ -4,7 +4,7 @@ import { VintageCard } from './Tracks';
 
 const OurPartners = () => {
   return (
-    <section id="partners" className="py-20 bg-[#F2E2C0]/30">
+    <section id="partners" className="py-20 bg-[#F2E2C0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-6xl font-bold text-[#332518] mb-4">

@@ -23,27 +23,25 @@ import FAQ from './Section/Faq.jsx';
 function App() {
   return (
     <Theme>
-    <Navbar />
+     <Navbar />
       <Hero />
-      <Sponsor />
-       <About />
-       <Timeline />
-       <Tracks />
-       <PRIZES />
- 
-        <Host />
-        <Cohost />
-        <Mentors  />
-       <Judges />
-       <Team />
-       <CommunityPartners />
-        <OurPartners />
-        <AvatarCardGenerator />
-        <FAQ />
-        <Footer />
-      
-
-      
+      {/* <Sponsor /> */}
+      <About />
+      <Timeline />
+      <Tracks />
+      <PRIZES />
+      <Host />
+      <Cohost />
+      {/* <Gallery /> */}
+  
+      <Mentors />
+      <Judges />
+      <Team />
+      <CommunityPartners />
+      <OurPartners />
+      <AvatarCardGenerator />
+      <FAQ />
+      <Footer />
       
     </Theme>
   );
