@@ -16,6 +16,7 @@ import Host from './Section/Host.jsx';
 import Judges from './Section/Judges.jsx';
 import AvatarCardGenerator from './Section/AvatarCardGenerator.jsx';
 import OurPartners from './Section/OurPartners.jsx';
+import FAQ from './Section/Faq.jsx';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
       <CommunityPartners />
       <OurPartners />
       <AvatarCardGenerator />
-      <div className="h-screen"></div>
+      <FAQ />
       <Footer />
     </Theme>
   );
