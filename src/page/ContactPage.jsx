@@ -54,7 +54,7 @@ function ContactForm() {
         <Navbar />
         <div className="flex justify-center items-center min-h-screen">
           <div
-            className="w-full max-w-lg p-8 bg-white rounded-lg shadow-lg"
+            className="w-[80vw] p-8 bg-white rounded-lg shadow-lg border-2 border-[#3e2c1d]"
             style={{
               background: "linear-gradient(135deg, #F4E5C2, #EBDBB9)",
               boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
@@ -67,7 +67,7 @@ function ContactForm() {
             >
               Report Your Issue
             </h2>
-            <form action="https://api.web3forms.com/submit" method="POST" onSubmit={handleSubmit}>
+            <form action="https://api.web3forms.com/submit" method="POST"  onSubmit={handleSubmit}>
 
 
             <input type="hidden" name="access_key" value="39c40613-05ef-4f9c-85c2-14987e7f86c9" />
