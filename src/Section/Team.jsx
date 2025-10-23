@@ -97,9 +97,6 @@ const Team = () => {
     },
     {
       name: 'Pushkar Das',
-      role: 'Social Media Co Lead',
-      handle: '📱 Engagement & Outreach',
-      emoji: '📱',
       role: 'Web Associate',
       handle: '⚙️ Technical Implementation',
       emoji: '⚙️',
@@ -148,6 +145,8 @@ const Team = () => {
       social: 'https://linkedin.com/in/shreyashi',
     },
   ];
+
+  
 
   const getSocialIcon = (url) => {
     if (url.includes('linkedin')) return <Linkedin size={20} />;

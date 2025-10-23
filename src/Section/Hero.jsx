@@ -1,7 +1,7 @@
 import { Calendar, MapPin, Users, ChevronRight } from 'lucide-react';
 import Image from '../../src/assets/biswabangla-with-tram.jpeg';
 import Border from '../components/ui/Border';
-import apexLogo from '../../src/assets/Icon/apexLogo.png';
+import apexLogo from '../../src/assets/Icon/apexlogo.png';
 import SocialIcons from '../components/ui/SocialIcon';
 
 import {
