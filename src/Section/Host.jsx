@@ -59,7 +59,7 @@ const Host = () => (
                   Whether you're a beginner or an expert, this is a space to learn, grow, and create
                   alongside like-minded individuals.
                 </p>
-                <div className="KnowMoreAboutKolataBtn bg-red-400 px-2 py-2 sm:py-4">
+                <div className="KnowMoreAboutKolataBtn  px-4 py-2 sm:py-4 text-center bg-[#3E2C1D] text-[#ecdcb8] rounded-lg">
                   <Link to="/about-kolkata">Know More About Calcutta</Link>
                 </div>
                 <div className="bg-[#F4E5C2]/50 p-2 sm:p-4 border-l-4 border-[#D4AF37] my-4 sm:my-6">
