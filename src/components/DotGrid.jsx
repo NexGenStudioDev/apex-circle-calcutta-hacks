@@ -22,7 +22,7 @@ function hexToRgb(hex) {
   return {
     r: parseInt(m[1], 16),
     g: parseInt(m[2], 16),
-    b: parseInt(m[3], 16)
+    b: parseInt(m[3], 16),
   };
 }
 
@@ -39,7 +39,7 @@ const DotGrid = ({
   resistance = 750,
   returnDuration = 1.5,
   className = '',
-  style
+  style,
 }) => {
   const wrapperRef = useRef(null);
   const canvasRef = useRef(null);
@@ -52,7 +52,7 @@ const DotGrid = ({
     speed: 0,
     lastTime: 0,
     lastX: 0,
-    lastY: 0
+    lastY: 0,
   });
 
   const baseRgb = useMemo(() => hexToRgb(baseColor), [baseColor]);
@@ -207,10 +207,10 @@ const DotGrid = ({
                 xOffset: 0,
                 yOffset: 0,
                 duration: returnDuration,
-                ease: 'elastic.out(1,0.75)'
+                ease: 'elastic.out(1,0.75)',
               });
               dot._inertiaApplied = false;
-            }
+            },
           });
         }
       }
@@ -235,10 +235,10 @@ const DotGrid = ({
                 xOffset: 0,
                 yOffset: 0,
                 duration: returnDuration,
-                ease: 'elastic.out(1,0.75)'
+                ease: 'elastic.out(1,0.75)',
               });
               dot._inertiaApplied = false;
-            }
+            },
           });
         }
       }
@@ -255,7 +255,10 @@ const DotGrid = ({
   }, [maxSpeed, speedTrigger, proximity, resistance, returnDuration, shockRadius, shockStrength]);
 
   return (
-    <section className={`flex items-center justify-center h-full w-full relative ${className}`} style={style}>
+    <section
+      className={`flex items-center justify-center h-full w-full relative ${className}`}
+      style={style}
+    >
       <div ref={wrapperRef} className="w-full h-full relative">
         <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none" />
       </div>

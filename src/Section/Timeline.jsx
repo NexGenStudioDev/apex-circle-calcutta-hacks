@@ -44,10 +44,7 @@ const Timeline = () => {
   }, [activeTab]);
 
   return (
-    <div
-      id="timeline"
-      className="w-full min-h-screen py-20 bg-[#ebdbb9]"
-    >
+    <div id="timeline" className="w-full min-h-screen py-20 bg-[#ebdbb9]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-[#3f2e1f] mb-4">Event Timeline</h1>

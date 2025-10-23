@@ -52,7 +52,7 @@ const Tracks = () => {
     <section id="tracks" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-display text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4">
+          <h2 className="font-display text-[6vh] md:text-6xl font-bold text-[#3E2C1D] mb-4">
             HACKATHON TRACKS
           </h2>
           <div className="w-32 h-1 bg-[#D4AF37] mx-auto mb-6"></div>
@@ -64,7 +64,7 @@ const Tracks = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {tracks.map((track, idx) => (
             <div key={idx} className="relative ">
-              <VintageCard className="w-[95%] h-[25vh] ">
+              <VintageCard className="w-[95%] py-[1rem] px-[0.8rem] ">
                 {/* <div className="flex flex-col items-center justify-center h-full p-6 text-center">
                
               

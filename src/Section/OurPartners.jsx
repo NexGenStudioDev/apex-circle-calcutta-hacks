@@ -1,7 +1,6 @@
 import React from 'react';
-import { Map, MapPin, Award } from 'lucide-react'; 
+import { Map, MapPin, Award } from 'lucide-react';
 import { VintageCard } from './Tracks';
-
 
 const OurPartners = () => {
   return (
@@ -24,11 +23,9 @@ const OurPartners = () => {
                 <div className="w-16 h-16 bg-[#332518] rounded-full flex items-center justify-center">
                   <Map className="text-[#C9A22C]" size={32} />
                 </div>
-                <h3 className="font-display text-3xl font-bold text-[#332518]">
-                  Venue Partner
-                </h3>
+                <h3 className="font-display text-3xl font-bold text-[#332518]">Venue Partner</h3>
               </div>
-              
+
               <div className="mb-6">
                 <h4 className="font-display text-2xl font-bold text-[#7D5B3D] mb-2">
                   Techno India University
@@ -36,9 +33,9 @@ const OurPartners = () => {
                 <p className="font-serif text-[#7D5B3D]/90 mb-4">
                   EM-4, EM Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091
                 </p>
-                <a 
-                  href="https://maps.app.goo.gl/qX2sEeT1irqAn4836" 
-                  target="_blank" 
+                <a
+                  href="https://maps.app.goo.gl/qX2sEeT1irqAn4836"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-[#7D5B3D] hover:text-[#332518] font-medium transition-colors"
                 >
@@ -46,7 +43,7 @@ const OurPartners = () => {
                   View on Google Maps
                 </a>
               </div>
-              
+
               <div className="flex flex-wrap gap-4">
                 <span className="inline-block px-4 py-2 bg-[#332518]/10 text-[#332518] font-medium rounded-full">
                   🚇 10 min from Sector V Metro
@@ -56,15 +53,15 @@ const OurPartners = () => {
                 </span>
               </div>
             </div>
-            
+
             <div className="rounded-lg overflow-hidden border-4 border-[#332518] h-full">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0827672337136!2d88.42593737499146!3d22.576007532846074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f970ae9a2e19b5%3A0x16c43b9069f4b159!2sTechno%20India%20University!5e0!3m2!1sen!2sin!4v1760859347451!5m2!1sen!2sin" 
-                width="100%" 
-                height="400" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0827672337136!2d88.42593737499146!3d22.576007532846074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f970ae9a2e19b5%3A0x16c43b9069f4b159!2sTechno%20India%20University!5e0!3m2!1sen!2sin!4v1760859347451!5m2!1sen!2sin"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Techno India University Location"
                 className="w-full h-full min-h-[300px]"
@@ -73,14 +70,12 @@ const OurPartners = () => {
           </div>
         </VintageCard>
 
-      
-        
         <div className="text-center">
           <h3 className="font-display text-2xl font-bold text-[#332518] mb-8">
             Want to partner with us?
           </h3>
-          <a 
-            href="mailto:partners@calcuttahack.in" 
+          <a
+            href="mailto:partners@calcuttahack.in"
             className="inline-block bg-[#332518] text-[#F2E2C0] px-8 py-3 text-lg font-display font-bold border-4 border-[#332518] hover:bg-[#7D5B3D] hover:border-[#7D5B3D] transition-all duration-300"
           >
             Become a Partner

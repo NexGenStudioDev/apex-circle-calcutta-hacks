@@ -54,7 +54,12 @@ class Title {
     this.createMesh();
   }
   createMesh() {
-    const { texture, width, height } = createTextTexture(this.gl, this.text, this.font, this.textColor);
+    const { texture, width, height } = createTextTexture(
+      this.gl,
+      this.text,
+      this.font,
+      this.textColor
+    );
     const geometry = new Plane(this.gl);
     const program = new Program(this.gl, {
       vertex: `
@@ -79,7 +84,7 @@ class Title {
         }
       `,
       uniforms: { tMap: { value: texture } },
-      transparent: true
+      transparent: true,
     });
     this.mesh = new Mesh(this.gl, { geometry, program });
     const aspect = width / height;
@@ -106,7 +111,7 @@ class Media {
     bend,
     textColor,
     borderRadius = 0,
-    font
+    font,
   }) {
     this.extra = 0;
     this.geometry = geometry;
@@ -130,7 +135,7 @@ class Media {
   }
   createShader() {
     const texture = new Texture(this.gl, {
-      generateMipmaps: true
+      generateMipmaps: true,
     });
     this.program = new Program(this.gl, {
       depthTest: false,
@@ -190,9 +195,9 @@ class Media {
         uImageSizes: { value: [0, 0] },
         uSpeed: { value: 0 },
         uTime: { value: 100 * Math.random() },
-        uBorderRadius: { value: this.borderRadius }
+        uBorderRadius: { value: this.borderRadius },
       },
-      transparent: true
+      transparent: true,
     });
     const img = new Image();
     img.crossOrigin = 'anonymous';
@@ -205,7 +210,7 @@ class Media {
   createMesh() {
     this.plane = new Mesh(this.gl, {
       geometry: this.geometry,
-      program: this.program
+      program: this.program,
     });
     this.plane.setParent(this.scene);
   }
@@ -216,7 +221,7 @@ class Media {
       renderer: this.renderer,
       text: this.text,
       textColor: this.textColor,
-      fontFamily: this.font
+      fontFamily: this.font,
     });
   }
   update(scroll, direction) {
@@ -265,7 +270,10 @@ class Media {
     if (viewport) {
       this.viewport = viewport;
       if (this.plane.program.uniforms.uViewportSizes) {
-        this.plane.program.uniforms.uViewportSizes.value = [this.viewport.width, this.viewport.height];
+        this.plane.program.uniforms.uViewportSizes.value = [
+          this.viewport.width,
+          this.viewport.height,
+        ];
       }
     }
     this.scale = this.screen.height / 1500;
@@ -289,7 +297,7 @@ class App {
       borderRadius = 0,
       font = 'bold 30px Figtree',
       scrollSpeed = 2,
-      scrollEase = 0.05
+      scrollEase = 0.05,
     } = {}
   ) {
     document.documentElement.classList.remove('no-js');
@@ -310,7 +318,7 @@ class App {
     this.renderer = new Renderer({
       alpha: true,
       antialias: true,
-      dpr: Math.min(window.devicePixelRatio || 1, 2)
+      dpr: Math.min(window.devicePixelRatio || 1, 2),
     });
     this.gl = this.renderer.gl;
     this.gl.clearColor(0, 0, 0, 0);
@@ -327,7 +335,7 @@ class App {
   createGeometry() {
     this.planeGeometry = new Plane(this.gl, {
       heightSegments: 50,
-      widthSegments: 100
+      widthSegments: 100,
     });
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
@@ -343,7 +351,7 @@ class App {
       { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: 'New York' },
       { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: 'Good Boy' },
       { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: 'Coastline' },
-      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: 'Palm Trees' }
+      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: 'Palm Trees' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
@@ -362,7 +370,7 @@ class App {
         bend,
         textColor,
         borderRadius,
-        font
+        font,
       });
     });
   }
@@ -396,18 +404,20 @@ class App {
   onResize() {
     this.screen = {
       width: this.container.clientWidth,
-      height: this.container.clientHeight
+      height: this.container.clientHeight,
     };
     this.renderer.setSize(this.screen.width, this.screen.height);
     this.camera.perspective({
-      aspect: this.screen.width / this.screen.height
+      aspect: this.screen.width / this.screen.height,
     });
     const fov = (this.camera.fov * Math.PI) / 180;
     const height = 2 * Math.tan(fov / 2) * this.camera.position.z;
     const width = height * this.camera.aspect;
     this.viewport = { width, height };
     if (this.medias) {
-      this.medias.forEach(media => media.onResize({ screen: this.screen, viewport: this.viewport }));
+      this.medias.forEach(media =>
+        media.onResize({ screen: this.screen, viewport: this.viewport })
+      );
     }
   }
   update() {
@@ -460,14 +470,27 @@ export default function CircularGallery({
   borderRadius = 0.05,
   font = 'bold 30px Figtree',
   scrollSpeed = 2,
-  scrollEase = 0.05
+  scrollEase = 0.05,
 }) {
   const containerRef = useRef(null);
   useEffect(() => {
-    const app = new App(containerRef.current, { items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase });
+    const app = new App(containerRef.current, {
+      items,
+      bend,
+      textColor,
+      borderRadius,
+      font,
+      scrollSpeed,
+      scrollEase,
+    });
     return () => {
       app.destroy();
     };
   }, [items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase]);
-  return <div className="w-full h-full overflow-hidden cursor-grab active:cursor-grabbing" ref={containerRef} />;
+  return (
+    <div
+      className="w-full h-full overflow-hidden cursor-grab active:cursor-grabbing"
+      ref={containerRef}
+    />
+  );
 }

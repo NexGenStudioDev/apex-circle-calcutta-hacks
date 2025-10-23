@@ -6,13 +6,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3E2C1D;
+  background: #3e2c1d;
   border-radius: 8px;
   border: 2px solid #f3e5c1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3E2C1D;
+  background: #3e2c1d;
 }
 
 ::-webkit-scrollbar-corner {
@@ -22,7 +22,7 @@
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #3E2C1D #f3e5c1;
+  scrollbar-color: #3e2c1d #f3e5c1;
 }
 
 body {

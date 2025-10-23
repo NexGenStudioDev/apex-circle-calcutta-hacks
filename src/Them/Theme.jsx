@@ -3,14 +3,13 @@ import React from 'react';
 import DotGrid from '../components/DotGrid';
 
 const Theme = ({ children }) => {
+  const lenis = new Lenis();
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
 
-const lenis = new Lenis();
-function raf(time) {
-  lenis.raf(time);
   requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
 
   return (
     <div
@@ -33,10 +32,7 @@ requestAnimationFrame(raf);
         />
       </div>
 
-      <section className='z-2 select-none relative'>
-
-      {children}
-      </section>
+      <section className="z-2 select-none relative">{children}</section>
     </div>
   );
 };
