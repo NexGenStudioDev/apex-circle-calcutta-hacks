@@ -16,97 +16,137 @@ import {
 
 export const day1Events = [
   {
-    time: '07:30 AM',
-    title: 'Check-in Starts',
+    time: '10:30 AM',
+    title: 'Registration',
     description:
       'Registration desk opens. Collect your badges, swag bags, and get ready for an exciting hackathon experience!',
     icon: <FaUserCheck className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '08:00 AM',
+    time: '11:30 AM',
     title: 'Opening Ceremony',
     description:
       'Welcome address, introduction of judges and mentors, and a brief overview of the hackathon rules and expectations.',
     icon: <FaFlag className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '08:30 AM',
-    title: 'Hacking Starts',
+    time: '12:00 PM',
+    title: 'Sponsor Session',
     description:
-      'The clock starts ticking! Begin working on your innovative solutions to the hackathon challenges.',
+      'Engage with our sponsors to learn about their products and services, and how they can help you during the hackathon.',
     icon: <FaCode className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '09:00 AM',
-    title: 'Team Building',
+    time: '1:00 PM',
+    title: 'Hackathon Starts',
     description:
-      'Networking session for participants looking to form teams. Find collaborators with complementary skills.',
+      'The clock starts ticking! Begin working on your innovative solutions to the hackathon challenges.',
     icon: <FaUsers className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '12:00 PM',
-    title: 'Lunch Break',
+    time: '1:30 PM',
+    title: 'Lunch',
     description:
       'Refuel with a delicious lunch while discussing project ideas with fellow participants.',
     icon: <FaUtensils className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '15:30 PM',
-    title: 'Fun Event 1',
+    time: '3:00 PM',
+    title: 'Organizer On Round',
     description:
-      'Take a short break from coding with our surprise fun activity to refresh your mind.',
+      'Join the organizers for a quick check-in and share your progress. Get any questions answered and stay on track.',
     icon: <FaGamepad className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '17:00 PM',
-    title: 'Hacker Hangout',
+    time: '4:00 PM',
+    title: 'Mentoring',
     description:
-      'Informal networking session with mentors, sponsors, and other participants to exchange ideas.',
+      'Connect with mentors for guidance, feedback, and support to help you refine your project and overcome challenges.',
     icon: <FaPeopleArrows className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '20:00 PM',
-    title: 'Fun Event 2',
-    description: 'Another engaging activity to keep the energy high as we progress into the night.',
+    time: '5:30 PM',
+    title: 'Tea Break',
+    description: 'Take a short break from coding with our surprise fun activity to refresh your mind.',
+    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
+  },
+  { 
+     time: '8:30 PM',
+    title: 'Dinner',
+    description: 'Refuel with a delicious dinner while discussing project ideas with fellow participants.',
+    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
+  },
+  {
+     time: '10:00 PM',
+    title: 'Evaluation Round 1',
+    description: 'Present your progress to the judges and receive feedback to improve your project further.',
     icon: <FaGamepad className="text-[#b09355] text-2xl" />,
   },
 ];
 
 export const day2Events = [
   {
-    time: '08:00 AM',
-    title: 'Breakfast',
-    description: 'Start your day with a nutritious breakfast to fuel your coding marathon.',
+    time: '12:00 AM',
+    title: 'Music & Midnight Snacks',
+    description: 'Enjoy some music and snacks to keep your energy up during the night.',
     icon: <FaMugHot className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '09:30 AM',
-    title: 'Checkpoint Reviews',
+    time: '1:00 AM',
+    title: 'Mini Games',
     description:
-      'Mentors will be available to provide feedback on your progress and help overcome challenges.',
+      'Another engaging activity to keep the energy high as we progress into the night',
     icon: <FaClipboardCheck className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '12:00 PM',
-    title: 'Lunch Break',
-    description: 'Final lunch break before the submission deadline. Make the most of it!',
+    time: '8:00 AM',
+    title: 'Breakfast',
+    description: 'Final breakfast before the submission deadline. Make the most of it!',
     icon: <FaUtensils className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '14:00 PM',
-    title: 'Submissions Close',
+    time: '9:00 AM',
+    title: 'Submissions Starts',
     description: 'Time to finalize your projects and submit them for evaluation.',
     icon: <FaLaptopCode className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '15:00 PM',
-    title: 'Demos & Judging',
+    time: '10:00 AM',
+    title: 'Final Evaluation Round',
     description:
       'Present your solutions to the judges and demonstrate how your project addresses the challenge.',
     icon: <FaTrophy className="text-[#b09355] text-2xl" />,
   },
+   {
+    time: '11:00 AM',
+    title: 'Submission Ends',
+    description:
+      'All projects must be submitted by this time for final evaluation.',
+    icon: <FaTrophy className="text-[#b09355] text-2xl" />,
+  },
+   {
+    time: '11:15 AM',
+    title: 'Technical Conference/Speaker',
+    description:
+      'Engaging talks from industry experts to inspire and educate participants.',
+    icon: <FaTrophy className="text-[#b09355] text-2xl" />,
+  },
+   {
+    time: '12:00 PM',
+    title: 'Top 5 Pitching',
+    description:
+      'The top 5 teams will present their projects to the judges and audience.',
+    icon: <FaTrophy className="text-[#b09355] text-2xl" />,
+  },
+   {
+    time: '12:30 PM',
+    title: 'Result Declaration',
+    description:
+      'Announcing the winners based on the judges’ evaluations and criteria set forth at the beginning of the hackathon.',
+    icon: <FaTrophy className="text-[#b09355] text-2xl" />,
+  },
   {
-    time: '18:00 PM',
+    time: '1:00 PM',
     title: 'Closing Ceremony',
     description:
       "Announcement of winners, prize distribution, and closing remarks to celebrate everyone's achievements.",
