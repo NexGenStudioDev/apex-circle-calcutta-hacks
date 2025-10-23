@@ -13,6 +13,7 @@ import {
   ArrowRight,
   ExternalLink,
 } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -188,7 +189,7 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 flex flex-col gap-4">
               <a
                 href="mailto:contact@calcuttahack.com"
                 className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
@@ -196,6 +197,23 @@ const Footer = () => {
                 <Mail size={16} className="mr-2 text-[#D4AF37]" />
                 apexcircleofficial2025@gmail.com
               </a>
+             
+                <a
+                  href="tel:+917003058672"
+                  className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
+                >
+                  <Phone size={16} className="text-[#D4AF37] mr-[0.5rem]" />
+                  <span>+91 70030 58672</span>
+                </a>
+
+                <a
+                  href="tel:+916291129896"
+                  className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
+                >
+                  <Phone size={16} className="text-[#D4AF37] mr-[0.5rem]" />
+                  <span>+91 62911 29896</span>
+                </a>
+          
             </div>
           </div>
 

@@ -18,6 +18,8 @@ import AvatarCardGenerator from './Section/AvatarCardGenerator.jsx';
 import OurPartners from './Section/OurPartners.jsx';
 import Cohost from './Section/Cohost.jsx';
 import FAQ from './Section/Faq.jsx';
+import ContactForm from './page/ContactPage.jsx';
+
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
       <Host />
       <Cohost />
       {/* <Gallery /> */}
+      <ContactForm />
       <Mentors />
       <Judges />
       <Team />

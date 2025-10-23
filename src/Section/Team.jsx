@@ -14,7 +14,6 @@ import Yuvraj from '../../src/assets/Team/yuvraj.jpg';
 import Shuvrajit from '../../src/assets/Team/Shuvrajit.jpg';
 // import Vivek from '../../src/assets/Team/yuvraj.jpg';
 
-
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
@@ -172,7 +171,6 @@ const Team = () => {
         <Marquee
           speed={75}
           gradient={false}
-
           pauseOnHover
           className="py-10 space-x-3 transform-3d translate-0.5 duration-300"
         >
