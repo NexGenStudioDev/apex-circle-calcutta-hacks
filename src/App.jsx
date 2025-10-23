@@ -6,7 +6,6 @@ import About from './Section/About.jsx';
 import Timeline from './Section/Timeline.jsx';
 import Sponsor from './Section/Sponsor.jsx';
 import Mentors from './Section/Mentors.jsx';
-import Gallery from './Section/Gallery.jsx';
 import Tracks from './Section/Tracks.jsx';
 import PRIZES from './Section/PRIZES.jsx';
 import Team from './Section/Team.jsx';
@@ -18,34 +17,39 @@ import AvatarCardGenerator from './Section/AvatarCardGenerator.jsx';
 import OurPartners from './Section/OurPartners.jsx';
 import Cohost from './Section/Cohost.jsx';
 import FAQ from './Section/Faq.jsx';
-import ContactForm from './page/ContactPage.jsx';
 
 
 
 function App() {
   return (
     <Theme>
-      <Navbar />
+    <Navbar />
       <Hero />
-      {/* <Sponsor /> */}
-      <About />
-      <Timeline />
-      <Tracks />
-      <PRIZES />
-      <Host />
-      <Cohost />
-      {/* <Gallery /> */}
-      <ContactForm />
-      <Mentors />
-      <Judges />
-      <Team />
-      <CommunityPartners />
-      <OurPartners />
-      <AvatarCardGenerator />
-      <FAQ />
-      <Footer />
+      <Sponsor />
+       <About />
+       <Timeline />
+       <Tracks />
+       <PRIZES />
+ 
+        <Host />
+        <Cohost />
+        <Mentors  />
+       <Judges />
+       <Team />
+       <CommunityPartners />
+        <OurPartners />
+        <AvatarCardGenerator />
+        <FAQ />
+        <Footer />
+      
+
+      
+      
     </Theme>
   );
 }
 
 export default App;
+
+
+
