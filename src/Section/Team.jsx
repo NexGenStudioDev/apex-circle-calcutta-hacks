@@ -14,7 +14,6 @@ import Yuvraj from '../../src/assets/Team/yuvraj.jpg';
 import Shuvrajit from '../../src/assets/Team/Shuvrajit.jpg';
 // import Vivek from '../../src/assets/Team/yuvraj.jpg';
 
-
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
@@ -149,7 +148,7 @@ const Team = () => {
     },
   ];
 
-  const getSocialIcon = (url) => {
+  const getSocialIcon = url => {
     if (url.includes('linkedin')) return <Linkedin size={20} />;
     if (url.includes('github')) return <Github size={20} />;
     if (url.includes('twitter')) return <Twitter size={20} />;
@@ -173,7 +172,6 @@ const Team = () => {
         <Marquee
           speed={75}
           gradient={false}
-
           pauseOnHover
           className="py-10 space-x-3 transform-3d translate-0.5 duration-300"
         >
