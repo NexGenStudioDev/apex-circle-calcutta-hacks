@@ -48,7 +48,7 @@ const Tracks = () => {
     {
       icon: smartCity,
       title: 'Smart City',
-      desc: 'Leverage technology and data-driven solutions to enhance urban living through sustainable infrastructure, intelligent transportation, and efficient resource management.',
+      desc: 'Use technology and data to create sustainable, efficient, and connected urban spaces.',
       glareColor: '#3e2c1d',
     },
     {
