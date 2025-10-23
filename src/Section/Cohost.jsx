@@ -5,7 +5,7 @@ import { VintageCard } from './Tracks';
 import { Link } from 'react-router-dom';
 
 const Cohost = () => (
-  <section id="host" className="py-14 sm:py-16 md:py-20 relative bg-[#F4E5C2]/20 overflow-hidden">
+  <section id="cohost" className="py-14 sm:py-16 md:py-20 relative bg-[#F4E5C2]/20 overflow-hidden">
     <div className="absolute top-0 left-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#D4AF37]/10 rounded-full blur-2xl sm:blur-3xl"></div>
     <div className="absolute bottom-10 sm:bottom-20 right-0 w-40 sm:w-64 h-40 sm:h-64 bg-[#D4AF37]/5 rounded-full blur-xl sm:blur-3xl"></div>
     <div className="absolute bottom-5 sm:bottom-10 right-5 sm:right-10 w-8 sm:w-12 h-8 sm:h-12 border-b-4 border-r-4 border-[#D4AF37]/30"></div>
