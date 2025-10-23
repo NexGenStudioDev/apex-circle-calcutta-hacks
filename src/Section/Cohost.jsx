@@ -4,7 +4,7 @@ import OrnateBorder from '../components/OrnateBorder';
 import { VintageCard } from './Tracks';
 import { Link } from 'react-router';
 
-const Host = () => (
+const Cohost = () => (
   <section id="host" className="py-14 sm:py-16 md:py-20 relative bg-[#F4E5C2]/20 overflow-hidden">
     <div className="absolute top-0 left-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#D4AF37]/10 rounded-full blur-2xl sm:blur-3xl"></div>
     <div className="absolute bottom-10 sm:bottom-20 right-0 w-40 sm:w-64 h-40 sm:h-64 bg-[#D4AF37]/5 rounded-full blur-xl sm:blur-3xl"></div>
@@ -13,7 +13,7 @@ const Host = () => (
     <div className="max-w-4xl sm:max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 relative z-10">
       <div className="text-center mb-8 sm:mb-16">
         <h2 className="font-display text-3xl sm:text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4 relative inline-block">
-          ABOUT THE HOST
+          ABOUT THE CO-HOST
           <div className="absolute -bottom-4 left-0 w-full h-1 bg-[#D4AF37] transform -skew-x-12"></div>
           <div className="absolute -bottom-3 sm:-bottom-4 left-1/4 w-1/2 h-1 bg-[#D4AF37] transform skew-x-12 mt-2 sm:mt-3"></div>
         </h2>
@@ -34,33 +34,42 @@ const Host = () => (
               </div>
 
               <h3 className="font-display text-2xl sm:text-4xl font-bold text-[#3E2C1D] mb-4 sm:mb-6 relative group">
-                <span className="ml-[1rem] sm:ml-[1.5rem]"> Apex Circle</span>
+                <span className="ml-[1rem] sm:ml-[1.5rem]"> GDGoC TIU</span>
                 <span className="absolute left-0 top-[40%] -translate-y-1/2 text-[#D4AF37] opacity-70">
                   &lt;{' '}
                 </span>
                 <span className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 text-[#D4AF37] opacity-70">
                   /&gt;
                 </span>
-                <div className="absolute -bottom-3 sm:-bottom-4 left-3 sm:left-6 w-[30%] h-1 bg-[#D4AF37] transform -skew-x-12"></div>
+                <div className="absolute bottom-3 sm:-bottom-4 left- sm:left-6 w-[30%] h-1 bg-[#D4AF37] transform -skew-x-12"></div>
               </h3>
 
               <div className="font-serif space-y-3 sm:space-y-5">
                 <p className="text-base sm:text-lg text-[#6B4423] leading-relaxed">
-                  A community for innovators, problem-solvers, and technology enthusiasts. We
-                  provide a platform where ideas transform into solutions through collaboration,
-                  learning, and skill development.
+                  Google Developer Groups on Campus – Techno India University (GDGoC TIU)* is a
+                  vibrant student community for innovators, developers, and technology enthusiasts.
+                  We provide a platform where ideas transform into impactful solutions through
+                  collaboration, learning, and creativity.
                 </p>
                 <p className="text-base sm:text-lg text-[#6B4423] leading-relaxed">
-                  From hackathons to workshops and hands-on projects, Apex Circle brings together
-                  individuals passionate about coding, AI, cybersecurity, Deep Tech and emerging
-                  technologies.
+                  At *GDG on Campus TIU, we aim to help students enhance their technical depth and
+                  problem-solving abilities by hosting **workshops, hackathons, speaker sessions,
+                  and study jams* across various domains such as *Web Development, Android, AI/ML,
+                  Cloud, Cybersecurity*, and more. Our peer-to-peer learning environment encourages
+                  curiosity, teamwork, and hands-on exploration of Google technologies and beyond.
                 </p>
                 <p className="text-base sm:text-lg text-[#6B4423] leading-relaxed font-medium">
-                  Whether you're a beginner or an expert, this is a space to learn, grow, and create
-                  alongside like-minded individuals.
+                  Whether you're a beginner taking your first step into tech or an advanced
+                  developer eager to innovate, *GDG TIU* is the space to learn, grow, and make a
+                  difference — together as a community. 🌐💡
                 </p>
                 <div className="KnowMoreAboutKolataBtn  px-4 py-2 sm:py-4 text-center bg-[#3E2C1D] text-[#ecdcb8] rounded-lg">
-                  <Link to="/about-kolkata">Know More About Calcutta</Link>
+                  <Link
+                    to="https://gdg.community.dev/gdg-on-campus-techno-india-university-kolkata-india/
+"
+                  >
+                    Know More About GDGoC TIU{' '}
+                  </Link>
                 </div>
                 <div className="bg-[#F4E5C2]/50 p-2 sm:p-4 border-l-4 border-[#D4AF37] my-4 sm:my-6">
                   <p className="text-base sm:text-lg text-[#6B4423] leading-relaxed italic">
@@ -77,12 +86,12 @@ const Host = () => (
                     className="text-[#D4AF37] group-hover:rotate-12 transition-transform"
                   />
                   <a
-                    href="https://bento.me/apex-circle-official"
+                    href="https://gdg.community.dev/gdg-on-campus-techno-india-university-kolkata-india/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#6B4423] hover:text-[#3E2C1D] underline decoration-[#D4AF37]/30 hover:decoration-[#D4AF37]"
                   >
-                    bento.me/apex-circle-official
+                    gdg-on-campus-techno-india-university-kolkata-india
                   </a>
                 </div>
                 <div className="flex items-center gap-2 transition-all hover:translate-x-2 group">
@@ -90,11 +99,8 @@ const Host = () => (
                     size={18}
                     className="text-[#D4AF37] group-hover:scale-110 transition-transform"
                   />
-                  <a
-                    href="mailto:apexcircleofficial2025@gmail.com"
-                    className="hover:text-[#D4AF37]"
-                  >
-                    apexcircleofficial2025@gmail.com
+                  <a href="mailto:gdgoncampus.tiu@gmail.com" className="hover:text-[#D4AF37]">
+                    gdgoncampus.tiu@gmail.com
                   </a>
                 </div>
                 <div className="text-[#6B4423]/90 italic pl-4 sm:pl-6 border-l-2 border-[#D4AF37]/30 mt-1 sm:mt-2">
@@ -120,10 +126,10 @@ const Host = () => (
                     </div>
                     <div>
                       <div className="font-serif font-bold mb-1 text-[#3E2C1D]">
-                        Collaborative learning
+                        Collaborative Community
                       </div>
                       <div className="font-serif text-xs sm:text-sm text-[#6B4423]">
-                        Building a community of problem-solvers and innovators
+                        Bringing students, developers & innovators together to learn and build.
                       </div>
                     </div>
                   </div>
@@ -134,10 +140,10 @@ const Host = () => (
                     </div>
                     <div>
                       <div className="font-serif font-bold mb-1 text-[#3E2C1D]">
-                        Technical Excellence
+                        Learning & Innovation
                       </div>
                       <div className="font-serif text-xs sm:text-sm text-[#6B4423]">
-                        Focus on AI, cybersecurity, and Deep Tech innovations
+                        Hosting workshops, ideathons and study-jams to solve real-world problems.
                       </div>
                     </div>
                   </div>
@@ -151,7 +157,8 @@ const Host = () => (
                         Hands-on Experience
                       </div>
                       <div className="font-serif text-xs sm:text-sm text-[#6B4423]">
-                        Workshops, hackathons, and practical projects
+                        Practical projects, peer-learning and community-driven initiatives to build
+                        impact
                       </div>
                     </div>
                   </div>
@@ -164,7 +171,7 @@ const Host = () => (
                 <div className="relative">
                   <h4 className="font-display text-base sm:text-lg font-bold text-[#3E2C1D] mb-3 sm:mb-5 flex items-center">
                     <Award size={16} sm:size={20} className="mr-1 sm:mr-2 text-[#D4AF37]" />
-                    Connect with Apex Circle
+                    Connect with GDGoC TIU
                   </h4>
                   <div className="flex gap-2 sm:gap-4 mb-4 sm:mb-6 flex-wrap">
                     {/* Social links unchanged (svg size can be made responsive as above) */}
@@ -173,7 +180,7 @@ const Host = () => (
                   <div className="mt-4 mb-0 bg-[#3E2C1D]/5 p-2 sm:p-4 rounded-sm border-l-2 border-[#D4AF37]">
                     <div className="flex items-center gap-1 sm:gap-2 mb-1 sm:mb-2">
                       <Calendar size={16} sm:size={18} className="text-[#D4AF37]" />
-                      <span className="font-serif font-medium">Upcoming Events</span>
+                      <span className="font-serif font-medium">Upcoming Events </span>
                     </div>
                     <div className="font-serif text-xs sm:text-sm text-[#6B4423] pl-4 sm:pl-6">
                       Follow our social media for information about upcoming workshops, meetups, and
@@ -190,4 +197,4 @@ const Host = () => (
   </section>
 );
 
-export default Host;
+export default Cohost;

@@ -1,6 +1,7 @@
 import { Calendar, MapPin, Users, ChevronRight } from 'lucide-react';
 import Image from '../../src/assets/biswabangla-with-tram.jpeg';
 import Border from '../components/ui/Border';
+import apexLogo from '../../src/assets/Icon/apexLogo.png';
 import SocialIcons from '../components/ui/SocialIcon';
 
 import {
@@ -69,7 +70,8 @@ const Hero = () => (
         {/* Right icons */}
         <SocialIcons icons={iconsPanel2} position="right" />
 
-        <div className="p-8 md:p-10 lg:p-12 aged-paper">
+        <div className="p-0.5 md:p-10 lg:p-12 aged-paper">
+          <img src={apexLogo} alt="Logo" className=" mx-auto w-32 h-32 object-contain" />
           {/* Tagline */}
           <div className="flex justify-center items-start mb-6">
             <div className="inline-block border-4 border-[#3E2C1D] px-6 py-2 bg-[#D4AF37]">

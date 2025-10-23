@@ -5,7 +5,8 @@ import web3 from '../../src/assets/Icon/web3.png';
 import heritage from '../../src/assets/Icon/heritage.png';
 import ai from '../../src/assets/Icon/AI.png';
 import cyber from '../../src/assets/Icon/cyberSecurity.png';
-import devops from '../../src/assets/Icon/devops.png';
+import smartCity from '../../src/assets/Icon/smartCity.png';
+
 import openInovation from '../../src/assets/Icon/openInovation.png';
 // Simple VintageCard component with vintage styling
 export const VintageCard = ({ children, className }) => {
@@ -45,9 +46,9 @@ const Tracks = () => {
       glareColor: '#3e2c1d',
     },
     {
-      icon: devops,
-      title: 'DevOps',
-      desc: 'Automate, deploy, and optimize development pipelines for faster and more reliable software delivery.',
+      icon: smartCity,
+      title: 'Smart City',
+      desc: 'Leverage technology and data-driven solutions to enhance urban living through sustainable infrastructure, intelligent transportation, and efficient resource management.',
       glareColor: '#3e2c1d',
     },
     {

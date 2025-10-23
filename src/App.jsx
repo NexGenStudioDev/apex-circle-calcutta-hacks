@@ -16,6 +16,7 @@ import Host from './Section/Host.jsx';
 import Judges from './Section/Judges.jsx';
 import AvatarCardGenerator from './Section/AvatarCardGenerator.jsx';
 import OurPartners from './Section/OurPartners.jsx';
+import Cohost from './Section/Cohost.jsx';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Tracks />
       <PRIZES />
       <Host />
+      <Cohost />
       {/* <Gallery /> */}
       <Mentors />
       <Judges />
