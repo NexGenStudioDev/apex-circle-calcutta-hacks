@@ -10,6 +10,7 @@ import Somnath from '../../src/assets/Team/Somnath.jpg';
 import Soumodweep from '../../src/assets/Team/Soumodweep.png';
 import Souvik from '../../src/assets/Team/Souvik.jpg';
 import Yuvraj from '../../src/assets/Team/yuvraj.jpg';
+import Shuvrajit from '../../src/assets/Team/Shuvrajit.jpg';
 // import Vivek from '../../src/assets/Team/yuvraj.jpg';
 
 import TiltedCard from '../components/ui/TiltedCard';
@@ -86,7 +87,7 @@ const Team = () => {
       handle: '📱 Social & Growth',
       emoji: '📱',
       color: '#3E2C1D',
-      image: '',
+      image: Shuvrajit,
       social: 'https://linkedin.com/in/shuvrajit',
     },
     {

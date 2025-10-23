@@ -456,7 +456,8 @@ const AvatarCardGenerator = () => {
                   <select
                     value={participantRole}
                     onChange={e => setParticipantRole(e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-[#3E2C1D] font-serif text-[#3E2C1D] focus:outline-none focus:border-[#6B4423] rounded-md transition-all duration-300 focus:shadow-md"
+                    className="w-full px-4 py-3 border-2 border-[#3E2C1D] font-serif text-[#3E2C1D] focus:outline-none focus:border-[#6B4423] 
+                    rounded-md transition-all duration-300 focus:shadow-md bg-[#ecdebb] "
                   >
                     <option>Participant</option>
                     <option>Team Lead</option>
@@ -469,8 +470,6 @@ const AvatarCardGenerator = () => {
               </div>
             </VintageCard>
           </div>
-
-          {/* Right: Preview */}
           {/* Right: Preview */}
           <div>
             <VintageCard>
