@@ -82,10 +82,10 @@ const CommunityPartners = () => {
             Interested in becoming a community partner?
           </p>
           <a
-            href="#contact"
-            className="inline-block bg-[#3E2C1D] text-[#F4E5C2] font-display py-2 px-6 border-2 border-[#D4AF37] hover:bg-[#F4E5C2] hover:text-[#3E2C1D] transition-colors duration-300"
+            href="mailto:mondalsoumya01@gmail.com"
+            className="inline-block bg-[#332518] text-[#F2E2C0] px-8 py-3 text-lg font-display font-bold border-4 border-[#332518] hover:bg-[#7D5B3D] hover:border-[#7D5B3D] transition-all duration-300"
           >
-            Get in Touch
+            Become a Partner
           </a>
         </div>
       </div>

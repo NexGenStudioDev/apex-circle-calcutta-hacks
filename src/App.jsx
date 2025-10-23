@@ -16,8 +16,10 @@ import Host from './Section/Host.jsx';
 import Judges from './Section/Judges.jsx';
 import AvatarCardGenerator from './Section/AvatarCardGenerator.jsx';
 import OurPartners from './Section/OurPartners.jsx';
+import Cohost from './Section/Cohost.jsx';
 import FAQ from './Section/Faq.jsx';
 import ContactForm from './page/ContactPage.jsx';
+
 
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
       <Tracks />
       <PRIZES />
       <Host />
+      <Cohost />
       {/* <Gallery /> */}
       <ContactForm />
       <Mentors />
