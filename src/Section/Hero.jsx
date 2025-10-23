@@ -2,26 +2,29 @@ import { Calendar, MapPin, Users, ChevronRight } from 'lucide-react';
 import Image from '../../src/assets/biswabangla-with-tram.jpeg';
 import Border from '../components/ui/Border';
 import SocialIcons from '../components/ui/SocialIcon';
+
 import {
   FaDiscord,
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaTwitter,
   FaTwitterSquare,
   FaWhatsapp,
 } from 'react-icons/fa';
 
 const iconsPanel1 = [
-  { icon: FaInstagram, link: 'https://instagram.com' },
+  {
+    icon: FaInstagram,
+    link: 'https://www.instagram.com/apex_circle_official?igsh=NHRsbDU1YmNteXE4',
+  },
   { icon: FaTwitterSquare, link: 'https://twitter.com' },
-  { icon: FaLinkedinIn, link: 'https://linkedin.com' },
+  { icon: FaLinkedinIn, link: 'https://www.linkedin.com/company/apex-circle-official/' },
 ];
 
 const iconsPanel2 = [
-  { icon: FaGithub, link: 'https://github.com' },
-  { icon: FaDiscord, link: 'https://discord.com/invite/your-server' },
-  { icon: FaWhatsapp, link: 'https://wa.me/your-number' },
+  { icon: FaGithub, link: 'https://github.com/NexGenStudioDev/apex-circle-calcutta-hacks' },
+  { icon: FaDiscord, link: 'https://discord.gg/ZF7f6wJYGX' },
+  { icon: FaWhatsapp, link: 'https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc' },
 ];
 
 const Hero = () => (
