@@ -2,7 +2,7 @@ import React from 'react';
 import { Mail, Target, Sparkles, Users, Globe, Calendar, Award } from 'lucide-react';
 import OrnateBorder from '../components/OrnateBorder';
 import { VintageCard } from './Tracks';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Cohost = () => (
   <section id="host" className="py-14 sm:py-16 md:py-20 relative bg-[#F4E5C2]/20 overflow-hidden">
