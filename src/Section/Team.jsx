@@ -1,4 +1,5 @@
 import React from 'react';
+import Marquee from 'react-fast-marquee';
 import Abhishek from '../../src/assets/Team/AbhishekBan.jpg';
 import Agnij from '../../src/assets/Team/Agnij.jpg';
 import Naila from '../../src/assets/Team/Naila.jpg';
@@ -12,6 +13,7 @@ import Souvik from '../../src/assets/Team/Souvik.jpg';
 import Yuvraj from '../../src/assets/Team/yuvraj.jpg';
 import Shuvrajit from '../../src/assets/Team/Shuvrajit.jpg';
 // import Vivek from '../../src/assets/Team/yuvraj.jpg';
+
 
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
@@ -86,6 +88,18 @@ const Team = () => {
     },
     {
       name: 'Abhishek',
+      role: 'Web Associate Lead',
+      handle: '🤝 Alliances & Support',
+      emoji: '🤝',
+      color: '#3E2C1D',
+      image: Abhishek,
+      social: 'https://linkedin.com/in/abhishek',
+    },
+    {
+      name: 'Pushkar Das',
+      role: 'Social Media Co Lead',
+      handle: '📱 Engagement & Outreach',
+      emoji: '📱',
       role: 'Web Associate',
       handle: '⚙️ Technical Implementation',
       emoji: '⚙️',
@@ -114,26 +128,6 @@ const Team = () => {
       social: 'https://linkedin.com/in/agnij',
     },
     {
-      name: 'Vivek Yadav',
-      role: 'PR & Outreach Co-Lead',
-      handle: '📞 Communication & Coordination',
-      emoji: '📞',
-      color: '#3E2C1D',
-      image: '',
-      social: 'https://linkedin.com/in/vivek',
-    },
-
-    // 🧩 4th Hierarchy — Management
-    {
-      name: 'Shreyashi Debnath',
-      role: 'Management Lead',
-      handle: '📊 Operations & Oversight',
-      emoji: '📊',
-      color: '#3E2C1D',
-      image: Shreyanshi,
-      social: 'https://linkedin.com/in/shreyashi',
-    },
-    {
       name: 'Rouson Das',
       role: 'Management Lead',
       handle: '🗂️ Planning & Coordination',
@@ -145,26 +139,17 @@ const Team = () => {
 
     // 💬 5th Hierarchy — Social Media
     {
-      name: 'Shuvrajit',
-      role: 'Social Media Lead',
-      handle: '📱 Branding & Digital Growth',
-      emoji: '📱',
+      name: 'Shreyashi Debnath',
+      role: 'Management Lead',
+      handle: '📊 Operations & Management',
+      emoji: '📊',
       color: '#3E2C1D',
-      image: Shuvrajit,
-      social: 'https://linkedin.com/in/shuvrajit',
-    },
-    {
-      name: 'Pushkar Das',
-      role: 'Social Media Co-Lead',
-      handle: '💬 Content & Engagement',
-      emoji: '💬',
-      color: '#3E2C1D',
-      image: Pushkar,
-      social: 'https://linkedin.com/in/pushkar',
+      image: Shreyanshi,
+      social: 'https://linkedin.com/in/shreyashi',
     },
   ];
 
-  const getSocialIcon = url => {
+  const getSocialIcon = (url) => {
     if (url.includes('linkedin')) return <Linkedin size={20} />;
     if (url.includes('github')) return <Github size={20} />;
     if (url.includes('twitter')) return <Twitter size={20} />;
@@ -173,7 +158,7 @@ const Team = () => {
 
   return (
     <section id="team" className="py-20 bg-[#F4E5C2]/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-[90vw] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4">
             OUR TEAM
@@ -184,38 +169,46 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Infinite Scroller */}
+        <Marquee
+          speed={75}
+          gradient={false}
+
+          pauseOnHover
+          className="py-10 space-x-3 transform-3d translate-0.5 duration-300"
+        >
           {team.map((member, i) => (
-            <div key={i} className="group">
+            <div key={i} className="mx-6">
               <TiltedCard
                 imageSrc={member.image}
                 captionText={member.name}
                 displayOverlayContent={true}
-                key={i}
                 altText=""
                 scaleOnHover={1.1}
                 rotateAmplitude={0.1}
                 maxTilt={0.2}
                 scale={1}
-                className="bg-[#b18631] w-full  relative border-4 border-[#3E2C1D] rounded-xl overflow-hidden h-[350px] shadow-lg hover:shadow-xl transition duration-300 z-20"
+                className="bg-[#b18631] w-[250px] relative border-4 border-[#3E2C1D] rounded-xl overflow-hidden h-[350px] shadow-lg hover:shadow-xl transition duration-300"
                 style={{
                   boxShadow: '0.5rem 0.5rem 0 rgba(62, 44, 29, 0.2)',
                 }}
                 overlayContent={
-                  <div className="absolute  h-[32vh] w-[15vw]  inset-0 flex flex-col justify-between p-4 text-white z-10">
+                  <div className="absolute h-[300px] w-[303px] bg-[#d4af37]/20 inset-0 flex flex-col justify-between p-4 text-white z-10">
                     <div className="flex justify-start">
-                      <a
-                        href={member.social}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-[#3E2C1D]/70 p-2 rounded-full hover:bg-[#3E2C1D]/90 transition"
-                      >
-                        {getSocialIcon(member.social)}
-                      </a>
+                      {member.social && (
+                        <a
+                          href={member.social}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-[#3E2C1D]/70 p-2 rounded-full hover:bg-[#3E2C1D]/90 transition"
+                        >
+                          {getSocialIcon(member.social)}
+                        </a>
+                      )}
                     </div>
 
                     <div
-                      className="w-full py-3 px-4 rounded-md text-center font-semibold text-[#3E2C1D] shadow-md "
+                      className="w-full py-3 px-4 rounded-md text-center font-semibold text-[#3E2C1D] shadow-md"
                       style={{ backgroundColor: member.color }}
                     >
                       <span className="text-lg text-[#F3E5C1]">
@@ -227,7 +220,7 @@ const Team = () => {
               />
             </div>
           ))}
-        </div>
+        </Marquee>
       </div>
     </section>
   );
