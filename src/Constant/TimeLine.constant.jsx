@@ -9,6 +9,7 @@ import {
   FaTrophy,
   FaLaptopCode,
   FaClipboardCheck,
+  FaMusic,
   FaMedal,
   FaMugHot,
   FaCalendarAlt,
@@ -55,7 +56,7 @@ export const day1Events = [
     title: 'Organizer On Round',
     description:
       'Join the organizers for a quick check-in and share your progress. Get any questions answered and stay on track.',
-    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
+   icon: <FaPeopleArrows className="text-[#b09355] text-2xl" />,
   },
   {
     time: '4:00 PM',
@@ -68,19 +69,19 @@ export const day1Events = [
     time: '5:30 PM',
     title: 'Tea Break',
     description: 'Take a short break from coding with our surprise fun activity to refresh your mind.',
-    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
+    icon: <FaMugHot className="text-[#b09355] text-2xl" />,
   },
   { 
      time: '8:30 PM',
     title: 'Dinner',
     description: 'Refuel with a delicious dinner while discussing project ideas with fellow participants.',
-    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
+    icon: <FaUtensils className="text-[#b09355] text-2xl" />,
   },
   {
      time: '10:00 PM',
     title: 'Evaluation Round 1',
     description: 'Present your progress to the judges and receive feedback to improve your project further.',
-    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
+    icon: <FaLaptopCode className="text-[#b09355] text-2xl" />,
   },
 ];
 
@@ -89,14 +90,14 @@ export const day2Events = [
     time: '12:00 AM',
     title: 'Music & Midnight Snacks',
     description: 'Enjoy some music and snacks to keep your energy up during the night.',
-    icon: <FaMugHot className="text-[#b09355] text-2xl" />,
+    icon: <FaMusic className="text-[#b09355] text-2xl" />,  
   },
   {
     time: '1:00 AM',
     title: 'Mini Games',
     description:
       'Another engaging activity to keep the energy high as we progress into the night',
-    icon: <FaClipboardCheck className="text-[#b09355] text-2xl" />,
+    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
   },
   {
     time: '8:00 AM',
@@ -115,35 +116,35 @@ export const day2Events = [
     title: 'Final Evaluation Round',
     description:
       'Present your solutions to the judges and demonstrate how your project addresses the challenge.',
-    icon: <FaTrophy className="text-[#b09355] text-2xl" />,
+    icon: <FaLaptopCode className="text-[#b09355] text-2xl" />,
   },
-   {
+  {
     time: '11:00 AM',
     title: 'Submission Ends',
     description:
       'All projects must be submitted by this time for final evaluation.',
-    icon: <FaTrophy className="text-[#b09355] text-2xl" />,
+    icon: <FaClipboardCheck className="text-[#b09355] text-2xl" />,
   },
-   {
+  {
     time: '11:15 AM',
     title: 'Technical Conference/Speaker',
     description:
       'Engaging talks from industry experts to inspire and educate participants.',
-    icon: <FaTrophy className="text-[#b09355] text-2xl" />,
+    icon: <FaCalendarAlt className="text-[#b09355] text-2xl" />,
   },
-   {
+  {
     time: '12:00 PM',
     title: 'Top 5 Pitching',
     description:
       'The top 5 teams will present their projects to the judges and audience.',
     icon: <FaTrophy className="text-[#b09355] text-2xl" />,
   },
-   {
+  {
     time: '12:30 PM',
     title: 'Result Declaration',
     description:
       'Announcing the winners based on the judges’ evaluations and criteria set forth at the beginning of the hackathon.',
-    icon: <FaTrophy className="text-[#b09355] text-2xl" />,
+    icon: <FaClipboardCheck className="text-[#b09355] text-2xl" />,
   },
   {
     time: '1:00 PM',

@@ -15,6 +15,8 @@ function TiltedCard({
   containerWidth = '100%',
   imageHeight = '300px',
   imageWidth = '300px',
+  // new prop: allow callers to pass image border classes (Tailwind-friendly)
+  imageBorderClass = 'border-4 border-[#3E2C1D]',
   scaleOnHover = 1.1,
   rotateAmplitude = 14,
   showMobileWarning = true,
@@ -98,7 +100,7 @@ function TiltedCard({
         <motion.img
           src={imageSrc}
           alt={altText}
-          className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
+          className={`absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)] ${imageBorderClass}`}
           style={{
             width: imageWidth,
             height: imageHeight,
