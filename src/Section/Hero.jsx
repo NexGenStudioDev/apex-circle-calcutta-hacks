@@ -86,7 +86,7 @@ const Hero = () => (
             <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-black text-[#3E2C1D] leading-tight">
               CALCUTTA
             </h1>
-            <div className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-[#6B4423]">
+            <div className="font-display text-6xl md:text-7xl lg:text-8xl font-black text-[#6B4423] max-[599px]:leading-none max-[1025px]:translate-y-0 translate-y-2.5 leading-tight">
               &lt;HACKS/&gt;
             </div>
           </div>
@@ -114,20 +114,20 @@ const Hero = () => (
             <div className="hidden md:block w-px h-6 bg-[#3E2C1D]"></div>
             <div className="flex items-center gap-2 font-serif text-base md:text-lg">
               <Users className="text-[#6B4423] flex-shrink-0" size={20} />
-              <span>200+ Hackers</span>
+              <span>150+ Hackers</span>
             </div>
           </div>
 
           {/* Buttons */}
           <div className="flex flex-wrap justify-center gap-6 items-center">
             {/* REGISTER NOW */}
-            <button className="group relative bg-[#3E2C1D] text-[#F4E5C2] px-12 py-4 text-xl font-display font-bold border-4 border-[#3E2C1D] hover:bg-[#6B4423] hover:border-[#6B4423] transition-all duration-300 transform hover:scale-105">
+            {/* <button className="group relative bg-[#3E2C1D] text-[#F4E5C2] px-12 py-4 text-xl font-display font-bold border-4 border-[#3E2C1D] hover:bg-[#6B4423] hover:border-[#6B4423] transition-all duration-300 transform hover:scale-105">
               REGISTER NOW
               <ChevronRight
                 className="inline-block ml-2 group-hover:translate-x-2 transition-transform"
                 size={24}
               />
-            </button>
+            </button> */}
 
             {/* Devfolio */}
             <a

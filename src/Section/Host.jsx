@@ -15,7 +15,7 @@ const Host = () => (
         <h2 className="font-display text-3xl sm:text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4 relative inline-block">
           ABOUT THE HOST
           <div className="absolute -bottom-4 left-0 w-full h-1 bg-[#D4AF37] transform -skew-x-12"></div>
-          <div className="absolute -bottom-3 sm:-bottom-4 left-1/4 w-1/2 h-1 bg-[#D4AF37] transform skew-x-12 mt-2 sm:mt-3"></div>
+          <div className="absolute -bottom-3 max-[1025px]:hidden left-1/4 w-1/2 h-1 bg-[#D4AF37] transform skew-x-12 mt-2 sm:mt-3"></div>
         </h2>
       </div>
 
