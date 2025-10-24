@@ -14,6 +14,8 @@ import {
   ExternalLink,
 } from 'lucide-react';
 import { Phone } from 'lucide-react';
+import { Link } from 'react-router';
+import { Code } from 'lucide-react';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -37,11 +39,21 @@ const Footer = () => {
           {/* Column 1 - About */}
           <div>
             <div className="font-display text-2xl font-bold mb-4 flex items-center">
-              <Landmark className="mr-2 text-[#D4AF37]" size={24} />
-              <span>
-                Calcutta <span className="text-[#D4AF37]">&lt;Hacks/&gt;</span>
-              </span>
+              {/* <Landmark className="mr-2 text-[#D4AF37]" size={39} /> */}
+              <Link
+                to="/"
+                className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
+              >
+                <div className="w-[1.75rem] h-[1.75rem] border-4 border-[#3E2C1D] bg-[#D4AF37] flex items-center justify-center">
+                  <Code className="text-[#3E2C1D]" size={18} />
+                </div>
+
+                <span>
+                  Calcutta <span className="text-[#D4AF37]">&lt;Hacks/&gt;</span>
+                </span>
+              </Link>
             </div>
+
             <p className="font-serif text-[#F4E5C2]/80 mb-4">
               Where heritage meets innovation in the heart of Kolkata. Join us for a weekend of
               coding, creativity and collaboration.
@@ -147,7 +159,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://twitter.com"
+                href="'https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc'"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
@@ -156,12 +168,12 @@ const Footer = () => {
                   <Twitter size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
                 </div>
                 <span className="font-serif group-hover:text-[#D4AF37] transition-colors">
-                  Twitter
+                  WhatsApp
                 </span>
               </a>
 
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/apex_circle_official/?igsh=NHRsbDU1YmNteXE4#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
@@ -175,7 +187,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/yuvrajprasad"
+                href="https://www.commudle.com/communities/apex-circle"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
@@ -184,7 +196,7 @@ const Footer = () => {
                   <Github size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
                 </div>
                 <span className="font-serif group-hover:text-[#D4AF37] transition-colors">
-                  GitHub
+                  Commudle
                 </span>
               </a>
             </div>

@@ -3,6 +3,7 @@ import Image from '../../src/assets/biswabangla-with-tram.jpeg';
 import Border from '../components/ui/Border';
 import apexLogo from '../../src/assets/Icon/apexlogo.png';
 import SocialIcons from '../components/ui/SocialIcon';
+import devfolio from '../../src/assets/Devfolio.png';
 
 import {
   FaDiscord,
@@ -18,12 +19,12 @@ const iconsPanel1 = [
     icon: FaInstagram,
     link: 'https://www.instagram.com/apex_circle_official?igsh=NHRsbDU1YmNteXE4',
   },
-  { icon: FaTwitterSquare, link: 'https://twitter.com' },
+  { icon: FaTwitterSquare, link: 'https://bento.me/apex-circle-official' },
   { icon: FaLinkedinIn, link: 'https://www.linkedin.com/company/apex-circle-official/' },
 ];
 
 const iconsPanel2 = [
-  { icon: FaGithub, link: 'https://github.com/NexGenStudioDev/apex-circle-calcutta-hacks' },
+  { icon: FaGithub, link: 'https://www.commudle.com/users/apexcircle' },
   { icon: FaDiscord, link: 'https://discord.gg/ZF7f6wJYGX' },
   { icon: FaWhatsapp, link: 'https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc' },
 ];
@@ -114,7 +115,7 @@ const Hero = () => (
             <div className="hidden md:block w-px h-6 bg-[#3E2C1D]"></div>
             <div className="flex items-center gap-2 font-serif text-base md:text-lg">
               <Users className="text-[#6B4423] flex-shrink-0" size={20} />
-              <span>150+ Hackers</span>
+              <span>160+ Hackers</span>
             </div>
           </div>
 
@@ -131,7 +132,7 @@ const Hero = () => (
 
             {/* Devfolio */}
             <a
-              href="https://devfolio.co/"
+              href="https://calcutta-lesshacksgreater.devfolio.co"
               target="_blank"
               rel="noopener noreferrer"
               className="relative group inline-flex items-center justify-center h-14 px-8 py-2 rounded-md overflow-hidden transition-all duration-300 transform hover:scale-105 
@@ -140,7 +141,7 @@ const Hero = () => (
               <span className="absolute inset-0 bg-[linear-gradient(90deg,#2E2E2E_0%,#5A5A5A_50%,#2E2E2E_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
               <div className="relative z-10 flex items-center justify-center w-full h-full">
                 <img
-                  src="src\assets\Devfolio.png"
+                  src={devfolio}
                   alt="Apply with Devfolio"
                   className="h-full w-auto max-h-10 object-contain filter brightness-0 invert"
                 />
@@ -149,7 +150,7 @@ const Hero = () => (
 
             {/* Discord */}
             <a
-              href="https://discord.gg/your-discord-link"
+              href="https://discord.com/invite/ZF7f6wJYGX"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative flex items-center justify-center px-8 py-4 text-white font-display font-bold rounded-md overflow-hidden transition-all duration-300 transform hover:scale-105 
