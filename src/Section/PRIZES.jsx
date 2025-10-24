@@ -7,19 +7,19 @@ const PRIZES = () => {
   const prizes = [
     {
       place: '1st',
-      amount: 'Amount To be declared ...',
+      amount: 'To be declared ...',
       perks: 'Trophy + Medals + Mentorship',
       icon: Trophy,
     },
     {
       place: '2nd',
-      amount: 'Amount To be declared ...',
+      amount: 'To be declared ...',
       perks: 'Trophy + Medals + Goodies',
       icon: Medal,
     },
     {
       place: '3rd',
-      amount: 'Amount To be declared ...',
+      amount: 'To be declared ...',
       perks: 'Trophy + Medals + Goodies',
       icon: Medal,
     },
@@ -47,7 +47,7 @@ const PRIZES = () => {
                 className="relative group transform transition-transform duration-500 hover:scale-105 py-[4.8vh]"
               >
                 {idx === 0 && (
-                  <div className="absolute top-0 -right-3 bg-[#D4AF37] text-[#3E2C1D] px-4 py-1 font-display font-bold text-sm transform rotate-12 shadow-md z-10">
+                  <div className="absolute top-20 -right-0 bg-[#D4AF37] text-[#3E2C1D] px-4 py-1 font-display font-bold text-sm transform rotate-45 shadow-md z-10">
                     GRAND PRIZE
                   </div>
                 )}
