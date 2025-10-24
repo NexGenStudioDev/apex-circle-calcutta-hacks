@@ -6,7 +6,6 @@ import About from './Section/About.jsx';
 import Timeline from './Section/Timeline.jsx';
 import Sponsor from './Section/Sponsor.jsx';
 import Mentors from './Section/Mentors.jsx';
-import Gallery from './Section/Gallery.jsx';
 import Tracks from './Section/Tracks.jsx';
 import PRIZES from './Section/PRIZES.jsx';
 import Team from './Section/Team.jsx';
@@ -17,11 +16,14 @@ import Judges from './Section/Judges.jsx';
 import AvatarCardGenerator from './Section/AvatarCardGenerator.jsx';
 import OurPartners from './Section/OurPartners.jsx';
 import Cohost from './Section/Cohost.jsx';
+import FAQ from './Section/Faq.jsx';
+
+
 
 function App() {
   return (
     <Theme>
-      <Navbar />
+     <Navbar />
       <Hero />
       {/* <Sponsor /> */}
       <About />
@@ -31,16 +33,21 @@ function App() {
       <Host />
       <Cohost />
       {/* <Gallery /> */}
+  
       <Mentors />
       <Judges />
       <Team />
       <CommunityPartners />
       <OurPartners />
       <AvatarCardGenerator />
-      <div className="h-screen"></div>
+      <FAQ />
       <Footer />
+      
     </Theme>
   );
 }
 
 export default App;
+
+
+

@@ -1,6 +1,6 @@
 import { Code, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -36,14 +36,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Left Side - Logo and Title */}
-          <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <div className="w-12 h-12 border-4 border-[#3E2C1D] bg-[#D4AF37] flex items-center justify-center">
               <Code className="text-[#3E2C1D]" size={24} />
             </div>
             <div className="font-display text-2xl font-bold text-[#3E2C1D]">
               Calcutta <span className="text-[#6B4423]">&lt;Hacks/&gt;</span>
             </div>
-          </a>
+          </Link>
 
           {/* Right Side - Desktop Menu */}
           <div className="hidden md:flex items-center space-x-5 font-serif text-sm">
