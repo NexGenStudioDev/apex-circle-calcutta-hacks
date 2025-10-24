@@ -16,6 +16,20 @@ import {
 import { Phone } from 'lucide-react';
 import { Link } from 'react-router';
 import { Code } from 'lucide-react';
+import commudle from '../../src/assets/Icon/commudle-logo128.png';
+
+const CommudleIcon = ({ size, className }) => (
+  <img 
+    src={commudle} 
+    alt="Commudle"
+    style={{ 
+      width: size, 
+      height: size,
+      filter: 'brightness(0) saturate(100%) invert(93%) sepia(4%) saturate(1122%) hue-rotate(316deg) brightness(106%) contrast(96%)'
+    }}
+    className={className}
+  />
+);
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -193,7 +207,7 @@ const Footer = () => {
                 className="flex items-center group"
               >
                 <div className="w-10 h-10 bg-[#F4E5C2]/10 border border-[#F4E5C2]/20 rounded-sm flex items-center justify-center mr-2 group-hover:bg-[#D4AF37]/20 group-hover:border-[#D4AF37] transition-colors">
-                  <Github size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
+                  <CommudleIcon size={18} className="group-hover:opacity-75 transition-opacity" />
                 </div>
                 <span className="font-serif group-hover:text-[#D4AF37] transition-colors">
                   Commudle

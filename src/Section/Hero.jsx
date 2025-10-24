@@ -4,10 +4,10 @@ import Border from '../components/ui/Border';
 import apexLogo from '../../src/assets/Icon/apexlogo.png';
 import SocialIcons from '../components/ui/SocialIcon';
 import devfolio from '../../src/assets/Devfolio.png';
+import commudle from '../../src/assets/Icon/commudle-logo128.png';
 
 import {
   FaDiscord,
-  FaGithub,
   FaInstagram,
   FaLinkedinIn,
   FaTwitterSquare,
@@ -23,8 +23,21 @@ const iconsPanel1 = [
   { icon: FaLinkedinIn, link: 'https://www.linkedin.com/company/apex-circle-official/' },
 ];
 
+const CommudleIcon = ({ size, className }) => (
+  <img 
+    src={commudle} 
+    alt="Commudle"
+    style={{ 
+      width: size, 
+      height: size,
+      filter: 'brightness(0) saturate(100%) invert(19%) sepia(14%) saturate(1111%) hue-rotate(356deg) brightness(92%) contrast(89%)'
+    }}
+    className={className}
+  />
+);
+
 const iconsPanel2 = [
-  { icon: FaGithub, link: 'https://www.commudle.com/users/apexcircle' },
+  { icon: CommudleIcon, link: 'https://www.commudle.com/users/apexcircle' },
   { icon: FaDiscord, link: 'https://discord.gg/ZF7f6wJYGX' },
   { icon: FaWhatsapp, link: 'https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc' },
 ];
