@@ -48,11 +48,11 @@ const Footer = () => {
             </p>
             <div className="flex items-center mb-3 font-serif">
               <Calendar className="mr-2 text-[#D4AF37]" size={16} />
-              <span>October 28-30, 2024</span>
+              <span>December 13-14, 2025</span>
             </div>
             <div className="flex items-start mb-3 font-serif">
               <MapPin className="mr-2 text-[#D4AF37] mt-1 flex-shrink-0" size={16} />
-              <span>Victoria Memorial Hall, Kolkata, West Bengal 700071</span>
+              <span>EM-4, EM-4/1, EM Block, Sector V, Bidhannagar, Kolkata, West Bengal 70009</span>
             </div>
           </div>
 
@@ -191,29 +191,28 @@ const Footer = () => {
 
             <div className="mt-6 flex flex-col gap-4">
               <a
-                href="mailto:contact@calcuttahack.com"
+                href="mailto:apexcircleofficial2025@gmail.com"
                 className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
               >
                 <Mail size={16} className="mr-2 text-[#D4AF37]" />
                 apexcircleofficial2025@gmail.com
               </a>
-             
-                <a
-                  href="tel:+917003058672"
-                  className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
-                >
-                  <Phone size={16} className="text-[#D4AF37] mr-[0.5rem]" />
-                  <span>+91 70030 58672</span>
-                </a>
 
-                <a
-                  href="tel:+916291129896"
-                  className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
-                >
-                  <Phone size={16} className="text-[#D4AF37] mr-[0.5rem]" />
-                  <span>+91 62911 29896</span>
-                </a>
-          
+              <a
+                href="tel:+917003058672"
+                className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
+              >
+                <Phone size={16} className="text-[#D4AF37] mr-[0.5rem]" />
+                <span>+91 70030 58672</span>
+              </a>
+
+              <a
+                href="tel:+916291129896"
+                className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
+              >
+                <Phone size={16} className="text-[#D4AF37] mr-[0.5rem]" />
+                <span>+91 62911 29896</span>
+              </a>
             </div>
           </div>
 
@@ -285,15 +284,21 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center font-serif text-sm text-[#F4E5C2]/70">
           <p>
-            &copy; {new Date().getFullYear()} Calcutta &lt;Hack/&gt;. Celebrating the heritage of
+            &copy; {new Date().getFullYear()} Calcutta &lt;Hacks/&gt;. Celebrating the heritage of
             Kolkata.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="#" className="hover:text-[#D4AF37] transition-colors">
+            <a
+              href="https://devfolio.co/privacy-policy"
+              className="hover:text-[#D4AF37] transition-colors"
+            >
               Privacy Policy
             </a>
             <span>|</span>
-            <a href="#" className="hover:text-[#D4AF37] transition-colors">
+            <a
+              href="https://devfolio.co/code-of-conduct"
+              className="hover:text-[#D4AF37] transition-colors"
+            >
               Code of Conduct
             </a>
             <span>|</span>

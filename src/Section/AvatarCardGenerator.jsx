@@ -597,7 +597,7 @@ const AvatarCardGenerator = () => {
                 <button
                   onClick={downloadCard}
                   disabled={!participantName || !uploadedImage}
-                  className="w-full bg-[#3E2C1D] text-[#E8D9B8] px-6 py-4 font-display font-bold border-4 border-[#3E2C1D] hover:bg-[#6B4423] hover:border-[#6B4423] transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
+                  className="w-full bg-[#3E2C1D] text-[#E8D9B8] px-6 py-4 font-display font-bold border-4 border-[#3E2C1D] hover:bg-[#6B4423] hover:border-[#6B4423] transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-90 disabled:cursor-not-allowed rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
                 >
                   <Download size={24} />
                   Download ID Card
@@ -605,7 +605,7 @@ const AvatarCardGenerator = () => {
                 <button
                   onClick={shareCard}
                   disabled={!participantName || !uploadedImage}
-                  className="w-full bg-[#E8D9B8] text-[#3E2C1D] px-6 py-4 font-display font-bold border-4 border-[#3E2C1D] hover:bg-[#D4AF37] transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
+                  className="w-full bg-[#E8D9B8] text-[#3E2C1D] px-6 py-4 font-display font-bold border-4 border-[#3E2C1D] hover:bg-[#D4AF37] transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-90 disabled:cursor-not-allowed rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
                 >
                   <Share2 size={24} />
                   Share on Social Media

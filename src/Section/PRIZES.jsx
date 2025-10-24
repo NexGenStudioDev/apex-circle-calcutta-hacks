@@ -34,7 +34,7 @@ const PRIZES = () => {
           </h2>
           <div className="w-32 h-1  text-[2vw] bg-[#D4AF37] mx-auto mb-6"></div>
           <p className="font-serif lg:text-xl text-[#6B4423]">
-            Total Prize Pool: <span className="font-bold">₹5,00,000+</span>
+            Total Prize Pool: <span className="font-bold">To be declared ...</span>
           </p>
         </div>
 
