@@ -38,10 +38,10 @@ const Cohost = () => (
                 <span className="absolute left-0 top-[40%] -translate-y-1/2 text-[#D4AF37] opacity-70">
                   &lt;{' '}
                 </span>
-                <span className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 text-[#D4AF37] opacity-70">
+                <span className="absolute right-2 sm:right-1 top-1/2 -translate-y-1/2 text-[#D4AF37] opacity-70">
                   /&gt;
                 </span>
-                <div className="absolute bottom-3 sm:-bottom-4 left- sm:left-6 w-[30%] h-1 bg-[#D4AF37] transform -skew-x-12"></div>
+                <div className="absolute -bottom-3 sm:-bottom-4 left-3 sm:left-6 w-[30%] h-1 bg-[#D4AF37] transform -skew-x-12"></div>
               </h3>
 
               <div className="font-serif space-y-3 sm:space-y-5">
