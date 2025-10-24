@@ -1,7 +1,7 @@
 import React from 'react';
 import { Map, MapPin, Award } from 'lucide-react';
 import { VintageCard } from './Tracks';
-
+import ETH from '../../src/assets/Icon/ethIndia.png';
 const OurPartners = () => {
   return (
     <section id="partners" className="py-20 bg-[#F2E2C0]/30">
@@ -66,6 +66,41 @@ const OurPartners = () => {
                 title="Techno India University Location"
                 className="w-full h-full min-h-[300px]"
               ></iframe>
+            </div>
+          </div>
+        </VintageCard>
+        <VintageCard className="mb-16">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-[#3E2C1D] rounded-full flex items-center justify-center">
+                  <Award className="text-[#D4AF37]" size={32} />
+                </div>
+                <h3 className="font-display text-3xl font-bold text-[#3E2C1D]"> SILVER SPONSOR</h3>
+              </div>
+
+              <div className="mb-6">
+                <h4 className="font-display text-2xl font-bold text-[#6B4423] mb-4">ETH INDIA</h4>
+                <p className="font-serif text-[#6B4423]/90 mb-4">
+                  Empowering the future of hackathons
+                </p>
+                <a
+                  href="https://ethindia2024.devfolio.co/overview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-[#6B4423] hover:text-[#3E2C1D] font-medium transition-colors"
+                >
+                  Visit Website
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-[#e8d9b6] p-2 rounded-lg border-4 border-[#3E2C1D] flex items-center justify-center">
+              <img
+                src={ETH}
+                alt="Devfolio Logo"
+                className="max-h-[5%] max-w-[15%] object-contain"
+              />
             </div>
           </div>
         </VintageCard>
