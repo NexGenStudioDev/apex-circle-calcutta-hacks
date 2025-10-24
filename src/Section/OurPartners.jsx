@@ -110,7 +110,7 @@ const OurPartners = () => {
             Want to partner with us?
           </h3>
           <a
-            href="mailto:partners@calcuttahack.in"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScBw9uQ_OYR3THLcXlXKeslXHxIMERDxnXRxCoMRPsR8PecuQ/viewform"
             className="inline-block bg-[#332518] text-[#F2E2C0] px-8 py-3 text-lg font-display font-bold border-4 border-[#332518] hover:bg-[#7D5B3D] hover:border-[#7D5B3D] transition-all duration-300"
           >
             Become a Partner

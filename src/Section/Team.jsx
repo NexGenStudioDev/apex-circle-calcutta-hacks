@@ -27,7 +27,7 @@ const Team = () => {
       emoji: '🧭',
       color: '#3E2C1D',
       image: Soumodweep,
-      social: 'https://linkedin.com/in/soumodweep',
+      social: 'https://www.linkedin.com/in/soumodweep-das/',
     },
     {
       name: 'Souvik Ghosh',
@@ -36,7 +36,7 @@ const Team = () => {
       emoji: '🛠',
       color: '#3E2C1D',
       image: Souvik,
-      social: 'https://linkedin.com/in/souvik',
+      social: 'https://www.linkedin.com/in/souvikghosh19/',
     },
     {
       name: 'Pritam Das',
@@ -45,7 +45,7 @@ const Team = () => {
       emoji: '💡',
       color: '#3E2C1D',
       image: Pritham,
-      social: '',
+      social: 'https://www.linkedin.com/in/pritam-das-739743289/',
     },
     {
       name: 'Yuvraj Prasad',
@@ -54,7 +54,7 @@ const Team = () => {
       emoji: '🎯',
       color: '#3E2C1D',
       image: Yuvraj,
-      social: 'https://www.linkedin.com/in/yuvrajprasad',
+      social: 'https://www.linkedin.com/in/yuvrajprasad/',
     },
     {
       name: 'Abhishek Banerjee',
@@ -63,7 +63,7 @@ const Team = () => {
       emoji: '🤝',
       color: '#3E2C1D',
       image: Abhishek,
-      social: 'https://linkedin.com/in/abhishek',
+      social: 'https://www.linkedin.com/in/avishek-mukherjee-1011a2235/',
     },
 
     // 🥈 2nd Hierarchy — Web Team
@@ -74,7 +74,7 @@ const Team = () => {
       emoji: '💻',
       color: '#3E2C1D',
       image: Somnath,
-      social: '',
+      social: 'https://www.linkedin.com/in/somnath-mukherjee-8b629b288/',
     },
     {
       name: 'Naila',
@@ -83,28 +83,16 @@ const Team = () => {
       emoji: '🧩',
       color: '#3E2C1D',
       image: Naila,
-      social: 'https://linkedin.com/in/naila',
+      social: 'https://www.linkedin.com/in/nailafarooque/',
     },
     {
       name: 'Abhishek',
-      role: 'Web Associate Lead',
-      handle: '🤝 Alliances & Support',
-      emoji: '🤝',
-      color: '#3E2C1D',
-      image: Abhishek,
-      social: 'https://linkedin.com/in/abhishek',
-    },
-    {
-      name: 'Pushkar Das',
-      role: 'Social Media Co Lead',
-      handle: '📱 Engagement & Outreach',
-      emoji: '📱',
       role: 'Web Associate',
       handle: '⚙ Technical Implementation',
       emoji: '⚙',
       color: '#3E2C1D',
       image: 'https://avatars.githubusercontent.com/u/122656682?v=4',
-      social: 'https://linkedin.com/in/rouson',
+      social: 'https://www.linkedin.com/in/abhishek-nexgen-dev',
     },
     {
       name: 'Anjali',
@@ -113,7 +101,7 @@ const Team = () => {
       emoji: '🧠',
       color: '#3E2C1D',
       image: 'https://avatars.githubusercontent.com/u/160884550?v=4',
-      social: 'https://linkedin.com/in/shreyashi',
+      social: 'https://www.linkedin.com/in/anjali-tomar713',
     },
 
     // 🥉 3rd Hierarchy — PR & Outreach
@@ -124,7 +112,27 @@ const Team = () => {
       emoji: '📢',
       color: '#3E2C1D',
       image: Agnij,
-      social: 'https://linkedin.com/in/agnij',
+      social: 'https://www.linkedin.com/in/agnij-dutta/',
+    },
+    {
+      name: 'Vivek Yadav',
+      role: 'PR & Outreach Co-Lead',
+      handle: '📞 Communication & Coordination',
+      emoji: '📞',
+      color: '#3E2C1D',
+      image: '',
+      social: '',
+    },
+
+    // 🧩 4th Hierarchy — Management
+    {
+      name: 'Shreyashi Debnath',
+      role: 'Management Lead',
+      handle: '📊 Operations & Oversight',
+      emoji: '📊',
+      color: '#3E2C1D',
+      image: Shreyanshi,
+      social: 'https://www.linkedin.com/in/shreyashi-debnath-aa73942b4/',
     },
     {
       name: 'Rouson Das',
@@ -133,24 +141,31 @@ const Team = () => {
       emoji: '🗂',
       color: '#3E2C1D',
       image: Rouson,
-      social: 'https://linkedin.com/in/rouson',
+      social: 'https://www.linkedin.com/in/rouson-das-563b52284/',
     },
 
     // 💬 5th Hierarchy — Social Media
     {
-      name: 'Shreyashi Debnath',
-      role: 'Management Lead',
-      handle: '📊 Operations & Management',
-      emoji: '📊',
+      name: 'Shuvrajit',
+      role: 'Social Media Lead',
+      handle: '📱 Branding & Digital Growth',
+      emoji: '📱',
       color: '#3E2C1D',
-      image: Shreyanshi,
-      social: 'https://linkedin.com/in/shreyashi',
+      image: Shuvrajit,
+      social: 'https://www.linkedin.com/in/shuvrajit-majhi-7a337b2b8/',
+    },
+    {
+      name: 'Pushkar Das',
+      role: 'Social Media Co-Lead',
+      handle: '💬 Content & Engagement',
+      emoji: '💬',
+      color: '#3E2C1D',
+      image: Pushkar,
+      social: '',
     },
   ];
 
-  
-
-  const getSocialIcon = (url) => {
+  const getSocialIcon = url => {
     if (url.includes('linkedin')) return <Linkedin size={20} />;
     if (url.includes('github')) return <Github size={20} />;
     if (url.includes('twitter')) return <Twitter size={20} />;

@@ -110,14 +110,14 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <a
+            {/* <a
               href="https://calcutta-lesshacksgreater.devfolio.co/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#D4AF37] text-[#3E2C1D] px-6 py-2 rounded-full font-bold border-2 border-[#D4AF37] hover:bg-[#f4e5c2] hover:border-[#D4AF37] transition-all duration-300 transform hover:scale-105"
             >
               Register
-            </a>
+            </a> */}
           </div>
 
           {/* Mobile Menu Icon */}
@@ -147,7 +147,7 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
-            <a
+            {/* <a
               href="https://calcutta-lesshacksgreater.devfolio.co/"
               target="_blank"
               rel="noopener noreferrer"
@@ -155,7 +155,7 @@ const Navbar = () => {
               onClick={() => setMenuOpen(false)}
             >
               Register
-            </a>
+            </a> */}
           </div>
         </div>
       )}
