@@ -47,7 +47,7 @@ const PRIZES = () => {
                 className="relative group transform transition-transform duration-500 hover:scale-105 py-[4.8vh]"
               >
                 {idx === 0 && (
-                  <div className="absolute top-20 -right-0 bg-[#D4AF37] text-[#3E2C1D] px-4 py-1 font-display font-bold text-sm transform rotate-45 shadow-md z-10">
+                  <div className="absolute top-18 -right-2 bg-[#D4AF37] text-[#3E2C1D] px-4 py-1 font-display font-bold text-sm transform rotate-45 shadow-md z-15">
                     GRAND PRIZE
                   </div>
                 )}
