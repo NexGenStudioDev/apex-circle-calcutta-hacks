@@ -24,7 +24,7 @@ const iconsPanel1 = [
 ];
 
 const iconsPanel2 = [
-  { icon: FaGithub, link: 'https://www.commudle.com/users/apexcircle' },
+  { icon: FaGithub, link: 'https://www.commudle.com/communities/apex-circle' },
   { icon: FaDiscord, link: 'https://discord.gg/ZF7f6wJYGX' },
   { icon: FaWhatsapp, link: 'https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc' },
 ];
