@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import GridDistortion from '../components/GridDistortion';
 import { ArrowBigDown, ArrowDown } from 'lucide-react';
+import LiquidEther from '../components/LiquidEther';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -18,11 +19,18 @@ const CulcuttaInfo = {
     "Culcutta, formerly known as Calcutta, is the capital of West Bengal, India. Often called the 'City of Joy,' it is renowned for its cultural heritage, colonial architecture, literature, and vibrant arts scene. Located on the eastern bank of the Hooghly River, Culcutta is also a major commercial, educational, and political center in Eastern India.",
   highlights: [
     {
-      title: 'Victoria Memorial',
+      title: 'Sir Rajendra Nath Mookherjee',
       image:
-        'https://images.unsplash.com/photo-1697127997429-4155a247fece?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471',
+        'https://indroyc.com/wp-content/uploads/2023/10/f7plid0boaamllz.jpg?w=900',
       description:
-        'A grand marble building dedicated to the memory of Queen Victoria, now a museum and popular tourist destination.',
+        'Hand-pulled rickshaws are an iconic part of Kolkata, relating to the city\'s historic mode of transport and making them an important part of its heritage.',
+    },
+    {
+      title: 'Partiton of Bengal',
+      image:
+        'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/partition.jpeg',
+      description:
+        'Kolkata was the first city in India to experience the Partition of Bengal, which created new boundaries and had a lasting impact on the city\'s social and cultural landscape.',
     },
     {
       title: 'Howrah Bridge',
@@ -32,11 +40,39 @@ const CulcuttaInfo = {
         'An iconic cantilever bridge over the Hooghly River, connecting Culcutta and Howrah.',
     },
     {
+      title: 'Hand Rikhshaw',
+      image:
+        'https://assets.telegraphindia.com/telegraph/2023/Aug/1692971151_2.jpg',
+      description:
+        'Hand-pulled rickshaws are an iconic part of Kolkata, relating to the city\'s historic mode of transport and reflecting its unique cultural heritage.',
+    },
+    {
+      title: 'First Tram In Kolkata',
+      image:
+        'https://assets.telegraphindia.com/telegraph/2022/Feb/1644921554_old-tram-depot-chowringhee.jpg',
+      description:
+        'Kolkata was the first city in India to introduce trams, which relates to its unique history as the only Indian city where trams still run today.',
+    },
+    {
+      title: 'First Mtero In Kolkata',
+      image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDnIFQC4nUlFMEk59oOURwKvijmW26wtvEfg&s',
+      description:
+        'Kolkata was the first city in India to have a metro railway, which started operations in 1984 and remains a pride of the city.',
+    },
+    {
       title: 'Indian Museum',
       image:
         'https://images.unsplash.com/photo-1651651166379-06540f274707?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1374',
       description:
         'The oldest and largest museum in India, housing rare collections of antiques, armor, ornaments, fossils, and paintings.',
+    },
+    {
+      title: 'Victoria Memorial',
+      image:
+        'https://images.unsplash.com/photo-1697127997429-4155a247fece?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471',
+      description:
+        'A grand marble building dedicated to the memory of Queen Victoria, now a museum and popular tourist destination.',
     },
     {
       title: 'Dakshineswar Kali Temple',
@@ -45,6 +81,20 @@ const CulcuttaInfo = {
       description:
         'A famous Hindu temple on the eastern bank of the Hooghly River, dedicated to goddess Kali.',
     },
+    {
+      title: 'Durga puja Festival',
+      image:
+        'https://images.unsplash.com/photo-1640281694730-df0af5ca7bd2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1486',
+      description:
+        'The Calcutta Book Fair is an annual event that brings book lovers from all over the city together. It’s a great place to discover new books, meet authors, and enjoy street food with friends and family.',
+    },
+    {
+      title: 'Calcutta Book Fair 2025',
+      image:
+        'https://images.timesnownews.com/thumb/msid-117683459,thumbsize-80464,width-1280,height-720,resizemode-75/117683459.jpg',
+      description:
+        'The Calcutta Book Fair is an annual event that brings book lovers from all over the city together. It’s a great place to discover new books, meet authors, and enjoy street food with friends and family.',
+    }
   ],
   facts: [
     'Famous for its sweets like rasgulla and sandesh.',
@@ -183,16 +233,25 @@ const AboutCulcutta = () => {
       <Theme>
         <Navbar />
         <section className="about-hero w-full h-screen relative">
-          <GridDistortion
-            imageSrc="https://images.unsplash.com/photo-1648440088882-fdf15f3a0491?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1415"
-            grid={10}
-            mouse={0.1}
-            strength={0.15}
-            relaxation={0.9}
-            className="custom-class"
+          <LiquidEther
+            colors={['#D4AF37', '#3E2C1D', '#f3e5c1']}
+            mouseForce={20}
+            cursorSize={100}
+            isViscous={false}
+            viscous={30}
+            iterationsViscous={32}
+            iterationsPoisson={32}
+            resolution={0.5}
+            isBounce={false}
+            autoDemo={true}
+            autoSpeed={0.5}
+            autoIntensity={2.2}
+            takeoverDuration={0.25}
+            autoResumeDelay={3000}
+            autoRampDuration={0.6}
           />
-          <div className=" absolute top-0 left-0 w-full h-screen pointer-events-none flex items-center justify-center text-[#f3e5c1]">
-            <div className=" w-full h-full backdrop-blur-xs ">
+          <div className=" absolute top-0 left-0 w-full h-screen pointer-events-none flex items-center justify-center text-[#3E2C1D]">
+            <div className=" w-full h-full ">
               <div className="overlay max-[599px]:px-14 max-[599px]:leading-none w-full h-full rounded-md flex flex-col items-center justify-center gap-6">
                 <h1 className="text-[5vw] max-[599px]:text-[10vw] text-center head font-bold uppercase">
                   Know About Culcutta

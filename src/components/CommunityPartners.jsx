@@ -83,7 +83,7 @@ const CommunityPartners = () => {
                     <>
                       <div className="font-display text-2xl font-bold text-[#3E2C1D] mb-6 relative">
                         <div className="font-display text-2xl font-bold text-[#3E2C1D] mb-6 relative"></div>
-                        Coming Soon
+                        Coming Soon...
                         <div className="h-0.5 w-0 bg-[#D4AF37] absolute left-1/2 -bottom-1 transform -translate-x-1/2 group-hover:w-24 transition-all duration-500"></div>
                       </div>
                     </>
