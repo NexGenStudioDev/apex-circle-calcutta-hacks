@@ -16,6 +16,14 @@ import {
 import { Phone } from 'lucide-react';
 import { Link } from 'react-router';
 import { Code } from 'lucide-react';
+import { RiGroupFill } from "react-icons/ri";
+import {
+  FaDiscord,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from 'react-icons/fa';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -165,7 +173,7 @@ const Footer = () => {
                 className="flex items-center group"
               >
                 <div className="w-10 h-10 bg-[#F4E5C2]/10 border border-[#F4E5C2]/20 rounded-sm flex items-center justify-center mr-2 group-hover:bg-[#D4AF37]/20 group-hover:border-[#D4AF37] transition-colors">
-                  <Twitter size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
+                  <FaWhatsapp size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
                 </div>
                 <span className="font-serif group-hover:text-[#D4AF37] transition-colors">
                   WhatsApp
@@ -193,7 +201,7 @@ const Footer = () => {
                 className="flex items-center group"
               >
                 <div className="w-10 h-10 bg-[#F4E5C2]/10 border border-[#F4E5C2]/20 rounded-sm flex items-center justify-center mr-2 group-hover:bg-[#D4AF37]/20 group-hover:border-[#D4AF37] transition-colors">
-                  <Github size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
+                  <RiGroupFill size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
                 </div>
                 <span className="font-serif group-hover:text-[#D4AF37] transition-colors">
                   Commudle
