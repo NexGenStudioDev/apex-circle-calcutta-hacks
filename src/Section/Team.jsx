@@ -66,7 +66,7 @@ const Team = () => {
 
     // 🥈 2nd Hierarchy — Web Team
     {
-      name: 'Somnath',
+      name: 'Somnath Mukherjee',
       role: 'Web Lead',
       handle: 'Development & Infrastructure',
       color: '#3E2C1D',
@@ -74,7 +74,7 @@ const Team = () => {
       social: 'https://www.linkedin.com/in/somnath-mukherjee-8b629b288/',
     },
     {
-      name: 'Naila',
+      name: 'Naila Farooque',
       role: 'Web Co-Lead',
       handle: 'Frontend Integration & Support',
       color: '#3E2C1D',
