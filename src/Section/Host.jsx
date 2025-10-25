@@ -37,8 +37,15 @@ const Host = () => (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start p-2 sm:p-6 relative">
             {/* LEFT SECTION */}
             <div className="relative">
-              <h3 className="font-display text-2xl sm:text-4xl font-bold text-[#3E2C1D] mb-6">
-                <span className="ml-6">&lt; Apex Circle /&gt;</span>
+              <h3 className="font-display text-2xl sm:text-4xl font-bold text-[#3E2C1D] mb-4 sm:mb-6 relative group">
+                <span className="ml-[1.2rem] mr-[2rem] sm:ml-[1.5rem]"> Apex Circle</span>
+                <span className="absolute left-0.5 top-[60%] -translate-y-1/2 text-[#D4AF37] opacity-70">
+                  &lt;{' '}
+                </span>
+                <span className="absolute  top-1/2 -translate-y-1/2 text-[#D4AF37] opacity-70">
+                  /&gt;
+                </span>
+                <div className="absolute -bottom-3 sm:-bottom-4 left-5 sm:left-6 w-[30%] h-1 bg-[#D4AF37] transform -skew-x-12"></div>
               </h3>
 
               <div className="font-serif space-y-5">
@@ -61,7 +68,6 @@ const Host = () => (
                   "Join us in shaping the future through tech!" ⚡🚀
                 </div>
               </div>
-
               {/* Contact */}
               <div className="space-y-4 font-serif text-[#3E2C1D] mt-8 border-t border-[#3E2C1D]/20 pt-4">
                 <div className="flex items-center gap-2 group">
