@@ -12,11 +12,11 @@ import LiquidEther from '../components/LiquidEther';
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const CulcuttaInfo = {
-  name: 'Culcutta',
+  name: 'Calcutta',
   image:
     'https://upload.wikimedia.org/wikipedia/commons/6/6d/Victoria_Memorial%2C_Culcutta%2C_West_Bengal%2C_India.jpg',
   description:
-    "Culcutta, formerly known as Calcutta, is the capital of West Bengal, India. Often called the 'City of Joy,' it is renowned for its cultural heritage, colonial architecture, literature, and vibrant arts scene. Located on the eastern bank of the Hooghly River, Culcutta is also a major commercial, educational, and political center in Eastern India.",
+    "Calcutta, officially known as Kolkata, is the dynamic capital of West Bengal, India. Celebrated as the 'City of Joy,' it stands as a vibrant hub of art, culture, literature, and intellectual legacy. Blending its colonial-era architecture with modern infrastructure, Calcutta serves as a major center for commerce, education, and technology in Eastern India. Situated along the eastern bank of the Hooghly River, the city harmoniously integrates heritage with innovation—making it one of India’s most influential urban landscapes.",
   highlights: [
     {
       title: 'Sir Rajendra Nath Mookherjee',
@@ -62,8 +62,7 @@ const CulcuttaInfo = {
     },
     {
       title: 'Indian Museum',
-      image:
-        'https://images.unsplash.com/photo-1651651166379-06540f274707?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1374',
+      image: 'https://indianmuseumkolkata.org/im_cont/uploads/2022/04/banner2.jpg',
       description:
         'The oldest and largest museum in India, housing rare collections of antiques, armor, ornaments, fossils, and paintings.',
     },
@@ -82,19 +81,20 @@ const CulcuttaInfo = {
         'A famous Hindu temple on the eastern bank of the Hooghly River, dedicated to goddess Kali.',
     },
     {
-      title: 'Durga puja Festival',
-      image:
-        'https://images.unsplash.com/photo-1640281694730-df0af5ca7bd2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1486',
+
+      title: 'Jadavpur University',
+      image: 'https://live.staticflickr.com/3090/2631200343_a2937561d6_b.jpg',
       description:
-        'The Calcutta Book Fair is an annual event that brings book lovers from all over the city together. It’s a great place to discover new books, meet authors, and enjoy street food with friends and family.',
+        'A leading public research university in Kolkata, known for its academic excellence, innovation, and vibrant intellectual culture.',
     },
     {
-      title: 'Calcutta Book Fair 2025',
+      title: 'Royal Bengal Tiger',
       image:
-        'https://images.timesnownews.com/thumb/msid-117683459,thumbsize-80464,width-1280,height-720,resizemode-75/117683459.jpg',
+        'https://t4.ftcdn.net/jpg/02/17/63/97/360_F_217639719_SxjxC4qyRoJQJdwmWtgQrvzTUX0SF3HY.jpg',
       description:
-        'The Calcutta Book Fair is an annual event that brings book lovers from all over the city together. It’s a great place to discover new books, meet authors, and enjoy street food with friends and family.',
-    }
+        'A leading public research university in Kolkata, known for its academic excellence, innovation, and vibrant intellectual culture.',
+    },
+
   ],
   facts: [
     'Famous for its sweets like rasgulla and sandesh.',
@@ -233,35 +233,30 @@ const AboutCulcutta = () => {
       <Theme>
         <Navbar />
         <section className="about-hero w-full h-screen relative">
-          <LiquidEther
-            colors={['#D4AF37', '#3E2C1D', '#f3e5c1']}
-            mouseForce={20}
-            cursorSize={100}
-            isViscous={false}
-            viscous={30}
-            iterationsViscous={32}
-            iterationsPoisson={32}
-            resolution={0.5}
-            isBounce={false}
-            autoDemo={true}
-            autoSpeed={0.5}
-            autoIntensity={2.2}
-            takeoverDuration={0.25}
-            autoResumeDelay={3000}
-            autoRampDuration={0.6}
+          <GridDistortion
+            imageSrc="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fe/ac/kolkata-calcutta.jpg?w=1200&h=700&s=1"
+            grid={5}
+            mouse={0.1}
+            strength={0.1}
+            relaxation={0.9}
+            className="custom-class"
           />
+
+
           <div className=" absolute top-0 left-0 w-full h-screen pointer-events-none flex items-center justify-center text-[#3E2C1D]">
             <div className=" w-full h-full ">
               <div className="overlay max-[599px]:px-14 max-[599px]:leading-none w-full h-full rounded-md flex flex-col items-center justify-center gap-6">
                 <h1 className="text-[5vw] max-[599px]:text-[10vw] text-center head font-bold uppercase">
-                  Know About Culcutta
+                  Know About Calcutta
                 </h1>
-                <p className="text-[1.5vw] max-[599px]:text-[3.5vw] max-[599px]:w-full subhead leading-tight tracking-tight text-center w-[70%] font-medium">
-                  Culcutta, often called the “City of Joy,” is a vibrant cultural and historical hub
-                  that pulses with artistic energy, intellectual legacy, and resilient spirit. Every
-                  street, from the grand colonial avenues to the bustling local markets, carries a
-                  story that reveals the city’s profound ability to inspire and uplift all who call
-                  it home.
+                <p className="text-[1.5vw] max-[599px]:text-[3.5vw] max-[599px]:w-full subhead leading-tight tracking-tight text-center w-[70%] font-medium mix-blend-difference">
+                  Calcutta, officially known as Kolkata, is the dynamic capital of West Bengal,
+                  India. Celebrated as the 'City of Joy,' it stands as a vibrant hub of art,
+                  culture, literature, and intellectual legacy. Blending its colonial-era
+                  architecture with modern infrastructure, Calcutta serves as a major center for
+                  commerce, education, and technology in Eastern India. Situated along the eastern
+                  bank of the Hooghly River, the city harmoniously integrates heritage with
+                  innovation—making it one of India’s most influential urban landscapes.
                 </p>
                 <span className="text-[2vw] max-[599px]:text-[6vw] subhead1 font-semibold flex items-center gap-4">
                   Scroll To Know More <ArrowDown />
