@@ -17,6 +17,12 @@ import { Phone } from 'lucide-react';
 import { Link } from 'react-router';
 import { Code } from 'lucide-react';
 import { RiGroupFill } from 'react-icons/ri';
+
+import { GiCableStayedBridge, GiIndianPalace } from 'react-icons/gi';
+import { MdOutlineTram } from 'react-icons/md';
+import { GrBus } from 'react-icons/gr';
+
+
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
@@ -262,19 +268,19 @@ const Footer = () => {
               <h4 className="font-display text-lg font-bold mb-3">Calcutta Icons</h4>
               <div className="flex justify-between">
                 <div className="flex flex-col items-center">
-                  <Train size={24} className="text-[#F7D070] mb-1" />
+                  <MdOutlineTram size={24} className="text-[#F7D070] mb-1" />
                   <span className="font-serif text-xs">Tram</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <Bus size={24} className="text-[#4A90E2] mb-1" />
+                  <GrBus size={24} className="text-[#4A90E2] mb-1" />
                   <span className="font-serif text-xs">Bus</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <Landmark size={24} className="text-[#D4AF37] mb-1" />
+                  <GiIndianPalace size={24} className="text-[#D4AF37] mb-1" />
                   <span className="font-serif text-xs">Victoria</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <ExternalLink size={24} className="text-[#F4E5C2] mb-1" />
+                  <GiCableStayedBridge size={24} className="text-[#F4E5C2] mb-1" />
                   <span className="font-serif text-xs">Howrah</span>
                 </div>
               </div>
