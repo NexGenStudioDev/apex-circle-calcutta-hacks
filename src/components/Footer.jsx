@@ -38,9 +38,7 @@ const WhatsAppIcon = ({ size, className }) => (
     alt="WhatsApp"
     style={{ 
       width: size, 
-      height: size,
-      filter: 'brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(175deg) brightness(96%) contrast(106%)'
-
+      height: size
     }}
     className={className}
   />
