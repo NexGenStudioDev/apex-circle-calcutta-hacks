@@ -1,5 +1,7 @@
 import Lenis from 'lenis';
 import React from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import DotGrid from '../components/DotGrid';
 
 const Theme = ({ children }) => {
@@ -10,6 +12,14 @@ const Theme = ({ children }) => {
   }
 
   requestAnimationFrame(raf);
+
+
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+  
+  gsap.ticker.lagSmoothing(0);
 
   return (
     <div

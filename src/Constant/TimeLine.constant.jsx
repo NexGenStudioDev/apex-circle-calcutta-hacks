@@ -67,19 +67,22 @@ export const day1Events = [
   {
     time: '5:30 PM',
     title: 'Tea Break',
-    description: 'Take a short break from coding with our surprise fun activity to refresh your mind.',
-    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
-  },
-  { 
-     time: '8:30 PM',
-    title: 'Dinner',
-    description: 'Refuel with a delicious dinner while discussing project ideas with fellow participants.',
+    description:
+      'Take a short break from coding with our surprise fun activity to refresh your mind.',
     icon: <FaGamepad className="text-[#b09355] text-2xl" />,
   },
   {
-     time: '10:00 PM',
+    time: '8:30 PM',
+    title: 'Dinner',
+    description:
+      'Refuel with a delicious dinner while discussing project ideas with fellow participants.',
+    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
+  },
+  {
+    time: '10:00 PM',
     title: 'Evaluation Round 1',
-    description: 'Present your progress to the judges and receive feedback to improve your project further.',
+    description:
+      'Present your progress to the judges and receive feedback to improve your project further.',
     icon: <FaGamepad className="text-[#b09355] text-2xl" />,
   },
 ];
@@ -94,8 +97,7 @@ export const day2Events = [
   {
     time: '1:00 AM',
     title: 'Mini Games',
-    description:
-      'Another engaging activity to keep the energy high as we progress into the night',
+    description: 'Another engaging activity to keep the energy high as we progress into the night',
     icon: <FaClipboardCheck className="text-[#b09355] text-2xl" />,
   },
   {
@@ -117,28 +119,25 @@ export const day2Events = [
       'Present your solutions to the judges and demonstrate how your project addresses the challenge.',
     icon: <FaTrophy className="text-[#b09355] text-2xl" />,
   },
-   {
+  {
     time: '11:00 AM',
     title: 'Submission Ends',
-    description:
-      'All projects must be submitted by this time for final evaluation.',
+    description: 'All projects must be submitted by this time for final evaluation.',
     icon: <FaTrophy className="text-[#b09355] text-2xl" />,
   },
-   {
+  {
     time: '11:15 AM',
     title: 'Technical Conference/Speaker',
-    description:
-      'Engaging talks from industry experts to inspire and educate participants.',
+    description: 'Engaging talks from industry experts to inspire and educate participants.',
     icon: <FaTrophy className="text-[#b09355] text-2xl" />,
   },
-   {
+  {
     time: '12:00 PM',
     title: 'Top 5 Pitching',
-    description:
-      'The top 5 teams will present their projects to the judges and audience.',
+    description: 'The top 5 teams will present their projects to the judges and audience.',
     icon: <FaTrophy className="text-[#b09355] text-2xl" />,
   },
-   {
+  {
     time: '12:30 PM',
     title: 'Result Declaration',
     description:
