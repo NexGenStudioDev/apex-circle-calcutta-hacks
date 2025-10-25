@@ -4,12 +4,7 @@ import OrnateBorder from '../components/OrnateBorder';
 import { VintageCard } from './Tracks';
 import { Link } from 'react-router-dom';
 
-import {
-  
-  FaFacebook,
-  FaLinkedin,
-  FaWhatsapp,
-} from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const Cohost = () => (
   <section id="cohost" className="py-14 sm:py-16 md:py-20 relative bg-[#F4E5C2]/20 overflow-hidden">
@@ -185,7 +180,7 @@ const Cohost = () => (
                     rel="noopener noreferrer"
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
-                    <p className='text-[#3E2C1D] text-[2rem]'>X</p>
+                    <p className="text-[#3E2C1D] text-[2rem]">X</p>
                   </a>
 
                   <a
