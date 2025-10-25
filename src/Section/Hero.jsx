@@ -67,11 +67,16 @@ const Hero = () => (
         <SocialIcons icons={iconsPanel2} position="right" />
 
         <div className="p-0.5 md:p-10 lg:p-12 aged-paper">
-          <img src={apexLogo} alt="Logo" className="  h-[5rem] w-[20rem]  mx-auto object-contain" />
+          <img
+            src={apexLogo}
+            alt="Logo"
+            className="mx-auto h-[5rem] w-[12rem] sm:h-20 sm:w-72 md:h-24 md:w-96 lg:h-24 lg:w-[24rem] object-contain"
+          />
+
           {/* Tagline */}
           <div className="flex justify-center items-start mb-6">
-            <div className="inline-block border-4 border-[#3E2C1D] px-6 py-2 bg-[#D4AF37]">
-              <span className="font-display text-sm tracking-widest font-semibold">
+            <div className="inline-block border-[2.5px] sm:border-4 border-[#3E2C1D] px-3 py-1.5 sm:px-6 sm:py-2 bg-[#D4AF37]">
+              <span className="font-display whitespace-nowrap text-[2.3vw] sm:text-sm md:text-base lg:text-lg xl:text-xl tracking-widest font-semibold">
                 HERITAGE • INNOVATION • EXCELLENCE
               </span>
             </div>
@@ -79,18 +84,18 @@ const Hero = () => (
 
           {/* Title */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
-            <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-black text-[#3E2C1D] leading-tight">
+            <h1 className="font-display text-[9vw] sm:text-6xl md:text-7xl lg:text-8xl font-black text-[#3E2C1D] leading-tight">
               CALCUTTA
             </h1>
-            <div className="font-display text-6xl md:text-7xl lg:text-8xl font-black text-[#6B4423] max-[599px]:leading-none max-[1025px]:translate-y-0 translate-y-2.5 leading-tight">
+            <div className="font-display text-[9vw] sm:text-6xl md:text-7xl lg:text-8xl font-black text-[#6B4423] leading-tight max-w-full whitespace-nowrap">
               &lt;HACKS/&gt;
             </div>
           </div>
 
           {/* Subtitle */}
-          <div className="w-full flex justify-center mb-6">
-            <div className="stamp-effect bg-[#F4E5C2] max-w-4xl text-center">
-              <p className="font-serif text-lg md:text-xl lg:text-2xl italic px-3 py-1 text-[#3E2C1D]">
+          <div className="w-full flex justify-center mb-6 px-2">
+            <div className="stamp-effect bg-[#F4E5C2] max-w-4xl text-center px-3 py-2 sm:px-6 sm:py-3">
+              <p className="font-serif text-[4vw] sm:text-lg md:text-xl lg:text-2xl italic text-[#3E2C1D] leading-snug">
                 "Where the Heritage of Calcutta Meets the Innovation of Tomorrow"
               </p>
             </div>

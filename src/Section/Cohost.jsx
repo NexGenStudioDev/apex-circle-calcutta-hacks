@@ -30,12 +30,17 @@ const Cohost = () => (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start p-2 sm:p-6 relative">
             {/* Left content */}
             <div className="relative">
-              <div className="absolute -top-4 sm:-top-6 -left-4 sm:-left-6 w-8 sm:w-12 h-8 sm:h-12">
-                <div className="absolute bottom-0 right-0 w-3/4 h-3/4 bg-[#D4AF37]/10"></div>
-              </div>
+              <div className="absolute -top-4 sm:-top-6 -left-4 sm:-left-6 w-8 sm:w-12 h-8 sm:h-12"></div>
 
-              <h3 className="font-display text-2xl sm:text-4xl font-bold text-[#3E2C1D] mb-6">
-                <span className="ml-6">&lt; GDGoC TIU /&gt;</span>
+              <h3 className="font-display text-2xl sm:text-4xl font-bold text-[#3E2C1D] mb-4 sm:mb-6 relative group">
+                <span className="ml-[1.2rem] mr-[2rem] sm:ml-[1.5rem]"> GDGOC TIU</span>
+                <span className="absolute left-0.5 top-[60%] -translate-y-1/2 text-[#D4AF37] opacity-70">
+                  &lt;{' '}
+                </span>
+                <span className="absolute  top-1/2 -translate-y-1/2 text-[#D4AF37] opacity-70">
+                  /&gt;
+                </span>
+                <div className="absolute -bottom-3 sm:-bottom-4 left-5 sm:left-6 w-[30%] h-1 bg-[#D4AF37] transform -skew-x-12"></div>
               </h3>
 
               <div className="font-serif space-y-3 sm:space-y-5">
