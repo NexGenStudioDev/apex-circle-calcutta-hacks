@@ -68,8 +68,7 @@ const Team = () => {
     {
       name: 'Somnath',
       role: 'Web Lead',
-      handle: '💻 Development & Infrastructure',
-      emoji: '💻',
+      handle: 'Development & Infrastructure',
       color: '#3E2C1D',
       image: Somnath,
       social: 'https://www.linkedin.com/in/somnath-mukherjee-8b629b288/',
@@ -77,8 +76,7 @@ const Team = () => {
     {
       name: 'Naila',
       role: 'Web Co-Lead',
-      handle: '🧩 Frontend Integration & Support',
-      emoji: '🧩',
+      handle: 'Frontend Integration & Support',
       color: '#3E2C1D',
       image: Naila,
       social: 'https://www.linkedin.com/in/nailafarooque/',
@@ -86,8 +84,7 @@ const Team = () => {
     {
       name: 'Abhishek',
       role: 'Web Associate',
-      handle: '⚙ Technical Implementation',
-      emoji: '⚙',
+      handle: 'Technical Implementation',
       color: '#3E2C1D',
       image: 'https://avatars.githubusercontent.com/u/122656682?v=4',
       social: 'https://www.linkedin.com/in/abhishek-nexgen-dev',
@@ -95,8 +92,7 @@ const Team = () => {
     {
       name: 'Anjali',
       role: 'Web Associate',
-      handle: '🧠 Backend & Content Management',
-      emoji: '🧠',
+      handle: 'Backend & Content Management',
       color: '#3E2C1D',
       image: 'https://avatars.githubusercontent.com/u/160884550?v=4',
       social: 'https://www.linkedin.com/in/anjali-tomar713',
@@ -105,9 +101,8 @@ const Team = () => {
     // 🥉 3rd Hierarchy — PR & Outreach
     {
       name: 'Agnij Dutta',
-      role: 'PR & Outreach Team Lead',
-      handle: '📢 Public Relations & Partnerships',
-      emoji: '📢',
+      role: 'PR & Outreach Lead',
+      handle: 'Public Relations & Partnerships',
       color: '#3E2C1D',
       image: Agnij,
       social: 'https://www.linkedin.com/in/agnij-dutta/',
@@ -115,8 +110,7 @@ const Team = () => {
     {
       name: 'Vivek Yadav',
       role: 'PR & Outreach Co-Lead',
-      handle: '📞 Communication & Coordination',
-      emoji: '📞',
+      handle: 'Communication & Coordination',
       color: '#3E2C1D',
       image: '',
       social: '',
@@ -126,8 +120,7 @@ const Team = () => {
     {
       name: 'Shreyashi Debnath',
       role: 'Management Lead',
-      handle: '📊 Operations & Oversight',
-      emoji: '📊',
+      handle: 'Operations & Oversight',
       color: '#3E2C1D',
       image: Shreyanshi,
       social: 'https://www.linkedin.com/in/shreyashi-debnath-aa73942b4/',
@@ -135,8 +128,7 @@ const Team = () => {
     {
       name: 'Rouson Das',
       role: 'Management Lead',
-      handle: '🗂 Planning & Coordination',
-      emoji: '🗂',
+      handle: 'Planning & Coordination',
       color: '#3E2C1D',
       image: Rouson,
       social: 'https://www.linkedin.com/in/rouson-das-563b52284/',
@@ -146,8 +138,7 @@ const Team = () => {
     {
       name: 'Shuvrajit',
       role: 'Social Media Lead',
-      handle: '📱 Branding & Digital Growth',
-      emoji: '📱',
+      handle: 'Branding & Digital Growth',
       color: '#3E2C1D',
       image: Shuvrajit,
       social: 'https://www.linkedin.com/in/shuvrajit-majhi-7a337b2b8/',
@@ -155,8 +146,7 @@ const Team = () => {
     {
       name: 'Pushkar Das',
       role: 'Social Media Co-Lead',
-      handle: '💬 Content & Engagement',
-      emoji: '💬',
+      handle: 'Content & Engagement',
       color: '#3E2C1D',
       image: Pushkar,
       social: '',
@@ -226,9 +216,7 @@ const Team = () => {
                         className="w-full py-3 px-4 rounded-md text-center font-semibold text-[#3E2C1D] shadow-md"
                         style={{ backgroundColor: member.color }}
                       >
-                        <span className="text-lg text-[#F3E5C1]">
-                          {member.emoji} {member.role}
-                        </span>
+                        <span className="text-lg text-[#F3E5C1]">{member.role}</span>
                       </div>
                     </div>
                   }

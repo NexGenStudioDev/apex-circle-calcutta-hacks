@@ -33,10 +33,13 @@ const Navbar = () => {
         scrolled ? 'bg-[#f4e5c2]/95 shadow-lg border-b-4 border-[#3E2C1D]' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-7 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Left Side - Logo and Title */}
-          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+          <Link
+            to="/"
+            className="flex items-center space-x-3 hover:opacity-80 transition-opacity -ml-2 sm:-ml-4"
+          >
             <div className="w-12 h-12 border-4 border-[#3E2C1D] bg-[#D4AF37] flex items-center justify-center">
               <Code className="text-[#3E2C1D]" size={24} />
             </div>
@@ -100,13 +103,6 @@ const Navbar = () => {
                   >
                     Judges
                   </a>
-                  <Link
-                    to="/Contact"
-                    className="block px-4 py-2 text-[#3E2C1D] hover:bg-[#D4AF37] transition-colors"
-                    onClick={() => setDropdownOpen(false)}
-                  >
-                    Contact
-                  </Link>
                 </div>
               )}
             </div>
