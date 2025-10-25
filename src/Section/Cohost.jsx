@@ -4,6 +4,13 @@ import OrnateBorder from '../components/OrnateBorder';
 import { VintageCard } from './Tracks';
 import { Link } from 'react-router-dom';
 
+import {
+  
+  FaFacebook,
+  FaLinkedin,
+  FaWhatsapp,
+} from 'react-icons/fa';
+
 const Cohost = () => (
   <section id="cohost" className="py-14 sm:py-16 md:py-20 relative bg-[#F4E5C2]/20 overflow-hidden">
     <div className="absolute top-0 left-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#D4AF37]/10 rounded-full blur-2xl sm:blur-3xl"></div>
@@ -14,7 +21,7 @@ const Cohost = () => (
       <div className="text-center mb-8 sm:mb-16">
         <h2 className="font-display text-3xl sm:text-5xl md:text-6xl font-bold text-[#3E2C1D] mb-4 relative inline-block">
           ABOUT THE CO-HOST
-          <div className="absolute -bottom-4 left-0 w-full h-1 bg-[#D4AF37] transform -skew-x-12"></div>
+          <div className="absolute -bottom-4 left-0 w-full h-1 bg-[#D4AF37] -skew-x-12"></div>
         </h2>
       </div>
 
@@ -32,15 +39,8 @@ const Cohost = () => (
                 <div className="absolute bottom-0 right-0 w-3/4 h-3/4 bg-[#D4AF37]/10"></div>
               </div>
 
-              <h3 className="font-display text-2xl sm:text-4xl font-bold text-[#3E2C1D] mb-4 sm:mb-6 relative group">
-                <span className="ml-[1rem] sm:ml-[1.5rem]"> GDGoC TIU</span>
-                <span className="absolute left-0 top-[40%] -translate-y-1/2 text-[#D4AF37] opacity-70">
-                  &lt;{' '}
-                </span>
-                <span className="absolute right-2 sm:right-1 top-1/2 -translate-y-1/2 text-[#D4AF37] opacity-70">
-                  /&gt;
-                </span>
-                <div className="absolute -bottom-3 sm:-bottom-4 left-3 sm:left-6 w-[30%] h-1 bg-[#D4AF37] transform -skew-x-12"></div>
+              <h3 className="font-display text-2xl sm:text-4xl font-bold text-[#3E2C1D] mb-6">
+                <span className="ml-6">&lt; GDGoC TIU /&gt;</span>
               </h3>
 
               <div className="font-serif space-y-3 sm:space-y-5">
@@ -164,28 +164,38 @@ const Cohost = () => (
                 </div>
               </div>
 
-              {/* Social section */}
-              <div className="relative bg-[#F4E5C2]/70 p-4 sm:p-6 border-2 border-[#3E2C1D] rounded-sm shadow-md overflow-hidden">
-                <div className="absolute -top-4 sm:-top-6 -right-4 sm:-right-6 w-10 sm:w-16 h-10 sm:h-16 border-4 sm:border-8 border-[#D4AF37]/20 rounded-full"></div>
-                <div className="relative">
-                  <h4 className="font-display text-base sm:text-lg font-bold text-[#3E2C1D] mb-3 sm:mb-5 flex items-center">
-                    <Award size={16} sm:size={20} className="mr-1 sm:mr-2 text-[#D4AF37]" />
-                    Connect with GDGoC TIU
-                  </h4>
-                  <div className="flex gap-2 sm:gap-4 mb-4 sm:mb-6 flex-wrap">
-                    {/* Social links unchanged (svg size can be made responsive as above) */}
-                    {/* ... */}
-                  </div>
-                  <div className="mt-4 mb-0 bg-[#3E2C1D]/5 p-2 sm:p-4 rounded-sm border-l-2 border-[#D4AF37]">
-                    <div className="flex items-center gap-1 sm:gap-2 mb-1 sm:mb-2">
-                      <Calendar size={16} sm:size={18} className="text-[#D4AF37]" />
-                      <span className="font-serif font-medium">Upcoming Events </span>
-                    </div>
-                    <div className="font-serif text-xs sm:text-sm text-[#6B4423] pl-4 sm:pl-6">
-                      Follow our social media for information about upcoming workshops, meetups, and
-                      hackathons!
-                    </div>
-                  </div>
+              <div className="relative bg-[#F4E5C2]/70 p-6 border-2 border-[#3E2C1D] rounded-sm shadow-md overflow-hidden">
+                <h4 className="font-display text-lg font-bold text-[#3E2C1D] mb-4 flex items-center">
+                  <Award size={20} className="mr-2 text-[##3e2c1d]" /> Connect with GDGoC TIU
+                </h4>
+
+                <div className="px-[1.2vw] flex gap-[1.5rem] font-serif">
+                  <a
+                    href="https://www.facebook.com/gdsctiu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
+                  >
+                    <FaFacebook size={28} className="text-[##3e2c1d]" />
+                  </a>
+
+                  <a
+                    href="https://x.com/gdsc_tiu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
+                  >
+                    <p className='text-[#3E2C1D] text-[2rem]'>X</p>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/company/gdsc-tiu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
+                  >
+                    <FaLinkedin size={28} className="text-[##3e2c1d]" />
+                  </a>
                 </div>
               </div>
             </div>
