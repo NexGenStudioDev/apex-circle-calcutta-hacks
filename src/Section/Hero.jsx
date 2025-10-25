@@ -10,21 +10,22 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaTwitterSquare,
   FaWhatsapp,
 } from 'react-icons/fa';
+import { SiBento } from "react-icons/si";
+import { RiGroupFill } from "react-icons/ri";
 
 const iconsPanel1 = [
   {
     icon: FaInstagram,
     link: 'https://www.instagram.com/apex_circle_official?igsh=NHRsbDU1YmNteXE4',
   },
-  { icon: FaTwitterSquare, link: 'https://bento.me/apex-circle-official' },
+  { icon: SiBento, link: 'https://bento.me/apex-circle-official' },
   { icon: FaLinkedinIn, link: 'https://www.linkedin.com/company/apex-circle-official/' },
 ];
 
 const iconsPanel2 = [
-  { icon: FaGithub, link: 'https://www.commudle.com/users/apexcircle' },
+  { icon: RiGroupFill, link: 'https://www.commudle.com/users/apexcircle' },
   { icon: FaDiscord, link: 'https://discord.gg/ZF7f6wJYGX' },
   { icon: FaWhatsapp, link: 'https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc' },
 ];
