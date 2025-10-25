@@ -17,9 +17,12 @@ import { Phone } from 'lucide-react';
 import { Link } from 'react-router';
 import { Code } from 'lucide-react';
 import { RiGroupFill } from 'react-icons/ri';
+
 import { GiCableStayedBridge, GiIndianPalace } from 'react-icons/gi';
 import { MdOutlineTram } from 'react-icons/md';
 import { GrBus } from 'react-icons/gr';
+
+
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
