@@ -6,6 +6,8 @@ body {
 body {
   font-family: 'Cinzel';
   font-weight: 900;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 h1,

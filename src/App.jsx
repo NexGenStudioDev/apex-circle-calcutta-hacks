@@ -18,12 +18,10 @@ import OurPartners from './Section/OurPartners.jsx';
 import Cohost from './Section/Cohost.jsx';
 import FAQ from './Section/Faq.jsx';
 
-
-
 function App() {
   return (
     <Theme>
-     <Navbar />
+      <Navbar />
       <Hero />
       {/* <Sponsor /> */}
       <About />
@@ -33,7 +31,7 @@ function App() {
       <Host />
       <Cohost />
       {/* <Gallery /> */}
-  
+
       <Mentors />
       <Judges />
       <Team />
@@ -42,12 +40,8 @@ function App() {
       <AvatarCardGenerator />
       <FAQ />
       <Footer />
-      
     </Theme>
   );
 }
 
 export default App;
-
-
-

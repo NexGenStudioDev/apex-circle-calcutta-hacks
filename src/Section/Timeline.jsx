@@ -27,8 +27,8 @@ const Timeline = () => {
           opacity: 1,
           x: 0,
           duration: 0.8,
-          ease: 'power2.out',
-          stagger: 0.1,
+          ease: 'circ.in',
+          stagger: 0.05,
           scrollTrigger: {
             trigger: event,
             start: 'top bottom-=100',

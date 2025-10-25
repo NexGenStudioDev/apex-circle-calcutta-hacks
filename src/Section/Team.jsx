@@ -148,9 +148,7 @@ const Team = () => {
     },
   ];
 
-  
-
-  const getSocialIcon = (url) => {
+  const getSocialIcon = url => {
     if (url.includes('linkedin')) return <Linkedin size={20} />;
     if (url.includes('github')) return <Github size={20} />;
     if (url.includes('twitter')) return <Twitter size={20} />;

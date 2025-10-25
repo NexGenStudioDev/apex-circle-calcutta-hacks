@@ -11,22 +11,25 @@ const CommunityPartners = () => {
       icon: Users,
       location: 'Kolkata',
       events: 12,
+      comingSoon: false,
     },
     {
       name: 'Local Devs',
       note: 'Meetups & Support',
       description: 'Monthly tech meetups and workshops for local developers.',
-      icon: Calendar,
+      icon: Users,
       location: 'Kolkata & Howrah',
       events: 24,
+      comingSoon: true,
     },
     {
       name: 'University Clubs',
       note: 'Student Partners',
       description: 'Empowering the next generation of tech leaders.',
-      icon: MapPin,
+      icon: Users,
       location: 'Multiple Campuses',
       events: 8,
+      comingSoon: true,
     },
   ];
 
@@ -56,21 +59,35 @@ const CommunityPartners = () => {
                     <Icon size={24} />
                   </div>
 
-                  <div className="font-display text-2xl font-bold text-[#3E2C1D] mb-1 relative">
-                    {partner.name}
-                    <div className="h-0.5 w-0 bg-[#D4AF37] absolute left-1/2 -bottom-1 transform -translate-x-1/2 group-hover:w-24 transition-all duration-500"></div>
-                  </div>
+                  {!partner.comingSoon ? (
+                    <div>
+                      <div className="font-display text-2xl font-bold text-[#3E2C1D] mb-1 relative">
+                        {partner.name}
+                        <div className="h-0.5 w-0 bg-[#D4AF37] absolute left-1/2 -bottom-1 transform -translate-x-1/2 group-hover:w-24 transition-all duration-500"></div>
+                      </div>
 
-                  <div className="font-serif text-[#6B4423] font-medium mb-4">{partner.note}</div>
+                      <div className="font-serif text-[#6B4423] font-medium mb-4">
+                        {partner.note}
+                      </div>
 
-                  <p className="font-serif text-[#6B4423]/80 mb-4 text-sm px-4">
-                    {partner.description}
-                  </p>
+                      <p className="font-serif text-[#6B4423]/80 mb-4 text-sm px-4">
+                        {partner.description}
+                      </p>
 
-                  <div className="mt-auto border-t border-[#3E2C1D]/10 pt-3 px-3 flex justify-between text-sm font-serif text-[#6B4423]">
-                    <span>📍 {partner.location}</span>
-                    <span>🗓️ {partner.events} Events/Year</span>
-                  </div>
+                      <div className="mt-auto border-t border-[#3E2C1D]/10 pt-3 px-3 flex justify-between text-sm font-serif text-[#6B4423]">
+                        <span>📍 {partner.location}</span>
+                        <span>🗓️ {partner.events} Events/Year</span>
+                      </div>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="font-display text-2xl font-bold text-[#3E2C1D] mb-6 relative">
+                        <div className="font-display text-2xl font-bold text-[#3E2C1D] mb-6 relative"></div>
+                        Coming Soon
+                        <div className="h-0.5 w-0 bg-[#D4AF37] absolute left-1/2 -bottom-1 transform -translate-x-1/2 group-hover:w-24 transition-all duration-500"></div>
+                      </div>
+                    </>
+                  )}
                 </VintageCard>
               </div>
             );
