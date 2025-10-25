@@ -3,7 +3,6 @@ import { Map, MapPin, Award } from 'lucide-react';
 import ETH from '../../src/assets/Icon/ethIndia.png';
 import xyz from '../../src/assets/Icon/.xyz.png';
 
-
 // VintageCard component with black/dark border, inner gold border, and proper padding
 const VintageCard = ({ children, className = '' }) => {
   return (
@@ -41,9 +40,7 @@ const OurPartners = () => {
                 <div className="w-16 h-16 bg-[#332518] rounded-full flex items-center justify-center">
                   <Map className="text-[#C9A22C]" size={32} />
                 </div>
-                <h3 className="font-display text-3xl font-bold text-[#332518]">
-                  Venue Partner
-                </h3>
+                <h3 className="font-display text-3xl font-bold text-[#332518]">Venue Partner</h3>
               </div>
 
               <div className="mb-6">
@@ -98,15 +95,11 @@ const OurPartners = () => {
                 <div className="w-16 h-16 bg-[#3E2C1D] rounded-full flex items-center justify-center">
                   <Award className="text-[#D4AF37]" size={32} />
                 </div>
-                <h3 className="font-display text-3xl font-bold text-[#3E2C1D]">
-                  SILVER SPONSOR
-                </h3>
+                <h3 className="font-display text-3xl font-bold text-[#3E2C1D]">SILVER SPONSOR</h3>
               </div>
 
               <div className="mb-6">
-                <h4 className="font-display text-2xl font-bold text-[#6B4423] mb-4">
-                  ETH INDIA
-                </h4>
+                <h4 className="font-display text-2xl font-bold text-[#6B4423] mb-4">ETH INDIA</h4>
                 <p className="font-serif text-[#6B4423]/90 mb-4">
                   Empowering the future of hackathons
                 </p>
@@ -122,54 +115,41 @@ const OurPartners = () => {
             </div>
 
             <div className="bg-[#e8d9b6] p-2 rounded-lg border-4 border-[#3E2C1D] flex items-center justify-center">
-              <img
-                src={ETH}
-                alt="ETH India Logo"
-                className="max-h-[120px] object-contain"
-              />
+              <img src={ETH} alt="ETH India Logo" className="max-h-[120px] object-contain" />
             </div>
           </div>
         </VintageCard>
-          <VintageCard className="mb-16">
-  <div className="grid md:grid-cols-2 gap-8 items-center">
-    <div>
-      <div className="flex items-center gap-4 mb-6">
-        <div className="w-16 h-16 bg-[#3E2C1D] rounded-full flex items-center justify-center">
-          <Award className="text-[#D4AF37]" size={32} />
-        </div>
-        <h3 className="font-display text-3xl font-bold text-[#3E2C1D]">
-          DOMAIN SPONSOR
-        </h3>
-      </div>
+        <VintageCard className="mb-16">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-[#3E2C1D] rounded-full flex items-center justify-center">
+                  <Award className="text-[#D4AF37]" size={32} />
+                </div>
+                <h3 className="font-display text-3xl font-bold text-[#3E2C1D]">DOMAIN SPONSOR</h3>
+              </div>
 
-      <div className="mb-6">
-        <h4 className="font-display text-2xl font-bold text-[#6B4423] mb-4">
-          .xyz
-        </h4>
-        <p className="font-serif text-[#6B4423]/90 mb-4 italic">
-          “For every website, everywhere.”
-        </p>
-        <a
-          href="https://gen.xyz/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-[#6B4423] hover:text-[#3E2C1D] font-medium transition-colors"
-        >
-          Visit Website
-        </a>
-      </div>
-    </div>
+              <div className="mb-6">
+                <h4 className="font-display text-2xl font-bold text-[#6B4423] mb-4">Gen xyz</h4>
+                <p className="font-serif text-[#6B4423]/90 mb-4 italic">
+                  “For every website, everywhere.”
+                </p>
+                <a
+                  href="https://gen.xyz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-[#6B4423] hover:text-[#3E2C1D] font-medium transition-colors"
+                >
+                  Visit Website
+                </a>
+              </div>
+            </div>
 
-    <div className="bg-[#e8d9b6] p-2 rounded-lg border-4 border-[#3E2C1D] flex items-center justify-center">
-      <img
-        src={xyz}
-        alt=".xyz Logo"
-        className="max-h-[120px] object-contain"
-      />
-    </div>
-  </div>
-</VintageCard>
-
+            <div className="bg-[#e8d9b6] p-2 rounded-lg border-4 border-[#3E2C1D] flex items-center justify-center">
+              <img src={xyz} alt=".xyz Logo" className="max-h-[120px] object-contain" />
+            </div>
+          </div>
+        </VintageCard>
 
         {/* Partner CTA */}
         <div className="text-center">
