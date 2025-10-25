@@ -17,6 +17,7 @@ import { Phone } from 'lucide-react';
 import { Link } from 'react-router';
 import { Code } from 'lucide-react';
 import commudle from '../../src/assets/Icon/commudle-logo128.png';
+import whatsappIcon from '../../src/assets/Icon/WhatsApp-icone.png';
 
 const CommudleIcon = ({ size, className }) => (
   <img 
@@ -26,6 +27,20 @@ const CommudleIcon = ({ size, className }) => (
       width: size, 
       height: size,
       filter: 'brightness(0) saturate(100%) invert(93%) sepia(4%) saturate(1122%) hue-rotate(316deg) brightness(106%) contrast(96%)'
+    }}
+    className={className}
+  />
+);
+
+const WhatsAppIcon = ({ size, className }) => (
+  <img 
+    src={whatsappIcon} 
+    alt="WhatsApp"
+    style={{ 
+      width: size, 
+      height: size,
+      filter: 'brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(175deg) brightness(96%) contrast(106%)'
+
     }}
     className={className}
   />
@@ -173,13 +188,13 @@ const Footer = () => {
               </a>
 
               <a
-                href="'https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc'"
+                href="https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
               >
                 <div className="w-10 h-10 bg-[#F4E5C2]/10 border border-[#F4E5C2]/20 rounded-sm flex items-center justify-center mr-2 group-hover:bg-[#D4AF37]/20 group-hover:border-[#D4AF37] transition-colors">
-                  <Twitter size={18} className="text-[#F4E5C2] group-hover:text-[#D4AF37]" />
+                  <WhatsAppIcon size={18} className="group-hover:opacity-75 transition-opacity" />
                 </div>
                 <span className="font-serif group-hover:text-[#D4AF37] transition-colors">
                   WhatsApp

@@ -5,6 +5,7 @@ import apexLogo from '../../src/assets/Icon/apexlogo.png';
 import SocialIcons from '../components/ui/SocialIcon';
 import devfolio from '../../src/assets/Devfolio.png';
 import commudle from '../../src/assets/Icon/commudle-logo128.png';
+import bento from '../../src/assets/Icon/bento.png';
 
 import {
   FaDiscord,
@@ -13,15 +14,6 @@ import {
   FaTwitterSquare,
   FaWhatsapp,
 } from 'react-icons/fa';
-
-const iconsPanel1 = [
-  {
-    icon: FaInstagram,
-    link: 'https://www.instagram.com/apex_circle_official?igsh=NHRsbDU1YmNteXE4',
-  },
-  { icon: FaTwitterSquare, link: 'https://bento.me/apex-circle-official' },
-  { icon: FaLinkedinIn, link: 'https://www.linkedin.com/company/apex-circle-official/' },
-];
 
 const CommudleIcon = ({ size, className }) => (
   <img 
@@ -35,6 +27,31 @@ const CommudleIcon = ({ size, className }) => (
     className={className}
   />
 );
+
+const bentoIcon = ({ size, className }) => (
+  <img 
+    src={bento}
+    alt="Bento"
+    style={{ 
+      width: size, 
+      height: size,
+      filter: 'brightness(0) saturate(100%) invert(19%) sepia(14%) saturate(1111%) hue-rotate(356deg) brightness(92%) contrast(89%)'
+    }}
+    className={className}
+  />
+);
+
+const iconsPanel1 = [
+  {
+    icon: FaInstagram,
+    link: 'https://www.instagram.com/apex_circle_official?igsh=NHRsbDU1YmNteXE4',
+  },
+  {
+    icon:  bentoIcon,
+    link: 'https://bento.me/apex-circle-official/',
+  },
+  { icon: FaLinkedinIn, link: 'https://www.linkedin.com/company/apex-circle-official/' },
+];
 
 const iconsPanel2 = [
   { icon: CommudleIcon, link: 'https://www.commudle.com/users/apexcircle' },
