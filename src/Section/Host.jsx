@@ -1,5 +1,13 @@
 import React from 'react';
 import { Mail, Target, Sparkles, Users, Globe, Award } from 'lucide-react';
+import {
+  FaDiscord,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitterSquare,
+  FaWhatsapp,
+} from 'react-icons/fa';
 import OrnateBorder from '../components/OrnateBorder';
 import { VintageCard } from './Tracks';
 import { Link } from 'react-router-dom';
@@ -131,35 +139,35 @@ const Host = () => (
               {/* Social Section */}
               <div className="relative bg-[#F4E5C2]/70 p-6 border-2 border-[#3E2C1D] rounded-sm shadow-md overflow-hidden">
                 <h4 className="font-display text-lg font-bold text-[#3E2C1D] mb-4 flex items-center">
-                  <Award size={20} className="mr-2 text-[#D4AF37]" /> Connect with Apex Circle
+                  <Award size={20} className="mr-2 text-[##3e2c1d]" /> Connect with Apex Circle
                 </h4>
 
-                <div className="flex flex-col gap-3 font-serif">
+                <div className="px-[1.2vw] flex gap-[1.5rem] font-serif">
                   <a
                     href="https://discord.com/channels/1430501551306444844/1430503120500166729"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-[#3E2C1D] hover:underline"
+                    className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
-                    🔹 Join our Discord Community
+                    <FaDiscord size={28} className="text-[##3e2c1d]" />
                   </a>
 
                   <a
                     href="https://www.linkedin.com/company/apex-circle-official/posts/?feedView=all"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-[#3E2C1D] hover:underline"
+                    className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
-                    🔹 Follow us on LinkedIn
+                    <FaLinkedinIn size={28} className="text-[##3e2c1d]" />
                   </a>
 
                   <a
                     href="https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-[#3E2C1D] hover:underline"
+                    className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
-                    🔹 Join our WhatsApp Group
+                    <FaWhatsapp size={28} className="text-[##3e2c1d]" />
                   </a>
                 </div>
               </div>

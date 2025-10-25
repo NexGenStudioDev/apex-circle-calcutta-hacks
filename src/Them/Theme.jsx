@@ -13,12 +13,10 @@ const Theme = ({ children }) => {
 
   requestAnimationFrame(raf);
 
-
-
-  gsap.ticker.add((time) => {
+  gsap.ticker.add(time => {
     lenis.raf(time * 1000);
   });
-  
+
   gsap.ticker.lagSmoothing(0);
 
   return (
