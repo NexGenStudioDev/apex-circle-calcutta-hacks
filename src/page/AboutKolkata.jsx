@@ -19,11 +19,18 @@ const CulcuttaInfo = {
     "Calcutta, officially known as Kolkata, is the dynamic capital of West Bengal, India. Celebrated as the 'City of Joy,' it stands as a vibrant hub of art, culture, literature, and intellectual legacy. Blending its colonial-era architecture with modern infrastructure, Calcutta serves as a major center for commerce, education, and technology in Eastern India. Situated along the eastern bank of the Hooghly River, the city harmoniously integrates heritage with innovation—making it one of India’s most influential urban landscapes.",
   highlights: [
     {
-      title: 'Victoria Memorial',
+      title: 'Sir Rajendra Nath Mookherjee',
       image:
-        'https://images.unsplash.com/photo-1697127997429-4155a247fece?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471',
+        'https://indroyc.com/wp-content/uploads/2023/10/f7plid0boaamllz.jpg?w=900',
       description:
-        'A grand marble building dedicated to the memory of Queen Victoria, now a museum and popular tourist destination.',
+        'Hand-pulled rickshaws are an iconic part of Kolkata, relating to the city\'s historic mode of transport and making them an important part of its heritage.',
+    },
+    {
+      title: 'Partiton of Bengal',
+      image:
+        'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/partition.jpeg',
+      description:
+        'Kolkata was the first city in India to experience the Partition of Bengal, which created new boundaries and had a lasting impact on the city\'s social and cultural landscape.',
     },
     {
       title: 'Howrah Bridge',
@@ -33,10 +40,38 @@ const CulcuttaInfo = {
         'An iconic cantilever bridge over the Hooghly River, connecting Culcutta and Howrah.',
     },
     {
+      title: 'Hand Rikhshaw',
+      image:
+        'https://assets.telegraphindia.com/telegraph/2023/Aug/1692971151_2.jpg',
+      description:
+        'Hand-pulled rickshaws are an iconic part of Kolkata, relating to the city\'s historic mode of transport and reflecting its unique cultural heritage.',
+    },
+    {
+      title: 'First Tram In Kolkata',
+      image:
+        'https://assets.telegraphindia.com/telegraph/2022/Feb/1644921554_old-tram-depot-chowringhee.jpg',
+      description:
+        'Kolkata was the first city in India to introduce trams, which relates to its unique history as the only Indian city where trams still run today.',
+    },
+    {
+      title: 'First Mtero In Kolkata',
+      image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDnIFQC4nUlFMEk59oOURwKvijmW26wtvEfg&s',
+      description:
+        'Kolkata was the first city in India to have a metro railway, which started operations in 1984 and remains a pride of the city.',
+    },
+    {
       title: 'Indian Museum',
       image: 'https://indianmuseumkolkata.org/im_cont/uploads/2022/04/banner2.jpg',
       description:
         'The oldest and largest museum in India, housing rare collections of antiques, armor, ornaments, fossils, and paintings.',
+    },
+    {
+      title: 'Victoria Memorial',
+      image:
+        'https://images.unsplash.com/photo-1697127997429-4155a247fece?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471',
+      description:
+        'A grand marble building dedicated to the memory of Queen Victoria, now a museum and popular tourist destination.',
     },
     {
       title: 'Dakshineswar Kali Temple',
@@ -46,6 +81,7 @@ const CulcuttaInfo = {
         'A famous Hindu temple on the eastern bank of the Hooghly River, dedicated to goddess Kali.',
     },
     {
+
       title: 'Jadavpur University',
       image: 'https://live.staticflickr.com/3090/2631200343_a2937561d6_b.jpg',
       description:
@@ -58,6 +94,7 @@ const CulcuttaInfo = {
       description:
         'A leading public research university in Kolkata, known for its academic excellence, innovation, and vibrant intellectual culture.',
     },
+
   ],
   facts: [
     'Famous for its sweets like rasgulla and sandesh.',
@@ -204,6 +241,7 @@ const AboutCulcutta = () => {
             relaxation={0.9}
             className="custom-class"
           />
+
 
           <div className=" absolute top-0 left-0 w-full h-screen pointer-events-none flex items-center justify-center text-[#3E2C1D]">
             <div className=" w-full h-full ">
