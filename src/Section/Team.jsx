@@ -13,6 +13,7 @@ import Souvik from '../../src/assets/Team/Souvik.jpg';
 import Yuvraj from '../../src/assets/Team/yuvraj.jpg';
 import Shuvrajit from '../../src/assets/Team/Shuvrajit.jpg';
 import AbhishekGupta from '../../src/assets/Team/AbhishekGupta.jpg';
+import VivekYadav from '../../src/assets/Team/VivekYadav.jpeg';
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
@@ -87,7 +88,7 @@ const Team = () => {
       role: 'Web Associate',
       handle: 'Technical Implementation',
       color: '#3E2C1D',
-      image: "https://avatars.githubusercontent.com/u/122656682?v=4",
+      image: 'https://avatars.githubusercontent.com/u/122656682?v=4',
       social: 'https://www.linkedin.com/in/abhishek-nexgen-dev',
     },
     {
@@ -113,8 +114,8 @@ const Team = () => {
       role: 'PR & Outreach Co-Lead',
       handle: 'Communication & Coordination',
       color: '#3E2C1D',
-      image: '',
-      social: '',
+      image: VivekYadav,
+      social: 'https://www.linkedin.com/in/yadav-vivek123',
     },
 
     // 🧩 4th Hierarchy — Management
@@ -179,10 +180,10 @@ const Team = () => {
           speed={95}
           gradient={false}
           pauseOnHover
-         loop={0}
-         style={{ transition: 'transform 0.8s ease-in-out' }}
-         autoFill={true}
-         delay={1}
+          loop={0}
+          style={{ transition: 'transform 0.8s ease-in-out' }}
+          autoFill={true}
+          delay={1}
           className="py-10 space-x-3 transform-3d translate-0.5 duration-300"
         >
           {team.map((member, i) => (
@@ -220,7 +221,9 @@ const Team = () => {
                         className="w-full py-3 px-4 rounded-md text-center font-semibold text-[#3E2C1D] shadow-md"
                         style={{ backgroundColor: member.color }}
                       >
-                        <div className="w-full bg-[#f4e5c2] h-fit text-[#3e2c1d] font-bold rounded-md text-lg">{member.name}</div>
+                        <div className="w-full bg-[#f4e5c2] h-fit text-[#3e2c1d] font-bold rounded-md text-lg">
+                          {member.name}
+                        </div>
                         <span className="text-md text-[#F3E5C1]">{member.role}</span>
                       </div>
                     </div>
