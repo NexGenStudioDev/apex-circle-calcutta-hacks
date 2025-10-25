@@ -561,8 +561,10 @@ export default function LiquidEther({
             px: { value: simProps.cellScale },
             force: { value: new THREE.Vector2(0.0, 0.0) },
             center: { value: new THREE.Vector2(0.0, 0.0) },
+
             scale: { value: new THREE.Vector2(simProps.cursor_size, simProps.cursor_size) },
           },
+
         });
         this.mouse = new THREE.Mesh(mouseG, mouseM);
         this.scene.add(this.mouse);
@@ -600,6 +602,7 @@ export default function LiquidEther({
               velocity_new: { value: simProps.dst_.texture },
               v: { value: simProps.viscous },
               px: { value: simProps.cellScale },
+
               dt: { value: simProps.dt },
             },
           },
@@ -639,10 +642,12 @@ export default function LiquidEther({
               boundarySpace: { value: simProps.boundarySpace },
               velocity: { value: simProps.src.texture },
               px: { value: simProps.cellScale },
+
               dt: { value: simProps.dt },
             },
           },
           output: simProps.dst,
+
         });
         this.init();
       }
@@ -662,12 +667,14 @@ export default function LiquidEther({
               boundarySpace: { value: simProps.boundarySpace },
               pressure: { value: simProps.dst_.texture },
               divergence: { value: simProps.src.texture },
+
               px: { value: simProps.cellScale },
             },
           },
           output: simProps.dst,
           output0: simProps.dst_,
           output1: simProps.dst,
+
         });
         this.init();
       }
@@ -700,10 +707,12 @@ export default function LiquidEther({
               pressure: { value: simProps.src_p.texture },
               velocity: { value: simProps.src_v.texture },
               px: { value: simProps.cellScale },
+
               dt: { value: simProps.dt },
             },
           },
           output: simProps.dst,
+
         });
         this.init();
       }
@@ -728,6 +737,7 @@ export default function LiquidEther({
           isViscous: false,
           BFECC: true,
           ...options,
+
         };
         this.fbos = {
           vel_0: null,
@@ -737,6 +747,7 @@ export default function LiquidEther({
           div: null,
           pressure_0: null,
           pressure_1: null,
+
         };
         this.fboSize = new THREE.Vector2();
         this.cellScale = new THREE.Vector2();
@@ -761,7 +772,7 @@ export default function LiquidEther({
           minFilter: THREE.LinearFilter,
           magFilter: THREE.LinearFilter,
           wrapS: THREE.ClampToEdgeWrapping,
-          wrapT: THREE.ClampToEdgeWrapping,
+
         };
         for (let key in this.fbos) {
           this.fbos[key] = new THREE.WebGLRenderTarget(this.fboSize.x, this.fboSize.y, opts);
@@ -774,11 +785,14 @@ export default function LiquidEther({
           dt: this.options.dt,
           src: this.fbos.vel_0,
           dst: this.fbos.vel_1,
+
         });
         this.externalForce = new ExternalForce({
           cellScale: this.cellScale,
           cursor_size: this.options.cursor_size,
+
           dst: this.fbos.vel_1,
+
         });
         this.viscous = new Viscous({
           cellScale: this.cellScale,
@@ -787,21 +801,27 @@ export default function LiquidEther({
           src: this.fbos.vel_1,
           dst: this.fbos.vel_viscous1,
           dst_: this.fbos.vel_viscous0,
+
           dt: this.options.dt,
+
         });
         this.divergence = new Divergence({
           cellScale: this.cellScale,
           boundarySpace: this.boundarySpace,
           src: this.fbos.vel_viscous0,
           dst: this.fbos.div,
+
           dt: this.options.dt,
+
         });
         this.poisson = new Poisson({
           cellScale: this.cellScale,
           boundarySpace: this.boundarySpace,
           src: this.fbos.div,
           dst: this.fbos.pressure_1,
+
           dst_: this.fbos.pressure_0,
+
         });
         this.pressure = new Pressure({
           cellScale: this.cellScale,
@@ -809,7 +829,9 @@ export default function LiquidEther({
           src_p: this.fbos.pressure_0,
           src_v: this.fbos.vel_viscous0,
           dst: this.fbos.vel_0,
+
           dt: this.options.dt,
+
         });
       }
       calcSize() {
@@ -835,24 +857,32 @@ export default function LiquidEther({
         this.advection.update({
           dt: this.options.dt,
           isBounce: this.options.isBounce,
+
           BFECC: this.options.BFECC,
+
         });
         this.externalForce.update({
           cursor_size: this.options.cursor_size,
           mouse_force: this.options.mouse_force,
+
           cellScale: this.cellScale,
+
         });
         let vel = this.fbos.vel_1;
         if (this.options.isViscous) {
           vel = this.viscous.update({
             viscous: this.options.viscous,
             iterations: this.options.iterations_viscous,
+
             dt: this.options.dt,
+
           });
         }
         this.divergence.update({ vel });
         const pressure = this.poisson.update({
+
           iterations: this.options.iterations_poisson,
+
         });
         this.pressure.update({ vel, pressure });
       }
@@ -877,8 +907,10 @@ export default function LiquidEther({
               velocity: { value: this.simulation.fbos.vel_0.texture },
               boundarySpace: { value: new THREE.Vector2() },
               palette: { value: paletteTex },
+
               bgColor: { value: bgVec4 },
             },
+
           })
         );
         this.scene.add(this.output);
@@ -915,7 +947,9 @@ export default function LiquidEther({
           enabled: props.autoDemo,
           speed: props.autoSpeed,
           resumeDelay: props.autoResumeDelay,
+
           rampDuration: props.autoRampDuration,
+
         });
         this.init();
         this._loop = this.loop.bind(this);
@@ -991,6 +1025,7 @@ export default function LiquidEther({
       takeoverDuration,
       autoResumeDelay,
       autoRampDuration,
+
     });
     webglRef.current = webgl;
 
@@ -1010,6 +1045,7 @@ export default function LiquidEther({
         BFECC,
         resolution,
         isBounce,
+
       });
       if (resolution !== prevRes) {
         sim.resize();
@@ -1087,6 +1123,7 @@ export default function LiquidEther({
     takeoverDuration,
     autoResumeDelay,
     autoRampDuration,
+
   ]);
 
   useEffect(() => {
@@ -1106,6 +1143,7 @@ export default function LiquidEther({
       BFECC,
       resolution,
       isBounce,
+
     });
     if (webgl.autoDriver) {
       webgl.autoDriver.enabled = autoDemo;
@@ -1137,6 +1175,7 @@ export default function LiquidEther({
     takeoverDuration,
     autoResumeDelay,
     autoRampDuration,
+
   ]);
 
   return (

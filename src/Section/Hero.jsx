@@ -5,15 +5,9 @@ import apexLogo from '../../src/assets/Icon/apexlogo.png';
 import SocialIcons from '../components/ui/SocialIcon';
 import devfolio from '../../src/assets/Devfolio.png';
 
-import {
-  FaDiscord,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaWhatsapp,
-} from 'react-icons/fa';
-import { SiBento } from "react-icons/si";
-import { RiGroupFill } from "react-icons/ri";
+import { FaDiscord, FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { SiBento } from 'react-icons/si';
+import { RiGroupFill } from 'react-icons/ri';
 
 const iconsPanel1 = [
   {
@@ -73,7 +67,7 @@ const Hero = () => (
         <SocialIcons icons={iconsPanel2} position="right" />
 
         <div className="p-0.5 md:p-10 lg:p-12 aged-paper">
-          <img src={apexLogo} alt="Logo" className=" mx-auto w-32 h-32 object-contain" />
+          <img src={apexLogo} alt="Logo" className="  h-[5rem] w-[20rem]  mx-auto object-contain" />
           {/* Tagline */}
           <div className="flex justify-center items-start mb-6">
             <div className="inline-block border-4 border-[#3E2C1D] px-6 py-2 bg-[#D4AF37]">
@@ -106,17 +100,17 @@ const Hero = () => (
           <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-8">
             <div className="flex items-center gap-2 font-serif text-base md:text-lg">
               <Calendar className="text-[#6B4423] flex-shrink-0" size={20} />
-              <span>13-14 Dec 2025</span>
+              <span className="font-medium">13-14 Dec 2025</span>
             </div>
             <div className="hidden md:block w-px h-6 bg-[#3E2C1D]"></div>
             <div className="flex items-center gap-2 font-serif text-base md:text-lg">
               <MapPin className="text-[#6B4423] flex-shrink-0" size={20} />
-              <span>Kolkata, WB</span>
+              <span className="font-medium">Kolkata, WB</span>
             </div>
             <div className="hidden md:block w-px h-6 bg-[#3E2C1D]"></div>
-            <div className="flex items-center gap-2 font-serif text-base md:text-lg">
+            <div className="flex items-center gap-2 font-serif text-base md:text-lgs">
               <Users className="text-[#6B4423] flex-shrink-0" size={20} />
-              <span>160+ Hackers</span>
+              <span className="font-medium">160+ Hackers</span>
             </div>
           </div>
 
