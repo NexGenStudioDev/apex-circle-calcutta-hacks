@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import Theme from "../Them/Theme";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import React, { useState } from 'react';
+import Theme from '../Them/Theme';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    issueType: "",
-    issueDescription: "",
+    name: '',
+    email: '',
+    issueType: '',
+    issueDescription: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async event => {
     event.preventDefault();
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          access_key: "my key",
+          access_key: 'my key',
           ...formData,
         }),
       });
@@ -29,19 +29,19 @@ function ContactForm() {
       const result = await response.json();
       console.log(result); // Debugging
       if (result.success) {
-        alert("Issue reported successfully!");
-        setFormData({ name: "", email: "", issueType: "", issueDescription: "" });
+        alert('Issue reported successfully!');
+        setFormData({ name: '', email: '', issueType: '', issueDescription: '' });
       } else {
-        alert("Failed to report the issue. Please try again.");
+        alert('Failed to report the issue. Please try again.');
       }
     } catch (error) {
-      alert("An error occurred. Please try again.");
+      alert('An error occurred. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -56,27 +56,22 @@ function ContactForm() {
           <div
             className="w-[80vw] p-8 bg-white rounded-lg shadow-lg border-2 border-[#3e2c1d]"
             style={{
-              background: "linear-gradient(135deg, #F4E5C2, #EBDBB9)",
-              boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
+              background: 'linear-gradient(135deg, #F4E5C2, #EBDBB9)',
+              boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
               fontFamily: "'Poppins', sans-serif",
             }}
           >
             <h2
               className="text-center text-3xl font-bold text-[#3E2C1D] mb-6"
-              style={{ fontWeight: "bold" }}
+              style={{ fontWeight: 'bold' }}
             >
               Report Your Issue
             </h2>
-            <form action="https://api.web3forms.com/submit" method="POST"  onSubmit={handleSubmit}>
-
-
-            <input type="hidden" name="access_key" value="39c40613-05ef-4f9c-85c2-14987e7f86c9" />
+            <form action="https://api.web3forms.com/submit" method="POST" onSubmit={handleSubmit}>
+              <input type="hidden" name="access_key" value="39c40613-05ef-4f9c-85c2-14987e7f86c9" />
 
               <div className="mb-6">
-                <label
-                  htmlFor="name"
-                  className="block text-[#3E2C1D] font-semibold mb-2"
-                >
+                <label htmlFor="name" className="block text-[#3E2C1D] font-semibold mb-2">
                   Name
                 </label>
                 <input
@@ -90,10 +85,7 @@ function ContactForm() {
               </div>
 
               <div className="mb-6">
-                <label
-                  htmlFor="email"
-                  className="block text-[#3E2C1D] font-semibold mb-2"
-                >
+                <label htmlFor="email" className="block text-[#3E2C1D] font-semibold mb-2">
                   Email
                 </label>
                 <input
@@ -107,10 +99,7 @@ function ContactForm() {
               </div>
 
               <div className="mb-6">
-                <label
-                  htmlFor="issueType"
-                  className="block text-[#3E2C1D] font-semibold mb-2"
-                >
+                <label htmlFor="issueType" className="block text-[#3E2C1D] font-semibold mb-2">
                   Issue Type
                 </label>
                 <select
@@ -152,11 +141,11 @@ function ContactForm() {
                 disabled={isSubmitting}
                 className={`w-full py-3 text-lg font-semibold text-white rounded-lg transition-all ${
                   isSubmitting
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-[#3E2C1D] hover:bg-[#6B4423]"
+                    ? 'bg-gray-400 cursor-not-allowed'
+                    : 'bg-[#3E2C1D] hover:bg-[#6B4423]'
                 }`}
               >
-                {isSubmitting ? "Submitting..." : "Submit Issue"}
+                {isSubmitting ? 'Submitting...' : 'Submit Issue'}
               </button>
             </form>
           </div>
