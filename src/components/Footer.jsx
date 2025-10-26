@@ -22,7 +22,6 @@ import { GiCableStayedBridge, GiIndianPalace } from 'react-icons/gi';
 import { MdOutlineTram } from 'react-icons/md';
 import { GrBus } from 'react-icons/gr';
 
-
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
@@ -153,7 +152,7 @@ const Footer = () => {
             </h3>
             <div className="grid grid-cols-2 gap-4 mb-4">
               <a
-                href="https://www.linkedin.com/company/apex-circle-official/"
+                href="https://links.calcuttahacks.xyz/linkedin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
@@ -167,7 +166,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="'https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc'"
+                href="https://links.calcuttahacks.xyz/whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
@@ -181,7 +180,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/apex_circle_official/?igsh=NHRsbDU1YmNteXE4#"
+                href="https://links.calcuttahacks.xyz/instagram"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
@@ -195,7 +194,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.commudle.com/communities/apex-circle"
+                href="https://links.calcuttahacks.xyz/commudle"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
