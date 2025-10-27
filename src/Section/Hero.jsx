@@ -175,7 +175,7 @@ const Hero = () => (
 
             {/* Discord */}
             <a
-              href="https://discord.com/invite/ZF7f6wJYGX"
+              href="https://links.calcuttahacks.xyz/discord"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative flex items-center justify-center px-8 py-4 text-white font-display font-bold rounded-md overflow-hidden transition-all duration-300 transform hover:scale-105 
