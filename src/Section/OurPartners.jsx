@@ -154,13 +154,13 @@ const OurPartners = () => {
         {/* Partner CTA */}
         <div className="text-center">
           <h3 className="font-display text-2xl font-bold text-[#332518] mb-8">
-            Want to partner with us?
+            Want to Sponsor us?
           </h3>
           <a
             href="https://links.calcuttahacks.xyz/partner-with-us"
             className="inline-block bg-[#332518] text-[#F2E2C0] px-8 py-3 text-lg font-display font-bold border-4 border-[#332518] hover:bg-[#7D5B3D] hover:border-[#7D5B3D] transition-all duration-300"
           >
-            Become a Partner
+            Become a Sponsor
           </a>
         </div>
       </div>

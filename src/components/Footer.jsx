@@ -210,11 +210,11 @@ const Footer = () => {
 
             <div className="mt-6 flex flex-col gap-4">
               <a
-                href="mailto:apexcircleofficial2025@gmail.com"
+                href="mailto:support@calcuttahacks.xyz"
                 className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
               >
                 <Mail size={16} className="mr-2 text-[#D4AF37]" />
-                apexcircleofficial2025@gmail.com
+                support@calcuttahacks.xyz
               </a>
 
               <a
