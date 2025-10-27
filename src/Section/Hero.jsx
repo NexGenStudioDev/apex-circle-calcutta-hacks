@@ -12,16 +12,16 @@ import { RiGroupFill } from 'react-icons/ri';
 const iconsPanel1 = [
   {
     icon: FaInstagram,
-    link: 'https://www.instagram.com/apex_circle_official?igsh=NHRsbDU1YmNteXE4',
+    link: 'https://links.calcuttahacks.xyz/instagram',
   },
-  { icon: SiBento, link: 'https://bento.me/apex-circle-official' },
-  { icon: FaLinkedinIn, link: 'https://www.linkedin.com/company/apex-circle-official/' },
+  { icon: SiBento, link: 'https://links.calcuttahacks.xyz/bento' },
+  { icon: FaLinkedinIn, link: 'https://links.calcuttahacks.xyz/linkedin' },
 ];
 
 const iconsPanel2 = [
-  { icon: RiGroupFill, link: 'https://www.commudle.com/users/apexcircle' },
-  { icon: FaDiscord, link: 'https://discord.gg/ZF7f6wJYGX' },
-  { icon: FaWhatsapp, link: 'https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc' },
+  { icon: RiGroupFill, link: 'https://links.calcuttahacks.xyz/commudle' },
+  { icon: FaDiscord, link: 'https://links.calcuttahacks.xyz/discord' },
+  { icon: FaWhatsapp, link: 'https://links.calcuttahacks.xyz/whatsapp ' },
 ];
 
 const Hero = () => (
@@ -167,9 +167,9 @@ const Hero = () => (
                     </g>
                   </g>
                 </svg>
-                <span className="text-white font-display font-bold text-lg">Apply with Devfolio </span>
-        
-                
+                <span className="text-white font-display font-bold text-lg">
+                  Apply with Devfolio{' '}
+                </span>
               </div>
             </a>
 

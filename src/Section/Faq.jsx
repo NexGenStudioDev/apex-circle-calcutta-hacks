@@ -147,7 +147,7 @@ const FAQ = () => {
           <div className="border-4 border-[#3E2C1D] bg-[#D4AF37] inline-block px-8 py-4">
             <p className="font-serif text-lg text-[#3E2C1D] mb-2">Still have questions?</p>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScf5jeavldFGg9M_qiSvwma0RQbIopHbheT8H8hzu6ysTfLpg/viewform?usp=publish-editor"
+              href="https://links.calcuttahacks.xyz/contact-us"
               className="font-display font-bold text-xl text-[#3E2C1D] hover:text-white transition-colors underline"
             >
               Contact Us

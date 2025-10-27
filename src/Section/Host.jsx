@@ -76,7 +76,7 @@ const Host = () => (
                     className="text-[#D4AF37] group-hover:rotate-12 transition-transform"
                   />
                   <a
-                    href="https://bento.me/apex-circle-official"
+                    href="https://links.calcuttahacks.xyz/bento"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline decoration-[#D4AF37]/30 hover:decoration-[#D4AF37]"
@@ -150,7 +150,7 @@ const Host = () => (
 
                 <div className="px-[1.2vw] flex gap-[1.5rem] font-serif">
                   <a
-                    href="https://discord.com/channels/1430501551306444844/1430503120500166729"
+                    href="https://links.calcuttahacks.xyz/discord"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
@@ -159,7 +159,7 @@ const Host = () => (
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/company/apex-circle-official/posts/?feedView=all"
+                    href="https://links.calcuttahacks.xyz/linkedin"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
@@ -168,7 +168,7 @@ const Host = () => (
                   </a>
 
                   <a
-                    href="https://chat.whatsapp.com/ENhpfDXhjnF1x72DbMLcne?mode=wwc"
+                    href="https://links.calcuttahacks.xyz/whatsapp"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
