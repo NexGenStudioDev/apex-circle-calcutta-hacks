@@ -104,6 +104,7 @@ const CommunityPartners = () => {
           </p>
           <a
             href="https://links.calcuttahacks.xyz/partner-with-us"
+            target="_blank"
             className="inline-block bg-[#332518] text-[#F2E2C0] px-8 py-3 text-lg font-display font-bold border-4 border-[#332518] hover:bg-[#7D5B3D] hover:border-[#7D5B3D] transition-all duration-300"
           >
             Become a Partner

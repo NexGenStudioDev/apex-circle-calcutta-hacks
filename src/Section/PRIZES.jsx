@@ -67,7 +67,7 @@ const PRIZES = () => {
                     <div className="relative w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent group-hover:translate-x-full transition-transform duration-1500 ease-in-out "></div>
                       <Icon
-                        className={`w-[70%] h-full ${idx === 0 ? 'text-[#D4AF37]' : 'text-[#6B4423] my-2.5'}`}
+                        className={`w-[70%] h-full mx-auto ${idx === 0 ? 'text-[#D4AF37]' : 'text-[#6B4423] my-2.5'}`}
                       />
                     </div>
 
@@ -80,7 +80,7 @@ const PRIZES = () => {
                       {prize.amount}
                     </div>
 
-                    <div className="font-serif text-[#6B4423] group-hover:font-medium transition-all duration-300">
+                    <div className="font-serif text-[#6B4423] transition-all duration-300">
                       {prize.perks}
                     </div>
                   </div>
@@ -102,7 +102,7 @@ const PRIZES = () => {
           </div>
 
           <div className="relative z-10">
-            <h3 className="font-display text-3xl font-bold text-[#3E2C1D] mb-4 flex items-center justify-center">
+            <h3 className="font-display text-3xl font-bold text-[#3E2C1D] mb-4 mt-4 flex items-center justify-center">
               <Award className="mr-3 text-[#D4AF37]" size={32} />
               <span>Additional Prizes</span>
             </h3>
