@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
             <div className="flex items-start mb-3 font-serif">
               <MapPin className="mr-2 text-[#D4AF37] mt-1 flex-shrink-0" size={16} />
-              <span>EM-4, EM-4/1, EM Block, Sector V, Bidhannagar, Kolkata, West Bengal 70009</span>
+              <span>Techno India University, Sector V, Bidhannagar, Kolkata, West Bengal 700091</span>
             </div>
           </div>
 

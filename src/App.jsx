@@ -34,9 +34,9 @@ function App() {
 
       <Mentors />
       <Judges />
+      <OurPartners />
       <Team />
       <CommunityPartners />
-      <OurPartners />
       <AvatarCardGenerator />
       <FAQ />
       <Footer />
