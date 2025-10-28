@@ -14,6 +14,9 @@ import Yuvraj from '../../src/assets/Team/yuvraj.jpg';
 import Shuvrajit from '../../src/assets/Team/Shuvrajit.jpg';
 import AbhishekGupta from '../../src/assets/Team/AbhishekGupta.jpg';
 import VivekYadav from '../../src/assets/Team/VivekYadav.jpeg';
+import Subhasish from '../../src/assets/Team/Subhasish.jpg';
+import Piush from '../../src/assets/Team/Piyush.jpg';
+import Ritabrata from '../../src/assets/Team/Rito.jpg';
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
@@ -65,6 +68,33 @@ const Team = () => {
       image: Abhishek,
       social: 'https://www.linkedin.com/in/avishek-mukherjee-1011a2235/',
     },
+    {
+      name: 'Subhasish Chanda',
+      role: 'Co-Organizer',
+      handle: '🤝 Strategic Alliances & Guidance',
+      emoji: '🤝',
+      color: '#3E2C1D',
+      image: Subhasish,
+      social: 'https://www.linkedin.com/in/subhasish-chanda/',
+    },
+    {
+      name: 'Piush Bose',
+      role: 'Co-Organizer',
+      handle: '🤝 Strategic Alliances & Guidance',
+      emoji: '🤝',
+      color: '#3E2C1D',
+      image: Piush,
+      social: 'https://www.linkedin.com/in/bosepiush/',
+    },
+    {
+      name: 'Ritabrata Nayek',
+      role: 'Co-Organizer',
+      handle: '🤝 Strategic Alliances & Guidance',
+      emoji: '🤝',
+      color: '#3E2C1D',
+      image: Ritabrata,
+      social: 'https://www.linkedin.com/in/ritabrata-nayek-7263572a4/',
+    },
 
     // 🥈 2nd Hierarchy — Web Team
     {
@@ -83,23 +113,7 @@ const Team = () => {
       image: Naila,
       social: 'https://www.linkedin.com/in/nailafarooque/',
     },
-    {
-      name: 'Abhishek Kumar',
-      role: 'Web Associate',
-      handle: 'Technical Implementation',
-      color: '#3E2C1D',
-      image: 'https://avatars.githubusercontent.com/u/122656682?v=4',
-      social: 'https://www.linkedin.com/in/abhishek-nexgen-dev',
-    },
-    {
-      name: 'Anjali Tomar',
-      role: 'Web Associate',
-      handle: 'Backend & Content Management',
-      color: '#3E2C1D',
-      image: 'https://avatars.githubusercontent.com/u/160884550?v=4',
-      social: 'https://www.linkedin.com/in/anjali-tomar713',
-    },
-
+    
     // 🥉 3rd Hierarchy — PR & Outreach
     {
       name: 'Agnij Dutta',
@@ -117,7 +131,7 @@ const Team = () => {
       image: VivekYadav,
       social: 'https://www.linkedin.com/in/yadav-vivek123',
     },
-
+    
     // 🧩 4th Hierarchy — Management
     {
       name: 'Shreyashi Debnath',
@@ -135,10 +149,10 @@ const Team = () => {
       image: Rouson,
       social: 'https://www.linkedin.com/in/rouson-das-563b52284/',
     },
-
+    
     // 💬 5th Hierarchy — Social Media
     {
-      name: 'Shuvrajit',
+      name: 'Shuvrajit Majhi',
       role: 'Social Media Lead',
       handle: 'Branding & Digital Growth',
       color: '#3E2C1D',
@@ -153,8 +167,24 @@ const Team = () => {
       image: Pushkar,
       social: '',
     },
+    {
+      name: 'Abhishek Kumar',
+      role: 'Web Associate',
+      handle: 'Technical Implementation',
+      color: '#3E2C1D',
+      image: 'https://avatars.githubusercontent.com/u/122656682?v=4',
+      social: 'https://www.linkedin.com/in/abhishek-nexgen-dev',
+    },
+    {
+      name: 'Anjali Tomar',
+      role: 'Web Associate',
+      handle: 'Backend & Content Management',
+      color: '#3E2C1D',
+      image: 'https://avatars.githubusercontent.com/u/160884550?v=4',
+      social: 'https://www.linkedin.com/in/anjali-tomar713',
+    },
   ];
-
+  
   const getSocialIcon = url => {
     if (url.includes('linkedin')) return <Linkedin size={20} />;
     if (url.includes('github')) return <Github size={20} />;

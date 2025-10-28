@@ -91,6 +91,13 @@ const Navbar = () => {
               {dropdownOpen && (
                 <div className="absolute top-full mt-2 right-0 bg-[#f4e5c2] border-2 border-[#3E2C1D] shadow-lg rounded-md py-2 min-w-[120px]">
                   <a
+                    href="#sponsors"
+                    className="block px-4 py-2 text-[#3E2C1D] hover:bg-[#D4AF37] transition-colors"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Sponsors
+                  </a>
+                  <a
                     href="#team"
                     className="block px-4 py-2 text-[#3E2C1D] hover:bg-[#D4AF37] transition-colors"
                     onClick={() => setDropdownOpen(false)}
@@ -103,13 +110,6 @@ const Navbar = () => {
                     onClick={() => setDropdownOpen(false)}
                   >
                     Partners
-                  </a>
-                  <a
-                    href="#sponsors"
-                    className="block px-4 py-2 text-[#3E2C1D] hover:bg-[#D4AF37] transition-colors"
-                    onClick={() => setDropdownOpen(false)}
-                  >
-                    Sponsors
                   </a>
                   <a
                     href="#faq"

@@ -109,22 +109,13 @@ const PRIZES = () => {
 
             <div className="grid md:grid-cols-3 gap-6 font-serif text-lg text-[#6B4423]">
               <div className="p-3 hover:bg-[#F4E5C2]/50 rounded transition-colors duration-300">
-                🏆 Best Heritage Tech Solution
+                🏆 To Be Declared
               </div>
               <div className="p-3 hover:bg-[#F4E5C2]/50 rounded transition-colors duration-300">
-                🏆 Best Women's Team
+                🏆 To Be Declared
               </div>
               <div className="p-3 hover:bg-[#F4E5C2]/50 rounded transition-colors duration-300">
-                🏆 Best First-Time Hackers
-              </div>
-              <div className="p-3 hover:bg-[#F4E5C2]/50 rounded transition-colors duration-300">
-                🏆 Most Innovative Idea
-              </div>
-              <div className="p-3 hover:bg-[#F4E5C2]/50 rounded transition-colors duration-300">
-                🏆 Best UI/UX Design
-              </div>
-              <div className="p-3 hover:bg-[#F4E5C2]/50 rounded transition-colors duration-300">
-                🏆 People's Choice Award
+                🏆 To Be Declared
               </div>
             </div>
           </div>

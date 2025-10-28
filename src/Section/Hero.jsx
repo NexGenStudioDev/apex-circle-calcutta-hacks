@@ -110,7 +110,7 @@ const Hero = () => (
             <div className="hidden md:block w-px h-6 bg-[#3E2C1D]"></div>
             <div className="flex items-center gap-2 font-serif text-base md:text-lg">
               <MapPin className="text-[#6B4423] flex-shrink-0" size={20} />
-              <span className="font-medium">Kolkata, WB</span>
+              <span className="font-medium">TIU, Kolkata</span>
             </div>
             <div className="hidden md:block w-px h-6 bg-[#3E2C1D]"></div>
             <div className="flex items-center gap-2 font-serif text-base md:text-lgs">

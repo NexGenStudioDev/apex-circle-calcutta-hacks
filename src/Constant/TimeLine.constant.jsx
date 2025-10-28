@@ -11,37 +11,39 @@ import {
   FaClipboardCheck,
   FaMedal,
   FaMugHot,
-  FaCalendarAlt,
+  FaMicrophone,
+  FaGuitar,
 } from 'react-icons/fa';
+import { MdFastfood } from 'react-icons/md';
 
 export const day1Events = [
   {
-    time: '10:30 AM',
+    time: '7:30 AM',
     title: 'Registration',
     description:
       'Registration desk opens. Collect your badges, swag bags, and get ready for an exciting hackathon experience!',
     icon: <FaUserCheck className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '11:30 AM',
+    time: '8:30 AM',
     title: 'Opening Ceremony',
     description:
       'Welcome address, introduction of judges and mentors, and a brief overview of the hackathon rules and expectations.',
-    icon: <FaFlag className="text-[#b09355] text-2xl" />,
+    icon: <FaUsers className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '12:00 PM',
+    time: '9:30 AM',
     title: 'Sponsor Session',
     description:
       'Engage with our sponsors to learn about their products and services, and how they can help you during the hackathon.',
     icon: <FaCode className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '1:00 PM',
+    time: '10:00 AM',
     title: 'Hackathon Starts',
     description:
       'The clock starts ticking! Begin working on your innovative solutions to the hackathon challenges.',
-    icon: <FaUsers className="text-[#b09355] text-2xl" />,
+    icon: <FaFlag className="text-[#b09355] text-2xl" />,
   },
   {
     time: '1:30 PM',
@@ -69,42 +71,42 @@ export const day1Events = [
     title: 'Tea Break',
     description:
       'Take a short break from coding with our surprise fun activity to refresh your mind.',
-    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
+    icon: <FaMugHot className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '8:30 PM',
+    time: '9:00 PM',
     title: 'Dinner',
     description:
       'Refuel with a delicious dinner while discussing project ideas with fellow participants.',
-    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
+    icon: <FaUtensils className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '10:00 PM',
+    time: '10:30 PM',
     title: 'Evaluation Round 1',
     description:
       'Present your progress to the judges and receive feedback to improve your project further.',
-    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
+    icon: <FaClipboardCheck className="text-[#b09355] text-2xl" />,
   },
 ];
 
 export const day2Events = [
   {
     time: '12:00 AM',
-    title: 'Music & Midnight Snacks',
+    title: 'Music, Standup Comedy & Midnight Snacks',
     description: 'Enjoy some music and snacks to keep your energy up during the night.',
-    icon: <FaMugHot className="text-[#b09355] text-2xl" />,
+    icon: <FaGuitar className="text-[#b09355] text-2xl" />,
   },
   {
-    time: '1:00 AM',
+    time: '2:00 AM',
     title: 'Mini Games',
     description: 'Another engaging activity to keep the energy high as we progress into the night',
-    icon: <FaClipboardCheck className="text-[#b09355] text-2xl" />,
+    icon: <FaGamepad className="text-[#b09355] text-2xl" />,
   },
   {
     time: '8:00 AM',
     title: 'Breakfast',
     description: 'Final breakfast before the submission deadline. Make the most of it!',
-    icon: <FaUtensils className="text-[#b09355] text-2xl" />,
+    icon: <MdFastfood className="text-[#b09355] text-2xl" />,
   },
   {
     time: '9:00 AM',
@@ -127,9 +129,9 @@ export const day2Events = [
   },
   {
     time: '11:15 AM',
-    title: 'Technical Conference/Speaker',
+    title: 'Technical Conference/Speaker Session',
     description: 'Engaging talks from industry experts to inspire and educate participants.',
-    icon: <FaTrophy className="text-[#b09355] text-2xl" />,
+    icon: <FaMicrophone className="text-[#b09355] text-2xl" />,
   },
   {
     time: '12:00 PM',

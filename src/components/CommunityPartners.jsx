@@ -11,7 +11,7 @@ const CommunityPartners = () => {
       icon: Users,
       location: 'Kolkata',
       events: 12,
-      comingSoon: false,
+      comingSoon: true,
     },
     {
       name: 'Local Devs',

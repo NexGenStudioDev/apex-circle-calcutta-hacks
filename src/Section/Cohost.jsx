@@ -45,24 +45,19 @@ const Cohost = () => (
 
               <div className="font-serif space-y-3 sm:space-y-5">
                 <p className="text-base sm:text-lg text-[#6B4423] leading-relaxed">
-                  Google Developer Groups on Campus – Techno India University (GDGoC TIU)* is a
-                  vibrant student community for innovators, developers, and technology enthusiasts.
-                  We provide a platform where ideas transform into impactful solutions through
-                  collaboration, learning, and creativity.
+                  Google Developer Groups on Campus, Techno India University (formerly GDSC TIU),
+                  established in 2017, has become a key part of the university’s tech culture
+                  through its peer-to-peer learning model. The community unites students across
+                  disciplines to explore, build, and grow through technology.
                 </p>
                 <p className="text-base sm:text-lg text-[#6B4423] leading-relaxed">
-                  At *GDG on Campus TIU, we aim to help students enhance their technical depth and
-                  problem-solving abilities by hosting **workshops, hackathons, speaker sessions,
-                  and study jams* across various domains such as *Web Development, Android, AI/ML,
-                  Cloud, Cybersecurity*, and more. Our peer-to-peer learning environment encourages
-                  curiosity, teamwork, and hands-on exploration of Google technologies and beyond.
+                  It regularly hosts sessions on AI/ML, Cybersecurity, Web Development, DevOps,
+                  Android Development, Robotics, and Blockchain. Its flagship hackathon, TechXtreme,
+                  promotes innovation by challenging participants to solve real-world problems and
+                  create meaningful projects. GDG on Campus TIU continues to inspire learners to
+                  collaborate, innovate, and shape their futures, one skill at a time.
                 </p>
-                <p className="text-base sm:text-lg text-[#6B4423] leading-relaxed font-medium">
-                  Whether you're a beginner taking your first step into tech or an advanced
-                  developer eager to innovate, *GDG TIU* is the space to learn, grow, and make a
-                  difference — together as a community. 🌐💡
-                </p>
-                <div className="KnowMoreAboutKolataBtn  px-4 py-2 sm:py-4 text-center bg-[#3E2C1D] text-[#ecdcb8] rounded-lg">
+                <div className="KnowMoreAboutKolataBtn px-4 py-2 sm:py-4 text-center bg-[#3E2C1D] text-[#ecdcb8] rounded-lg">
                   <Link
                     to="https://gdg.community.dev/gdg-on-campus-techno-india-university-kolkata-india/
 "
