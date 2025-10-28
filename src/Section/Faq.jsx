@@ -148,6 +148,8 @@ const FAQ = () => {
             <p className="font-serif text-lg text-[#3E2C1D] mb-2">Still have questions?</p>
             <a
               href="https://links.calcuttahacks.xyz/contact-us"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-display font-bold text-xl text-[#3E2C1D] hover:text-white transition-colors underline"
             >
               Contact Us

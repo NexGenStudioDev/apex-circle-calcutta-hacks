@@ -49,14 +49,14 @@ const Footer = () => {
               {/* <Landmark className="mr-2 text-[#D4AF37]" size={39} /> */}
               <Link
                 to="/"
-                className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
+                className="flex items-center hover:opacity-80 transition-opacity"
               >
-                <div className="w-[1.75rem] h-[1.75rem] border-4 border-[#3E2C1D] bg-[#D4AF37] flex items-center justify-center">
+                <div className="w-[1.75rem] h-[1.75rem] border-4 mr-2 p-1 border-[#3E2C1D] bg-[#D4AF37] flex items-center justify-center">
                   <Code className="text-[#3E2C1D]" size={18} />
                 </div>
 
-                <span>
-                  Calcutta <span className="text-[#D4AF37]">&lt;Hacks/&gt;</span>
+                <span className="flex">
+                  Calcutta <span className="text-[#D4AF37] ml-1">&lt;Hacks/&gt;</span>
                 </span>
               </Link>
             </div>
@@ -243,24 +243,19 @@ const Footer = () => {
             <p className="font-serif text-sm mb-4">
               Stay updated with the latest news and announcements for Calcutta &lt;Hacks/&gt;
             </p>
-            <form onSubmit={handleSubmit} className="space-y-3">
-              <div className="relative">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  placeholder="Enter your email"
-                  className="w-full bg-[#F4E5C2]/10 border border-[#F4E5C2]/20 text-[#F4E5C2] px-4 py-2 rounded-sm focus:outline-none focus:border-[#D4AF37] font-serif"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#D4AF37] text-[#3E2C1D] w-8 h-8 flex items-center justify-center rounded-sm hover:bg-[#F4E5C2] transition-colors"
-                >
-                  <ArrowRight size={16} />
-                </button>
+            <a 
+              href="https://links.calcuttahacks.xyz/Join-Newsletter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center h-10 w-full px-8 py-2 rounded-md overflow-hidden 
+                          bg-[#D4AF37] text-[#3E2C1D] transition-all duration-300 transform hover:scale-105">
+              <span className="absolute inset-0 bg-[linear-gradient(90deg,#D4AF37_0%,#ffdd86_50%,#D4AF37_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <div className="relative z-10 flex items-center justify-center w-full h-full">
+                <span className="font-display font-bold text-xs sm:text-sm md:text-base">
+                  Join Newsletter
+                </span>
               </div>
-            </form>
+            </a>
 
             {/* Calcutta Icons */}
             <div className="mt-8">

@@ -84,7 +84,7 @@ const PRIZES = () => {
                       {prize.amount}
                     </div>
 
-                    <div className="font-serif text-[#6B4423] group-hover:font-medium transition-all duration-300">
+                    <div className="font-serif text-[#6B4423] transition-all duration-300">
                       {prize.perks}
                     </div>
                   </div>
@@ -106,7 +106,7 @@ const PRIZES = () => {
           </div>
 
           <div className="relative z-10">
-            <h3 className="font-display text-3xl font-bold text-[#3E2C1D] mb-4 flex items-center justify-center">
+            <h3 className="font-display text-3xl font-bold text-[#3E2C1D] mb-4 mt-4 flex items-center justify-center">
               <Award className="mr-3 text-[#D4AF37]" size={32} />
               <span>Additional Prizes</span>
             </h3>

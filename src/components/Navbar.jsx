@@ -55,7 +55,8 @@ const Navbar = () => {
               { label: 'Timeline', link: '#timeline' },
               { label: 'Tracks', link: '#tracks' },
               { label: 'Prizes', link: '#prizes' },
-              { label: 'Team', link: '#team' },
+              { label: 'Mentors', link: '#mentors' },
+              { label: 'Judges', link: '#judges' },
             ].map(item => (
               <a
                 key={item.label}
@@ -90,30 +91,44 @@ const Navbar = () => {
               {dropdownOpen && (
                 <div className="absolute top-full mt-2 right-0 bg-[#f4e5c2] border-2 border-[#3E2C1D] shadow-lg rounded-md py-2 min-w-[120px]">
                   <a
-                    href="#mentors"
+                    href="#team"
                     className="block px-4 py-2 text-[#3E2C1D] hover:bg-[#D4AF37] transition-colors"
                     onClick={() => setDropdownOpen(false)}
                   >
-                    Mentors
+                    Team
                   </a>
                   <a
-                    href="#judges"
+                    href="#partners"
                     className="block px-4 py-2 text-[#3E2C1D] hover:bg-[#D4AF37] transition-colors"
                     onClick={() => setDropdownOpen(false)}
                   >
-                    Judges
+                    Partners
+                  </a>
+                  <a
+                    href="#sponsors"
+                    className="block px-4 py-2 text-[#3E2C1D] hover:bg-[#D4AF37] transition-colors"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Sponsors
+                  </a>
+                  <a
+                    href="#faq"
+                    className="block px-4 py-2 text-[#3E2C1D] hover:bg-[#D4AF37] transition-colors"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    FAQ's
                   </a>
                 </div>
               )}
             </div>
-            {/* <a
-              href="https://calcutta-lesshacksgreater.devfolio.co/"
+            <a
+              href="https://links.calcuttahacks.xyz/Join-Newsletter"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#D4AF37] text-[#3E2C1D] px-6 py-2 rounded-full font-bold border-2 border-[#D4AF37] hover:bg-[#f4e5c2] hover:border-[#D4AF37] transition-all duration-300 transform hover:scale-105"
             >
-              Register
-            </a> */}
+              Join Newsletter
+            </a>
           </div>
 
           {/* Mobile Menu Icon */}
@@ -143,15 +158,15 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
-            {/* <a
-              href="https://calcutta-lesshacksgreater.devfolio.co/"
+            <a
+              href="https://links.calcuttahacks.xyz/Join-Newsletter"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#D4AF37] text-[#3E2C1D] px-6 py-2 rounded-full font-bold border-2 border-[#D4AF37] hover:bg-[#f4e5c2] hover:border-[#D4AF37] transition-all duration-300 transform hover:scale-105"
               onClick={() => setMenuOpen(false)}
             >
-              Register
-            </a> */}
+              Join Newsletter
+            </a>
           </div>
         </div>
       )}

@@ -19,7 +19,7 @@ const VintageCard = ({ children, className = '' }) => {
 
 const OurPartners = () => {
   return (
-    <section id="partners" className="py-20 bg-[#F2E2C0]">
+    <section id="sponsors" className="py-20 bg-[#F2E2C0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-16">
@@ -157,7 +157,8 @@ const OurPartners = () => {
             Want to Sponsor us?
           </h3>
           <a
-            href="https://links.calcuttahacks.xyz/partner-with-us"
+            href="https://links.calcuttahacks.xyz/sponsor-us"
+            target="_blank"
             className="inline-block bg-[#332518] text-[#F2E2C0] px-8 py-3 text-lg font-display font-bold border-4 border-[#332518] hover:bg-[#7D5B3D] hover:border-[#7D5B3D] transition-all duration-300"
           >
             Become a Sponsor

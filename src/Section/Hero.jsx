@@ -87,9 +87,9 @@ const Hero = () => (
             <h1 className="font-display text-[9vw] sm:text-6xl md:text-7xl lg:text-8xl font-black text-[#3E2C1D] leading-tight">
               CALCUTTA
             </h1>
-            <div className="font-display text-[9vw] sm:text-6xl md:text-7xl lg:text-8xl font-black text-[#6B4423] leading-tight max-w-full whitespace-nowrap">
+            <h1 className="font-display text-[9vw] sm:text-6xl md:text-7xl lg:text-8xl font-black text-[#6B4423] leading-tight max-w-full whitespace-nowrap">
               &lt;HACKS/&gt;
-            </div>
+            </h1>
           </div>
 
           {/* Subtitle */}
@@ -121,14 +121,6 @@ const Hero = () => (
 
           {/* Buttons */}
           <div className="flex flex-wrap justify-center gap-6 items-center">
-            {/* REGISTER NOW */}
-            {/* <button className="group relative bg-[#3E2C1D] text-[#F4E5C2] px-12 py-4 text-xl font-display font-bold border-4 border-[#3E2C1D] hover:bg-[#6B4423] hover:border-[#6B4423] transition-all duration-300 transform hover:scale-105">
-              REGISTER NOW
-              <ChevronRight
-                className="inline-block ml-2 group-hover:translate-x-2 transition-transform"
-                size={24}
-              />
-            </button> */}
 
             {/* Devfolio */}
             <a
@@ -136,8 +128,8 @@ const Hero = () => (
               target="_blank"
               rel="noopener noreferrer"
               className="relative group inline-flex items-center justify-center h-14 px-8 py-2 rounded-md overflow-hidden transition-all duration-300 transform hover:scale-105 
-                         bg-[linear-gradient(90deg,#2E2E2E_0%,#2E2E2E_100%)] shadow-[0_4px_20px_rgba(0,0,0,0.2)] min-w-[200px]"
-            >
+              bg-[linear-gradient(90deg,#2E2E2E_0%,#2E2E2E_100%)] shadow-[0_4px_20px_rgba(0,0,0,0.2)] min-w-[200px]"
+              >
               <span className="absolute inset-0 bg-[linear-gradient(90deg,#2E2E2E_0%,#5A5A5A_50%,#2E2E2E_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
               <div className="relative z-10 flex items-center justify-center w-full h-full">
                 <svg
@@ -150,25 +142,40 @@ const Hero = () => (
                   enable-background="new 0 0 60.3 66.2"
                   version="1.1"
                   viewBox="0 0 60.3 66.2"
-                >
+                  >
                   <g id="Layer_2_1_">
                     <g id="Layer_1-2_1_">
                       <path
                         fill="#FFFFFF"
                         d="M60.3,36.4C60.3,52,48.6,64.7,33.8,66c0,0-19.1,0.5-25.4-0.1c-2.4-0.3-4.4-1.8-5.3-4c0.9,0.4,1.8,0.7,2.8,0.8
-			C8,62.9,11.5,63,16.4,63c7.2,0,15.1-0.2,15.1-0.2h0.1c7.9-0.7,15.2-4.3,20.4-10.2c4.5-5,7.4-11.3,8.2-17.9
-			C60.3,35.2,60.3,35.8,60.3,36.4z"
-                      ></path>
+                        C8,62.9,11.5,63,16.4,63c7.2,0,15.1-0.2,15.1-0.2h0.1c7.9-0.7,15.2-4.3,20.4-10.2c4.5-5,7.4-11.3,8.2-17.9
+                        C60.3,35.2,60.3,35.8,60.3,36.4z"
+                        ></path>
                       <path
                         fill="#FFFFFF"
                         d="M58,30c0,15.6-11.7,28.3-26.6,29.5c0,0-19.1,0.5-25.4-0.1c-3.4-0.3-5.9-3.5-6-7.1l0.1-45
-			c0.1-3.6,2.7-6.8,6.1-7.1c6.3-0.5,25.4,0.1,25.4,0.1C46.4,1.6,58,14.4,58,30z"
-                      ></path>
+                        c0.1-3.6,2.7-6.8,6.1-7.1c6.3-0.5,25.4,0.1,25.4,0.1C46.4,1.6,58,14.4,58,30z"
+                        ></path>
                     </g>
                   </g>
                 </svg>
-                <span className="text-white font-display font-bold text-lg">
+                <span className="text-white font-display font-bold text-xs sm:text-sm md:text-base">
                   Apply with Devfolio{' '}
+                </span>
+              </div>
+            </a>
+
+            {/* Join Newsletter */}
+            <a 
+              href="https://links.calcuttahacks.xyz/Join-Newsletter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center h-14 px-8 py-2 rounded-md overflow-hidden 
+                          bg-[#D4AF37] text-[#3E2C1D] transition-all duration-300 transform hover:scale-105">
+              <span className="absolute inset-0 bg-[linear-gradient(90deg,#D4AF37_0%,#ffdd86_50%,#D4AF37_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <div className="relative z-10 flex items-center justify-center w-full h-full">
+                <span className="font-display font-bold text-xs sm:text-sm md:text-base">
+                  Join Newsletter
                 </span>
               </div>
             </a>
@@ -193,7 +200,7 @@ const Hero = () => (
                   <path d="M60.104 4.552A58.345 58.345 0 0046.605 0a41.243 41.243 0 00-1.94 4.026 56.35 56.35 0 00-16.33 0A41.21 41.21 0 0026.395 0 58.339 58.339 0 0011.896 4.552C-2.117 24.07-1.313 43.27.104 47.41a58.563 58.563 0 0017.31 4.448 41.088 41.088 0 003.565-5.834 35.253 35.253 0 01-5.564-2.637c.468-.346.927-.71 1.372-1.085 10.88 5.08 22.652 5.08 33.493 0 .445.375.904.74 1.372 1.085a35.233 35.233 0 01-5.565 2.637 41.085 41.085 0 003.566 5.834 58.567 58.567 0 0017.31-4.448c1.417-4.14 2.22-23.34-11.794-42.858zM23.725 37.78c-3.171 0-5.778-2.899-5.778-6.473 0-3.575 2.573-6.473 5.778-6.473 3.22 0 5.822 2.899 5.778 6.473 0 3.574-2.558 6.473-5.778 6.473zm23.537 0c-3.171 0-5.778-2.899-5.778-6.473 0-3.575 2.573-6.473 5.778-6.473 3.22 0 5.822 2.899 5.778 6.473 0 3.574-2.558 6.473-5.778 6.473z" />
                 </svg>
 
-                <span>Join Discord</span>
+                <span className="text-white font-display font-bold text-xs sm:text-sm md:text-base">Join Discord</span>
               </div>
             </a>
           </div>
