@@ -1,7 +1,10 @@
 import React from 'react';
-import { Trophy, Award, Medal } from 'lucide-react';
+import { Award } from 'lucide-react';
 import { VintageCard } from './Tracks';
 import SpotlightCard from '../components/ui/SpotlightCard';
+import first from '../../src/assets/Icon/firstPlace.png';
+import second from '../../src/assets/Icon/secondPlace.png';
+import third from '../../src/assets/Icon/thirdPlace.png';
 
 const PRIZES = () => {
   const prizes = [
@@ -9,19 +12,19 @@ const PRIZES = () => {
       place: '1st',
       amount: 'To be declared ...',
       perks: 'Trophy + Medals + Mentorship',
-      icon: Trophy,
+      icon: first,
     },
     {
       place: '2nd',
       amount: 'To be declared ...',
       perks: 'Trophy + Medals + Goodies',
-      icon: Medal,
+      icon: second,
     },
     {
       place: '3rd',
       amount: 'To be declared ...',
       perks: 'Trophy + Medals + Goodies',
-      icon: Medal,
+      icon: third,
     },
   ];
 
@@ -32,7 +35,7 @@ const PRIZES = () => {
           <h2 className="font-display text-[6.7vw] lg:text-6xl font-bold text-[#3E2C1D] mb-4">
             PRIZES & PERKS
           </h2>
-          <div className="w-32 h-1  text-[2vw] bg-[#D4AF37] mx-auto mb-6"></div>
+          <div className="w-32 h-1 text-[2vw] bg-[#D4AF37] mx-auto mb-6"></div>
           <p className="font-serif lg:text-xl text-[#6B4423]">
             Total Prize Pool: <span className="font-bold">To be declared ...</span>
           </p>
@@ -40,7 +43,6 @@ const PRIZES = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {prizes.map((prize, idx) => {
-            const Icon = prize.icon;
             return (
               <div
                 key={idx}
@@ -53,9 +55,9 @@ const PRIZES = () => {
                 )}
 
                 <VintageCard
-                  className={`text-center relative overflow-hidden  ${idx === 0 ? 'md:scale-110 border-[#D4AF37]' : ''}`}
+                  className={`text-center relative overflow-hidden ${idx === 0 ? 'md:scale-110 border-[#D4AF37]' : ''}`}
                 >
-                  <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none ">
+                  <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
                     <svg viewBox="0 0 100 100" className="w-full h-full">
                       <circle cx="50" cy="50" r="40" stroke="#D4AF37" strokeWidth="2" fill="none" />
                       <circle cx="50" cy="50" r="30" stroke="#D4AF37" strokeWidth="2" fill="none" />
@@ -64,19 +66,21 @@ const PRIZES = () => {
                   </div>
 
                   <div className="relative z-10 flex flex-col items-center px-6 py-8">
-                    <div className="relative w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent group-hover:translate-x-full transition-transform duration-1500 ease-in-out "></div>
-                      <Icon
-                        className={`w-[70%] h-full ${idx === 0 ? 'text-[#D4AF37]' : 'text-[#6B4423] my-2.5'}`}
+                    <div className="relative w-32 h-32 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent group-hover:translate-x-full transition-transform duration-1500 ease-in-out"></div>
+                      <img
+                        src={prize.icon}
+                        alt={`${prize.place} Place`}
+                        className="w-full h-full object-contain"
                       />
                     </div>
 
-                    <div className="font-display text-[4.8vw] lg:text-4xl font-bold text-[#3E2C1D] mb-2 relative">
+                    <div className="font-display text-[3.8vw] lg:text-3xl font-bold text-[#3E2C1D] mb-2 relative">
                       {prize.place}
                       <div className="absolute h-1 w-0 bg-[#D4AF37] left-1/2 -bottom-1 transform -translate-x-1/2 group-hover:w-16 transition-all duration-300"></div>
                     </div>
 
-                    <div className="font-display text-[3.5vw] lg:text-3xl font-bold text-[#6B4423] mb-4">
+                    <div className="font-display text-[2.5vw] lg:text-2xl font-bold text-[#6B4423] mb-4">
                       {prize.amount}
                     </div>
 
