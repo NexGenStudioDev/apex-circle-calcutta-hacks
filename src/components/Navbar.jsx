@@ -21,7 +21,10 @@ const Navbar = () => {
     { label: 'Prizes', link: '#prizes' },
     { label: 'Mentors', link: '#mentors' },
     { label: 'Judges', link: '#judges' },
+    { label: 'Sponsors', link: '#sponsors' },
     { label: 'Team', link: '#team' },
+    { label: 'Partners', link: '#partners' },
+    { label: 'FAQ\'s', link: '#faq' },
   ];
 
   // State for dropdown
