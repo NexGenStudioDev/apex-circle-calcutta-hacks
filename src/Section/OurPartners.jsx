@@ -44,7 +44,7 @@ const categories = {
     name: 'Education Sponsor',
     partners: [
       {
-        name: 'Codecrafter',
+        name: 'Codecrafters',
         logo: codecrafter,
         link: 'https://codecrafters.io/',
         tagline: 'Become a better software engineer.',
