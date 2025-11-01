@@ -4,7 +4,7 @@ import OrnateBorder from '../components/OrnateBorder';
 import { VintageCard } from './Tracks';
 import { Link } from 'react-router-dom';
 
-import { FaFacebook, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaDiscord, FaFacebook, FaInstagram, FaInstagramSquare, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 const Cohost = () => (
   <section id="cohost" className="py-14 sm:py-16 md:py-20 relative bg-[#F4E5C2]/20 overflow-hidden">
@@ -166,6 +166,15 @@ const Cohost = () => (
 
                 <div className="px-[1.2vw] flex gap-[1.5rem] font-serif">
                   <a
+                    href="https://discord.gg/aBtJ7vbE3c"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
+                  >
+                    <FaDiscord size={28} className="text-[##3e2c1d]" />
+                  </a>
+
+                  <a
                     href="https://www.facebook.com/gdsctiu"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -180,7 +189,7 @@ const Cohost = () => (
                     rel="noopener noreferrer"
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
-                    <p className="text-[#3E2C1D] text-[2rem]">X</p>
+                    <FaTwitter size={28} className="text-[##3e2c1d]" />
                   </a>
 
                   <a
@@ -190,6 +199,15 @@ const Cohost = () => (
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
                     <FaLinkedin size={28} className="text-[##3e2c1d]" />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/gdgoncampus_tiu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
+                  >
+                    <FaInstagramSquare size={28} className="text-[##3e2c1d]" />
                   </a>
                 </div>
               </div>
