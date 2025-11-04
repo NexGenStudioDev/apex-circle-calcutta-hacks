@@ -7,6 +7,17 @@ import xyz from '../../src/assets/Icon/.xyz.png';
 import interviewbuddy from '../../src/assets/Icon/interviewbuddy.png';
 
 const categories = {
+  silverspn: {
+    name: 'Silver Sponsors',
+    partners: [
+      {
+        name: 'ETH India',
+        logo: ETH,
+        link: 'https://ethindia2024.devfolio.co/overview',
+        tagline: 'Empowering the future of hackathons',
+      },
+    ],
+  },
   vibingptn: {
     name: 'Vibing Partner',
     partners: [
@@ -15,18 +26,6 @@ const categories = {
         logo: bolt,
         link: 'https://bolt.new/',
         tagline: 'Create stunning apps & websites by chatting with AI',
-      },
-    ],
-  },
-  silverspn: {
-    name: 'Silver Sponsors',
-    partners: [
-      {
-        name: 'ETH India',
-        role: 'Silver Sponsor',
-        logo: ETH,
-        link: 'https://ethindia2024.devfolio.co/overview',
-        tagline: 'Empowering the future of hackathons',
       },
     ],
   },
@@ -54,7 +53,7 @@ const categories = {
         name: 'Interview Buddy',
         logo: interviewbuddy,
         link: 'https://interviewbuddy.net/',
-        tagline: 'Master the art of interviewing with AI-powered mock sessions, expert feedback and personalized coaching that gets you hired at top companies',
+        tagline: 'AI-powered mock interviews, expert feedback, and personalized coaching.',
       },
     ],
   },
@@ -75,21 +74,20 @@ const VintageCard = ({ children, className = '' }) => {
 };
 
 const SponsorCard = ({ category }) => {
-  let partners = categories[category].partners;
+  const { name, partners } = categories[category];
   return (
     <VintageCard className="mb-16">
       <div className="grid md:grid-cols-2 gap-8 items-center">
-        <div className="flex items-center gap-4 mb-6">
+        <div className="flex items-center gap-4 mb-6 md:col-span-2">
           <div className="w-16 h-16 bg-[#3E2C1D] rounded-full flex items-center justify-center">
             <Award className="text-[#D4AF37]" size={32} />
           </div>
           <h3 className="font-display uppercase text-3xl font-bold text-[#3E2C1D]">
-            {categories[category].name}
+            {name}
           </h3>
         </div>
-        <div></div>
         {partners.map(partner => (
-          <>
+          <React.Fragment key={partner.name}>
             <div className="mb-6">
               <h4 className="font-display uppercase text-2xl font-bold text-[#6B4423] mb-4">
                 {partner.name}
@@ -111,7 +109,7 @@ const SponsorCard = ({ category }) => {
                 className="max-h-[120px] object-contain"
               />
             </div>
-          </>
+          </React.Fragment>
         ))}
       </div>
     </VintageCard>
@@ -194,7 +192,7 @@ const OurPartners = () => {
         {/* Vibing Partner */}
         <SponsorCard category="vibingptn" />
 
-        {/* Learning Partner */}
+        {/* Education Sponsors */}
         <SponsorCard category="educationspn" />
 
         {/* Domain Sponsor */}
@@ -208,6 +206,7 @@ const OurPartners = () => {
           <a
             href="https://links.calcuttahacks.xyz/sponsor-us"
             target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-[#332518] text-[#F2E2C0] px-8 py-3 text-lg font-display font-bold border-4 border-[#332518] hover:bg-[#7D5B3D] hover:border-[#7D5B3D] transition-all duration-300"
           >
             Become a Sponsor
