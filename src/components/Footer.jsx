@@ -218,19 +218,19 @@ const Footer = () => {
               </a>
 
               <a
-                href="tel:+917003058672"
-                className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
-              >
-                <Phone size={16} className="text-[#D4AF37] mr-[0.5rem]" />
-                <span>+91 70030 58672</span>
-              </a>
-
-              <a
                 href="tel:+916291129896"
                 className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
               >
                 <Phone size={16} className="text-[#D4AF37] mr-[0.5rem]" />
                 <span>+91 62911 29896</span>
+              </a>
+
+              <a
+                href="tel:+917003058672"
+                className="flex items-center hover:text-[#D4AF37] transition-colors font-serif"
+              >
+                <Phone size={16} className="text-[#D4AF37] mr-[0.5rem]" />
+                <span>+91 70030 58672</span>
               </a>
             </div>
           </div>
