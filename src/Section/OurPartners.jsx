@@ -4,10 +4,34 @@ import bolt from '../../src/assets/Icon/bolt.png';
 import ETH from '../../src/assets/Icon/ethIndia.png';
 import codecrafter from '../../src/assets/Icon/codecrafter.png';
 import xyz from '../../src/assets/Icon/.xyz.png';
+import interviewbuddy from '../../src/assets/Icon/interviewbuddy.png';
+import loveable from '../../src/assets/Icon/loveable.png';
 
 const categories = {
+  silverspn: {
+    name: 'Silver Sponsors',
+    partners: [
+      {
+        name: 'ETH India',
+        logo: ETH,
+        link: 'https://ethindia2024.devfolio.co/overview',
+        tagline: 'Empowering the future of hackathons',
+      },
+    ],
+  },
   vibingptn: {
     name: 'Vibing Partner',
+    partners: [
+      {
+        name: 'Loveable',
+        logo: loveable,
+        link: 'https://lovable.dev/',
+        tagline: 'Create apps and websites by chatting with AI',
+      },
+    ],
+  },
+  creativeptn: {
+    name: 'Creative Partner',
     partners: [
       {
         name: 'Bolt.new',
@@ -17,15 +41,20 @@ const categories = {
       },
     ],
   },
-  silverspn: {
-    name: 'Silver Sponsor',
+  educationspn: {
+    name: 'Education Sponsors',
     partners: [
       {
-        name: 'ETH India',
-        role: 'Silver Sponsor',
-        logo: ETH,
-        link: 'https://ethindia2024.devfolio.co/overview',
-        tagline: 'Empowering the future of hackathons',
+        name: 'Codecrafters',
+        logo: codecrafter,
+        link: 'https://codecrafters.io/',
+        tagline: 'Become a better software engineer.',
+      },
+      {
+        name: 'Interview Buddy',
+        logo: interviewbuddy,
+        link: 'https://interviewbuddy.net/',
+        tagline: 'AI-powered mock interviews, expert feedback, and personalized coaching.',
       },
     ],
   },
@@ -37,17 +66,6 @@ const categories = {
         logo: xyz,
         link: 'https://gen.xyz/',
         tagline: 'For every website, everywhere.',
-      },
-    ],
-  },
-  educationspn: {
-    name: 'Education Sponsor',
-    partners: [
-      {
-        name: 'Codecrafters',
-        logo: codecrafter,
-        link: 'https://codecrafters.io/',
-        tagline: 'Become a better software engineer.',
       },
     ],
   },
@@ -68,21 +86,20 @@ const VintageCard = ({ children, className = '' }) => {
 };
 
 const SponsorCard = ({ category }) => {
-  let partners = categories[category].partners;
+  const { name, partners } = categories[category];
   return (
     <VintageCard className="mb-16">
       <div className="grid md:grid-cols-2 gap-8 items-center">
-        <div className="flex items-center gap-4 mb-6">
+        <div className="flex items-center gap-4 mb-6 md:col-span-2">
           <div className="w-16 h-16 bg-[#3E2C1D] rounded-full flex items-center justify-center">
             <Award className="text-[#D4AF37]" size={32} />
           </div>
           <h3 className="font-display uppercase text-3xl font-bold text-[#3E2C1D]">
-            {categories[category].name}
+            {name}
           </h3>
         </div>
-        <div></div>
         {partners.map(partner => (
-          <>
+          <React.Fragment key={partner.name}>
             <div className="mb-6">
               <h4 className="font-display uppercase text-2xl font-bold text-[#6B4423] mb-4">
                 {partner.name}
@@ -104,7 +121,7 @@ const SponsorCard = ({ category }) => {
                 className="max-h-[120px] object-contain"
               />
             </div>
-          </>
+          </React.Fragment>
         ))}
       </div>
     </VintageCard>
@@ -122,7 +139,7 @@ const OurPartners = () => {
           </h2>
           <div className="w-32 h-1 bg-[#C9A22C] mx-auto mb-6"></div>
           <p className="font-serif text-xl text-[#7D5B3D] max-w-3xl mx-auto">
-            Proudly hosted at our venue partner
+            They make the magic happen! A big thanks to our amazing partners for their support and collaboration.
           </p>
         </div>
 
@@ -181,13 +198,16 @@ const OurPartners = () => {
           </div>
         </VintageCard>
 
-        {/* Vibing Partner */}
-        <SponsorCard category="vibingptn" />
-
         {/* Silver Sponsor */}
         <SponsorCard category="silverspn" />
 
-        {/* Learning Partner */}
+        {/* Vibing Partner */}
+        <SponsorCard category="vibingptn" />
+
+        {/* Creative Partner */}
+        <SponsorCard category="creativeptn" />
+
+        {/* Education Sponsors */}
         <SponsorCard category="educationspn" />
 
         {/* Domain Sponsor */}
@@ -201,6 +221,7 @@ const OurPartners = () => {
           <a
             href="https://links.calcuttahacks.xyz/sponsor-us"
             target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-[#332518] text-[#F2E2C0] px-8 py-3 text-lg font-display font-bold border-4 border-[#332518] hover:bg-[#7D5B3D] hover:border-[#7D5B3D] transition-all duration-300"
           >
             Become a Sponsor

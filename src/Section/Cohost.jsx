@@ -59,8 +59,7 @@ const Cohost = () => (
                 </p>
                 <div className="KnowMoreAboutKolataBtn px-4 py-2 sm:py-4 text-center bg-[#3E2C1D] text-[#ecdcb8] rounded-lg">
                   <Link
-                    to="https://gdg.community.dev/gdg-on-campus-techno-india-university-kolkata-india/
-"
+                    to="https://gdg.community.dev/gdg-on-campus-techno-india-university-kolkata-india/"
                   >
                     Know More About GDGoC TIU{' '}
                   </Link>
@@ -161,7 +160,7 @@ const Cohost = () => (
 
               <div className="relative bg-[#F4E5C2]/70 p-6 border-2 border-[#3E2C1D] rounded-sm shadow-md overflow-hidden">
                 <h4 className="font-display text-lg font-bold text-[#3E2C1D] mb-4 flex items-center">
-                  <Award size={20} className="mr-2 text-[##3e2c1d]" /> Connect with GDGoC TIU
+                  <Award size={20} className="mr-2 text-[#3e2c1d]" /> Connect with GDGoC TIU
                 </h4>
 
                 <div className="px-[1.2vw] flex gap-[1.5rem] font-serif">
@@ -171,7 +170,7 @@ const Cohost = () => (
                     rel="noopener noreferrer"
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
-                    <FaDiscord size={28} className="text-[##3e2c1d]" />
+                    <FaDiscord size={28} className="text-[#3e2c1d]" />
                   </a>
 
                   <a
@@ -180,7 +179,7 @@ const Cohost = () => (
                     rel="noopener noreferrer"
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
-                    <FaFacebook size={28} className="text-[##3e2c1d]" />
+                    <FaFacebook size={28} className="text-[#3e2c1d]" />
                   </a>
 
                   <a
@@ -189,7 +188,7 @@ const Cohost = () => (
                     rel="noopener noreferrer"
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
-                    <FaTwitter size={28} className="text-[##3e2c1d]" />
+                    <FaTwitter size={28} className="text-[#3e2c1d]" />
                   </a>
 
                   <a
@@ -198,7 +197,7 @@ const Cohost = () => (
                     rel="noopener noreferrer"
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
-                    <FaLinkedin size={28} className="text-[##3e2c1d]" />
+                    <FaLinkedin size={28} className="text-[#3e2c1d]" />
                   </a>
 
                   <a
@@ -207,7 +206,7 @@ const Cohost = () => (
                     rel="noopener noreferrer"
                     className="text-sm text-[#3E2C1D] hover:underline flex items-center gap-2"
                   >
-                    <FaInstagramSquare size={28} className="text-[##3e2c1d]" />
+                    <FaInstagramSquare size={28} className="text-[#3e2c1d]" />
                   </a>
                 </div>
               </div>
