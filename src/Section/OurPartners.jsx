@@ -5,6 +5,7 @@ import ETH from '../../src/assets/Icon/ethIndia.png';
 import codecrafter from '../../src/assets/Icon/codecrafter.png';
 import xyz from '../../src/assets/Icon/.xyz.png';
 import interviewbuddy from '../../src/assets/Icon/interviewbuddy.png';
+import loveable from '../../src/assets/Icon/loveable.png';
 
 const categories = {
   silverspn: {
@@ -22,21 +23,21 @@ const categories = {
     name: 'Vibing Partner',
     partners: [
       {
+        name: 'Loveable',
+        logo: loveable,
+        link: 'https://lovable.dev/',
+        tagline: 'Create apps and websites by chatting with AI',
+      },
+    ],
+  },
+  creativeptn: {
+    name: 'Creative Partner',
+    partners: [
+      {
         name: 'Bolt.new',
         logo: bolt,
         link: 'https://bolt.new/',
         tagline: 'Create stunning apps & websites by chatting with AI',
-      },
-    ],
-  },
-  domainspn: {
-    name: 'Domain Sponsor',
-    partners: [
-      {
-        name: 'Gen xyz',
-        logo: xyz,
-        link: 'https://gen.xyz/',
-        tagline: 'For every website, everywhere.',
       },
     ],
   },
@@ -54,6 +55,17 @@ const categories = {
         logo: interviewbuddy,
         link: 'https://interviewbuddy.net/',
         tagline: 'AI-powered mock interviews, expert feedback, and personalized coaching.',
+      },
+    ],
+  },
+  domainspn: {
+    name: 'Domain Sponsor',
+    partners: [
+      {
+        name: 'Gen xyz',
+        logo: xyz,
+        link: 'https://gen.xyz/',
+        tagline: 'For every website, everywhere.',
       },
     ],
   },
@@ -191,6 +203,9 @@ const OurPartners = () => {
 
         {/* Vibing Partner */}
         <SponsorCard category="vibingptn" />
+
+        {/* Creative Partner */}
+        <SponsorCard category="creativeptn" />
 
         {/* Education Sponsors */}
         <SponsorCard category="educationspn" />
