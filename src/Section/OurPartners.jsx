@@ -4,6 +4,7 @@ import bolt from '../../src/assets/Icon/bolt.png';
 import ETH from '../../src/assets/Icon/ethIndia.png';
 import codecrafter from '../../src/assets/Icon/codecrafter.png';
 import xyz from '../../src/assets/Icon/.xyz.png';
+import interviewbuddy from '../../src/assets/Icon/interviewbuddy.png';
 
 const categories = {
   vibingptn: {
@@ -18,7 +19,7 @@ const categories = {
     ],
   },
   silverspn: {
-    name: 'Silver Sponsor',
+    name: 'Silver Sponsors',
     partners: [
       {
         name: 'ETH India',
@@ -41,13 +42,19 @@ const categories = {
     ],
   },
   educationspn: {
-    name: 'Education Sponsor',
+    name: 'Education Sponsors',
     partners: [
       {
         name: 'Codecrafters',
         logo: codecrafter,
         link: 'https://codecrafters.io/',
         tagline: 'Become a better software engineer.',
+      },
+      {
+        name: 'Interview Buddy',
+        logo: interviewbuddy,
+        link: 'https://interviewbuddy.net/',
+        tagline: 'Master the art of interviewing with AI-powered mock sessions, expert feedback and personalized coaching that gets you hired at top companies',
       },
     ],
   },
@@ -122,7 +129,7 @@ const OurPartners = () => {
           </h2>
           <div className="w-32 h-1 bg-[#C9A22C] mx-auto mb-6"></div>
           <p className="font-serif text-xl text-[#7D5B3D] max-w-3xl mx-auto">
-            Proudly hosted at our venue partner
+            They make the magic happen! A big thanks to our amazing partners for their support and collaboration.
           </p>
         </div>
 
@@ -181,11 +188,11 @@ const OurPartners = () => {
           </div>
         </VintageCard>
 
-        {/* Vibing Partner */}
-        <SponsorCard category="vibingptn" />
-
         {/* Silver Sponsor */}
         <SponsorCard category="silverspn" />
+
+        {/* Vibing Partner */}
+        <SponsorCard category="vibingptn" />
 
         {/* Learning Partner */}
         <SponsorCard category="educationspn" />
