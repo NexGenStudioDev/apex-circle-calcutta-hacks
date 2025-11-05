@@ -6,6 +6,7 @@ import codecrafter from '../../src/assets/Icon/codecrafter.png';
 import xyz from '../../src/assets/Icon/.xyz.png';
 import interviewbuddy from '../../src/assets/Icon/interviewbuddy.png';
 import loveable from '../../src/assets/Icon/loveable.png';
+import elevenlabs from '../../src/assets/Icon/elevenlabs.png';
 
 const categories = {
   silverspn: {
@@ -23,21 +24,27 @@ const categories = {
     name: 'Vibing Partner',
     partners: [
       {
-        name: 'Loveable',
+        name: 'Lovable',
         logo: loveable,
         link: 'https://lovable.dev/',
         tagline: 'Create apps and websites by chatting with AI',
       },
     ],
   },
-  creativeptn: {
-    name: 'Creative Partner',
+  buildingptn: {
+    name: 'Building Partners',
     partners: [
       {
         name: 'Bolt.new',
         logo: bolt,
         link: 'https://bolt.new/',
         tagline: 'Create stunning apps & websites by chatting with AI',
+      },
+      {
+        name: 'ElevenLabs',
+        logo: elevenlabs,
+        link: 'https://elevenlabs.io/',
+        tagline: 'The most realistic voice AI platform',
       },
     ],
   },
@@ -114,7 +121,7 @@ const SponsorCard = ({ category }) => {
                 Visit Website
               </a>
             </div>
-            <div className="bg-[#e8d9b6] p-2 rounded-lg border-4 border-[#3E2C1D] flex items-center justify-center">
+            <div className="p-2 rounded-lg flex items-center justify-center">
               <img
                 src={partner.logo}
                 alt={`${partner.name} Logo`}
@@ -205,7 +212,7 @@ const OurPartners = () => {
         <SponsorCard category="vibingptn" />
 
         {/* Creative Partner */}
-        <SponsorCard category="creativeptn" />
+        <SponsorCard category="buildingptn" />
 
         {/* Education Sponsors */}
         <SponsorCard category="educationspn" />
